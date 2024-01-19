@@ -1,31 +1,42 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <a-layout>
+        <a-layout-header class="header">
+            <div class="logo" />
+            <a-menu
+                    v-model:selectedKeys="selectedKeys1"
+                    theme="dark"
+                    mode="horizontal"
+                    :style="{ lineHeight: '64px' }"
+            >
+                <a-menu-item key="1">首页</a-menu-item>
+                <a-menu-item key="2">电子书管理</a-menu-item>
+                <a-menu-item key="3">关于我们</a-menu-item>
+            </a-menu>
+        </a-layout-header>
 
-  </div>
-  <router-view/>
+        <a-layout-footer style="text-align: center">
+            wiki ©2024 Created by Tailai
+        </a-layout-footer>
+    </a-layout>
+
 </template>
 
+
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+    #components-layout-demo-top-side-2 .logo {
+        float: left;
+        width: 120px;
+        height: 31px;
+        margin: 16px 24px 16px 0;
+        background: rgba(255, 255, 255, 0.3);
+    }
 
-#nav {
-  padding: 30px;
-}
+    .ant-row-rtl #components-layout-demo-top-side-2 .logo {
+        float: right;
+        margin: 16px 0 16px 24px;
+    }
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
+    .site-layout-background {
+        background: #fff;
+    }
 </style>
