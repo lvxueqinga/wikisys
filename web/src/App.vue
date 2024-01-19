@@ -1,29 +1,31 @@
 <template>
     <a-layout>
-        <a-layout-header class="header">
-            <div class="logo" />
-            <a-menu
-                    v-model:selectedKeys="selectedKeys1"
-                    theme="dark"
-                    mode="horizontal"
-                    :style="{ lineHeight: '64px' }"
-            >
-                <a-menu-item key="1">首页</a-menu-item>
-                <a-menu-item key="2">电子书管理</a-menu-item>
-                <a-menu-item key="3">关于我们</a-menu-item>
-            </a-menu>
-        </a-layout-header>
+
+        <the-header></the-header>
+
         <router-view/>
 
+        <the-footer></the-footer>
 
 
-
-        <a-layout-footer style="text-align: center">
-            wiki ©2024 Created by Tailai
-        </a-layout-footer>
     </a-layout>
 
 </template>
+
+<script lang="ts">
+    import { defineComponent } from 'vue';
+    import TheHeader from '@/components/the-header.vue';
+    import TheFooter from '@/components/the-footer.vue';
+
+    export default defineComponent({
+        name: 'app',
+        components:{
+            TheHeader,
+            TheFooter,
+        },
+
+    });
+</script>
 
 
 <style>
