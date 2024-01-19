@@ -13,6 +13,10 @@
                 <a-menu-item key="3">关于我们</a-menu-item>
             </a-menu>
         </a-layout-header>
+        <router-view/>
+
+
+
 
         <a-layout-footer style="text-align: center">
             wiki ©2024 Created by Tailai
