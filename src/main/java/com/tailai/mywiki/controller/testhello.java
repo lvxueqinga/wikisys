@@ -1,6 +1,7 @@
 package com.tailai.mywiki.controller;
 
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -15,8 +16,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class testhello {
 
+    @Value("${test.hello}")
+    private String testhello ;
     @RequestMapping("/hello")
     public String hello(){
+
+        System.out.print(testhello);
         return "hello world";
     }
 }
