@@ -46,7 +46,6 @@ export default defineComponent({
     onMounted(() => {
       console.log("onMounted");
       axios.get("http://localhost:8888/book/search").then((response) => {
-        console.log(response);
         const data = response.data;
         ebooks.value = data;
       });
