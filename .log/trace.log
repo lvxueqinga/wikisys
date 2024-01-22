@@ -34,3 +34,11 @@
 2024-01-22 11:33:36.738 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
 2024-01-22 11:33:36.989 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
 2024-01-22 11:33:37.127 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：439 ms -------------
+2024-01-22 11:41:09.800 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2024-01-22 11:41:09.803 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :24   [32m                  [0;39m 请求地址: http://localhost:8888/book/search GET
+2024-01-22 11:41:09.804 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :25   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-01-22 11:41:09.820 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：15 ms -------------
+2024-01-22 11:41:14.538 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2024-01-22 11:41:14.539 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :24   [32m                  [0;39m 请求地址: http://localhost:8888/book/search GET
+2024-01-22 11:41:14.539 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :25   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-01-22 11:41:14.543 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：4 ms -------------
