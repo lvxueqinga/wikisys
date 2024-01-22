@@ -50,8 +50,16 @@ public class BookServiceImpl implements BookService {
 
     @Override
     public int editBook(Book book) {
-        return bookMapper.editBook(book);
+        int ans;
+        if (ObjectUtils.isEmpty(book.getId())){
+
+            ans = bookMapper.addBook(book);
+        }else {
+            ans = bookMapper.editBook(book);
+        }
+        return ans;
     }
+
      @Override
     public int addBook(Book book) {
         return bookMapper.addBook(book);

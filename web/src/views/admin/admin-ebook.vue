@@ -3,6 +3,9 @@
     <a-layout-content
             :style="{ background: '#fff', padding: '24px', margin: 0, minHeight: '280px' }"
     >
+      <p>
+        <a-button type="primary" @click="myadd" size="large">新增</a-button>
+      </p>
       <a-table
               :columns="columns"
               :row-key="record => record.id"
@@ -158,6 +161,11 @@
 
       };
 
+      // 新增
+      const myadd = () => {
+        modalVisible.value = true;
+        ebook.value={};
+      };
 
       return {
         ebooks,
@@ -169,6 +177,7 @@
         modalVisible,
         modalLoading,
         myedit,
+        myadd,
               handleModalOk,
         ebook,
       }
