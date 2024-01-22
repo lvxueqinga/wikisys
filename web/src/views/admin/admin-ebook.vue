@@ -139,10 +139,23 @@
       const handleModalOk = () => {
 
         modalLoading.value = true;
-        setTimeout(() => {
-          modalVisible.value = false;
-          modalLoading.value = false;
-        }, 2000);
+
+
+        axios.post("http://localhost:8888/book/edit", ebook.value).then((response) => {
+          const data = response.data;
+          //成功后：
+            modalVisible.value = false;
+            modalLoading.value = false;
+
+            //重新加载列表
+            handleQuery({
+              page:1,
+              size:pagination.value.pageSize
+            });
+
+
+        });
+
       };
 
 

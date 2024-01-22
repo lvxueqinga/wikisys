@@ -9,4 +9,20 @@
         select * from book
     </select>
 
+    <update id="editBook" parameterType="com.tailai.mywiki.model.Book">
+        UPDATE book
+        SET
+        name = #{name},
+        category = #{category},
+        pic = #{pic}
+        WHERE id = #{id}
+    </update>
+
+    <insert id="addBook" parameterType="com.tailai.mywiki.model.Book">
+
+        INSERT INTO book (name, category, pic,id)
+        VALUES (#{name}, #{category}, #{pic},#{id})
+    </insert>
+
+
 </mapper>

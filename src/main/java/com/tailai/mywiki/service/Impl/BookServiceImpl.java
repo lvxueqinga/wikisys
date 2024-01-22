@@ -5,6 +5,7 @@ import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.tailai.mywiki.config.MywikiApplication;
 import com.tailai.mywiki.dao.BookMapper;
+import com.tailai.mywiki.model.Book;
 import com.tailai.mywiki.req.BookReq;
 import com.tailai.mywiki.resp.PageResp;
 import com.tailai.mywiki.service.BookService;
@@ -12,6 +13,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.util.ObjectUtils;
 
 import javax.annotation.Resource;
 import java.util.List;
@@ -45,4 +47,15 @@ public class BookServiceImpl implements BookService {
 
         return pageResp;
     }
+
+    @Override
+    public int editBook(Book book) {
+        return bookMapper.editBook(book);
+    }
+     @Override
+    public int addBook(Book book) {
+        return bookMapper.addBook(book);
+    }
+
+
 }

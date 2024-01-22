@@ -1,6 +1,7 @@
 package com.tailai.mywiki.dao;
 
 import com.alibaba.fastjson.JSONObject;
+import com.tailai.mywiki.model.Book;
 import com.tailai.mywiki.req.BookReq;
 import org.springframework.stereotype.Repository;
 
@@ -15,4 +16,10 @@ import java.util.List;
 public interface BookMapper {
     //查询全部
     List<JSONObject> searchBook(BookReq req);
+
+    //编辑电子书
+    int editBook(Book book);
+
+    //编辑电子书
+    int addBook(Book book);
 }
