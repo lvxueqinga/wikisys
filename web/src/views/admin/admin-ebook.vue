@@ -16,16 +16,8 @@
         </template>
         <template v-slot:action="{ text, record }">
           <a-space size="small">
-            <a-button type="primary" @click="myedit">编辑</a-button>
-            <a-modal
-                    v-model:visible="modalVisible"
-                    title="电子书表单"
-                    :confirm-loading="modalLoading"
-                    @ok="handleModalOk"
-            >
-              <p>编辑</p>
+            <a-button type="primary" @click="myedit(record)">编辑</a-button>
 
-            </a-modal>
             <a-button type="danger">
               删除
             </a-button>
@@ -34,6 +26,27 @@
       </a-table>
     </a-layout-content>
   </a-layout>
+
+  <a-modal
+          v-model:visible="modalVisible"
+          title="电子书表单"
+          :confirm-loading="modalLoading"
+          @ok="handleModalOk"
+  >
+    <a-form :model="ebook" :label-col="{ span: 6 }" :wrapper-col="{ span: 18 }">
+      <a-form-item label="封面">
+        <a-input v-model:value="ebook.pic" />
+      </a-form-item>
+      <a-form-item label="名称">
+        <a-input v-model:value="ebook.name" />
+      </a-form-item>
+      <a-form-item label="分类">
+        <a-input v-model:value="ebook.category" />
+      </a-form-item>
+    </a-form>
+
+  </a-modal>
+
 </template>
 
 <script lang="ts">
@@ -114,10 +127,13 @@
 
       // 编辑表单
 
+      const ebook=ref({});
       const modalVisible = ref<boolean>(false);
       const modalLoading = ref<boolean>(false);
-      const myedit = () => {
+      const myedit = (record: any) => {
         modalVisible.value = true;
+        console.log("record：" + record);
+        ebook.value=record;
       };
 
       const handleModalOk = () => {
@@ -141,6 +157,7 @@
         modalLoading,
         myedit,
               handleModalOk,
+        ebook,
       }
     }
   });
