@@ -5,6 +5,8 @@ import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.tailai.mywiki.config.MywikiApplication;
 import com.tailai.mywiki.dao.BookMapper;
+import com.tailai.mywiki.req.BookReq;
+import com.tailai.mywiki.resp.PageResp;
 import com.tailai.mywiki.service.BookService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -28,12 +30,19 @@ public class BookServiceImpl implements BookService {
     private BookMapper bookMapper;
 
     @Override
-    public List<JSONObject> searchBook() {
-        PageHelper.startPage(1,2);
-        List<JSONObject> ans = bookMapper.searchBook();
+    public PageResp<JSONObject> searchBook(BookReq req) {
+
+        PageHelper.startPage(req.getPage(),req.getSize());
+        List<JSONObject> ans = bookMapper.searchBook(req);
+
         PageInfo<JSONObject> pageInfo = new PageInfo<>(ans);
         LOG.info("总行数 {}",pageInfo.getTotal());
         LOG.info("总页数 {}",pageInfo.getPages());
-        return ans;
+
+        PageResp<JSONObject> pageResp = new PageResp<>();
+        pageResp.setTotal(pageInfo.getTotal());
+        pageResp.setList(ans);
+
+        return pageResp;
     }
 }

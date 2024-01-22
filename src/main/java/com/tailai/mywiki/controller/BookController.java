@@ -1,6 +1,8 @@
 package com.tailai.mywiki.controller;
 
 import com.alibaba.fastjson.JSONObject;
+import com.tailai.mywiki.req.BookReq;
+import com.tailai.mywiki.resp.PageResp;
 import com.tailai.mywiki.service.BookService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -9,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
-import java.util.List;
+
 
 /**
  * @program：mywiki
@@ -25,8 +27,8 @@ public class BookController {
 
     @GetMapping("/search")
     @ApiOperation(value = "查询列表",httpMethod = "GET")
-    public List<JSONObject> search(){
-        return  bookService.searchBook();
+    public PageResp<JSONObject> search(BookReq req){
+        return  bookService.searchBook(req);
     }
 
 }

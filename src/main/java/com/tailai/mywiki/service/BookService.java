@@ -1,6 +1,8 @@
 package com.tailai.mywiki.service;
 
 import com.alibaba.fastjson.JSONObject;
+import com.tailai.mywiki.req.BookReq;
+import com.tailai.mywiki.resp.PageResp;
 
 import java.util.List;
 
@@ -12,5 +14,5 @@ import java.util.List;
 public interface BookService {
 
     //查询全部
-    List<JSONObject> searchBook();
+    PageResp<JSONObject> searchBook(BookReq req);
 }
