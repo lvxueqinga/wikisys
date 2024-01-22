@@ -21,9 +21,19 @@
           <a-space size="small">
             <a-button type="primary" @click="myedit(record)">编辑</a-button>
 
-            <a-button type="danger" @click="mydelete(record)">
-              删除
-            </a-button>
+            <a-popconfirm
+                    title="是否删除"
+                    ok-text="是"
+                    cancel-text="否"
+                    @confirm="mydelete(record)"
+
+            >
+              <a-button type="danger" >
+                删除
+              </a-button>
+            </a-popconfirm>
+
+
           </a-space>
         </template>
       </a-table>
@@ -55,6 +65,7 @@
 <script lang="ts">
   import { defineComponent, onMounted, ref } from 'vue';
   import axios from 'axios';
+  import { message } from 'ant-design-vue';
 
   export default defineComponent({
     name: 'AdminEbook',
@@ -182,6 +193,10 @@
         });
       };
 
+
+
+
+
       return {
         ebooks,
         pagination,
@@ -196,6 +211,9 @@
         mydelete,
         handleModalOk,
         ebook,
+
+
+
       }
     }
   });
