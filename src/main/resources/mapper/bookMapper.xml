@@ -24,5 +24,13 @@
         VALUES (#{name}, #{category}, #{pic},#{id})
     </insert>
 
+    <delete id="delBook" parameterType="com.tailai.mywiki.model.Book">
+
+        delete from book where id = #{id}
+
+    </delete>
+
+
+
 
 </mapper>

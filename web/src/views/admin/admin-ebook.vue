@@ -21,7 +21,7 @@
           <a-space size="small">
             <a-button type="primary" @click="myedit(record)">编辑</a-button>
 
-            <a-button type="danger">
+            <a-button type="danger" @click="mydelete(record)">
               删除
             </a-button>
           </a-space>
@@ -135,7 +135,6 @@
       const modalLoading = ref<boolean>(false);
       const myedit = (record: any) => {
         modalVisible.value = true;
-        console.log("record：" + record);
         ebook.value=record;
       };
 
@@ -167,6 +166,22 @@
         ebook.value={};
       };
 
+      //删除
+      const mydelete = (record: any) => {
+        ebook.value=record;
+        axios.post("http://localhost:8888/book/delete", ebook.value).then((response) => {
+
+          console.log("ebook.value：" + ebook.value);
+          //成功后重新加载列表
+          handleQuery({
+            page:1,
+            size:pagination.value.pageSize
+          });
+
+
+        });
+      };
+
       return {
         ebooks,
         pagination,
@@ -178,7 +193,8 @@
         modalLoading,
         myedit,
         myadd,
-              handleModalOk,
+        mydelete,
+        handleModalOk,
         ebook,
       }
     }

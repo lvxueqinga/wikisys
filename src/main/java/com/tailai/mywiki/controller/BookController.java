@@ -42,4 +42,10 @@ public class BookController {
         return  bookService.addBook(book);
     }
 
+    @PostMapping("/delete")
+    @ApiOperation(value = "删除",httpMethod = "POST")
+    public int del(@RequestBody Book book){
+        return  bookService.delBook(book);
+    }
+
 }

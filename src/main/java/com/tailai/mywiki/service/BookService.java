@@ -22,4 +22,7 @@ public interface BookService {
 
     //新增
     int addBook(Book book);
+
+    //删除
+    int delBook(Book book);
 }

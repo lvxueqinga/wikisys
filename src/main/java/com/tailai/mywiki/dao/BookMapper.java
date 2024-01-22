@@ -20,6 +20,9 @@ public interface BookMapper {
     //编辑电子书
     int editBook(Book book);
 
-    //编辑电子书
+    //新增电子书
     int addBook(Book book);
+
+    //删除电子书
+    int delBook(Book book);
 }

@@ -65,5 +65,10 @@ public class BookServiceImpl implements BookService {
         return bookMapper.addBook(book);
     }
 
+    @Override
+    public int delBook(Book book) {
+        return bookMapper.delBook(book);
+    }
+
 
 }
