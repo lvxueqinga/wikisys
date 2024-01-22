@@ -16,9 +16,16 @@
         </template>
         <template v-slot:action="{ text, record }">
           <a-space size="small">
-            <a-button type="primary">
-              编辑
-            </a-button>
+            <a-button type="primary" @click="myedit">编辑</a-button>
+            <a-modal
+                    v-model:visible="modalVisible"
+                    title="电子书表单"
+                    :confirm-loading="modalLoading"
+                    @ok="handleModalOk"
+            >
+              <p>编辑</p>
+
+            </a-modal>
             <a-button type="danger">
               删除
             </a-button>
@@ -105,12 +112,35 @@
         });
       });
 
+      // 编辑表单
+
+      const modalVisible = ref<boolean>(false);
+      const modalLoading = ref<boolean>(false);
+      const myedit = () => {
+        modalVisible.value = true;
+      };
+
+      const handleModalOk = () => {
+
+        modalLoading.value = true;
+        setTimeout(() => {
+          modalVisible.value = false;
+          modalLoading.value = false;
+        }, 2000);
+      };
+
+
       return {
         ebooks,
         pagination,
         columns,
         loading,
-        handleTableChange
+        handleTableChange,
+
+        modalVisible,
+        modalLoading,
+        myedit,
+              handleModalOk,
       }
     }
   });
