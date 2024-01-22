@@ -6,7 +6,7 @@
 
 <mapper namespace="com.tailai.mywiki.dao.BookMapper">
     <select id="searchBook" resultType="com.alibaba.fastjson.JSONObject" >
-        select * from book;
+        select * from book
     </select>
 
 </mapper>
