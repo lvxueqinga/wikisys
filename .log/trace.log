@@ -862,3 +862,392 @@ java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check th
 2024-01-22 14:20:48.732 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
 2024-01-22 14:20:48.733 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
 2024-01-22 14:20:48.741 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
+2024-01-22 14:23:02.563 INFO  com.tailai.mywiki.config.MywikiApplication        :55   [32m                  [0;39m Starting MywikiApplication using Java 1.8.0_231 on baotumeimei-3.local with PID 46942 (/Users/lvxueqing/Desktop/mywiki/target/classes started by lvxueqing in /Users/lvxueqing/Desktop/mywiki)
+2024-01-22 14:23:02.567 INFO  com.tailai.mywiki.config.MywikiApplication        :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2024-01-22 14:23:02.631 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-01-22 14:23:02.631 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-01-22 14:23:03.833 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8888 (http)
+2024-01-22 14:23:03.842 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8888"]
+2024-01-22 14:23:03.843 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2024-01-22 14:23:03.843 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2024-01-22 14:23:03.916 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2024-01-22 14:23:03.916 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1282 ms
+2024-01-22 14:23:05.210 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2024-01-22 14:23:05.247 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2024-01-22 14:23:05.371 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8888"]
+2024-01-22 14:23:05.394 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8888 (http) with context path ''
+2024-01-22 14:23:05.395 INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper:120  [32m                  [0;39m Context refreshed
+2024-01-22 14:23:05.411 INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper:123  [32m                  [0;39m Found 1 custom documentation plugin(s)
+2024-01-22 14:23:05.422 INFO  s.d.spring.web.scanners.ApiListingReferenceScanner:41   [32m                  [0;39m Scanning for api listing references
+2024-01-22 14:23:05.597 INFO  s.d.s.w.r.operation.CachingOperationNameGenerator :40   [32m                  [0;39m Generating unique operation named: helloUsingGET_1
+2024-01-22 14:23:05.598 INFO  s.d.s.w.r.operation.CachingOperationNameGenerator :40   [32m                  [0;39m Generating unique operation named: helloUsingGET_2
+2024-01-22 14:23:05.599 INFO  s.d.s.w.r.operation.CachingOperationNameGenerator :40   [32m                  [0;39m Generating unique operation named: helloUsingGET_3
+2024-01-22 14:23:05.601 INFO  s.d.s.w.r.operation.CachingOperationNameGenerator :40   [32m                  [0;39m Generating unique operation named: helloUsingGET_4
+2024-01-22 14:23:05.602 INFO  s.d.s.w.r.operation.CachingOperationNameGenerator :40   [32m                  [0;39m Generating unique operation named: helloUsingGET_5
+2024-01-22 14:23:05.603 INFO  s.d.s.w.r.operation.CachingOperationNameGenerator :40   [32m                  [0;39m Generating unique operation named: helloUsingGET_6
+2024-01-22 14:23:05.603 INFO  s.d.s.w.r.operation.CachingOperationNameGenerator :40   [32m                  [0;39m Generating unique operation named: helloUsingGET_7
+2024-01-22 14:23:05.623 INFO  com.tailai.mywiki.config.MywikiApplication        :61   [32m                  [0;39m Started MywikiApplication in 3.469 seconds (JVM running for 4.196)
+2024-01-22 14:23:05.627 INFO  com.tailai.mywiki.config.MywikiApplication        :24   [32m                  [0;39m 启动成功！！
+2024-01-22 14:23:05.627 INFO  com.tailai.mywiki.config.MywikiApplication        :25   [32m                  [0;39m 地址: 	http://127.0.0.1:8888
+2024-01-22 14:23:06.719 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-22 14:23:06.719 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2024-01-22 14:23:06.721 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
+2024-01-22 14:23:06.759 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2024-01-22 14:23:06.760 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :24   [32m                  [0;39m 请求地址: http://localhost:8888/book/search GET
+2024-01-22 14:23:06.761 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :25   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-01-22 14:23:06.824 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
+2024-01-22 14:23:07.071 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
+2024-01-22 14:23:07.118 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM book
+2024-01-22 14:23:07.145 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2024-01-22 14:23:07.165 TRACE com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2024-01-22 14:23:07.165 TRACE com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :143  [32m                  [0;39m <==        Row: 3
+2024-01-22 14:23:07.171 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :137  [32m                  [0;39m <==      Total: 1
+2024-01-22 14:23:07.173 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook       :137  [32m                  [0;39m ==>  Preparing: select * from book
+2024-01-22 14:23:07.173 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook       :137  [32m                  [0;39m ==> Parameters: 
+2024-01-22 14:23:07.175 TRACE com.tailai.mywiki.dao.BookMapper.searchBook       :143  [32m                  [0;39m <==    Columns: id, pic, name, category
+2024-01-22 14:23:07.175 TRACE com.tailai.mywiki.dao.BookMapper.searchBook       :143  [32m                  [0;39m <==        Row: 1, /image/cover2.png, name1, jisuanji
+2024-01-22 14:23:07.178 TRACE com.tailai.mywiki.dao.BookMapper.searchBook       :143  [32m                  [0;39m <==        Row: 2, /image/cover2.png, name2, xinlixue
+2024-01-22 14:23:07.178 TRACE com.tailai.mywiki.dao.BookMapper.searchBook       :143  [32m                  [0;39m <==        Row: 3, /image/cover2.png, 全程软件测试, 朱少民
+2024-01-22 14:23:07.179 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook       :137  [32m                  [0;39m <==      Total: 3
+2024-01-22 14:23:07.181 INFO  com.tailai.mywiki.config.MywikiApplication        :39   [32m                  [0;39m 总行数 3
+2024-01-22 14:23:07.181 INFO  com.tailai.mywiki.config.MywikiApplication        :40   [32m                  [0;39m 总页数 0
+2024-01-22 14:23:07.236 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：475 ms -------------
+2024-01-22 14:23:22.724 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2024-01-22 14:23:22.725 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :24   [32m                  [0;39m 请求地址: http://localhost:8888/book/search GET
+2024-01-22 14:23:22.725 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :25   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-01-22 14:23:22.727 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM book
+2024-01-22 14:23:22.728 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2024-01-22 14:23:22.729 TRACE com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2024-01-22 14:23:22.730 TRACE com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :143  [32m                  [0;39m <==        Row: 3
+2024-01-22 14:23:22.730 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :137  [32m                  [0;39m <==      Total: 1
+2024-01-22 14:23:22.731 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook       :137  [32m                  [0;39m ==>  Preparing: select * from book
+2024-01-22 14:23:22.731 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook       :137  [32m                  [0;39m ==> Parameters: 
+2024-01-22 14:23:22.732 TRACE com.tailai.mywiki.dao.BookMapper.searchBook       :143  [32m                  [0;39m <==    Columns: id, pic, name, category
+2024-01-22 14:23:22.733 TRACE com.tailai.mywiki.dao.BookMapper.searchBook       :143  [32m                  [0;39m <==        Row: 1, /image/cover2.png, name1, jisuanji
+2024-01-22 14:23:22.735 TRACE com.tailai.mywiki.dao.BookMapper.searchBook       :143  [32m                  [0;39m <==        Row: 2, /image/cover2.png, name2, xinlixue
+2024-01-22 14:23:22.736 TRACE com.tailai.mywiki.dao.BookMapper.searchBook       :143  [32m                  [0;39m <==        Row: 3, /image/cover2.png, 全程软件测试, 朱少民
+2024-01-22 14:23:22.737 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook       :137  [32m                  [0;39m <==      Total: 3
+2024-01-22 14:23:22.738 INFO  com.tailai.mywiki.config.MywikiApplication        :39   [32m                  [0;39m 总行数 3
+2024-01-22 14:23:22.738 INFO  com.tailai.mywiki.config.MywikiApplication        :40   [32m                  [0;39m 总页数 0
+2024-01-22 14:23:22.740 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：15 ms -------------
+2024-01-22 14:23:24.001 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2024-01-22 14:23:24.001 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :24   [32m                  [0;39m 请求地址: http://localhost:8888/book/search GET
+2024-01-22 14:23:24.002 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :25   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-01-22 14:23:24.004 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM book
+2024-01-22 14:23:24.004 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2024-01-22 14:23:24.006 TRACE com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2024-01-22 14:23:24.006 TRACE com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :143  [32m                  [0;39m <==        Row: 3
+2024-01-22 14:23:24.007 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :137  [32m                  [0;39m <==      Total: 1
+2024-01-22 14:23:24.007 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook       :137  [32m                  [0;39m ==>  Preparing: select * from book
+2024-01-22 14:23:24.008 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook       :137  [32m                  [0;39m ==> Parameters: 
+2024-01-22 14:23:24.010 TRACE com.tailai.mywiki.dao.BookMapper.searchBook       :143  [32m                  [0;39m <==    Columns: id, pic, name, category
+2024-01-22 14:23:24.010 TRACE com.tailai.mywiki.dao.BookMapper.searchBook       :143  [32m                  [0;39m <==        Row: 1, /image/cover2.png, name1, jisuanji
+2024-01-22 14:23:24.011 TRACE com.tailai.mywiki.dao.BookMapper.searchBook       :143  [32m                  [0;39m <==        Row: 2, /image/cover2.png, name2, xinlixue
+2024-01-22 14:23:24.012 TRACE com.tailai.mywiki.dao.BookMapper.searchBook       :143  [32m                  [0;39m <==        Row: 3, /image/cover2.png, 全程软件测试, 朱少民
+2024-01-22 14:23:24.013 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook       :137  [32m                  [0;39m <==      Total: 3
+2024-01-22 14:23:24.014 INFO  com.tailai.mywiki.config.MywikiApplication        :39   [32m                  [0;39m 总行数 3
+2024-01-22 14:23:24.015 INFO  com.tailai.mywiki.config.MywikiApplication        :40   [32m                  [0;39m 总页数 0
+2024-01-22 14:23:24.017 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：15 ms -------------
+2024-01-22 14:24:43.147 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2024-01-22 14:24:43.155 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :24   [32m                  [0;39m 请求地址: http://localhost:8888/book/search GET
+2024-01-22 14:24:43.155 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :25   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-01-22 14:24:43.172 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM book
+2024-01-22 14:24:43.176 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2024-01-22 14:24:43.182 TRACE com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2024-01-22 14:24:43.183 TRACE com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :143  [32m                  [0;39m <==        Row: 3
+2024-01-22 14:24:43.185 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :137  [32m                  [0;39m <==      Total: 1
+2024-01-22 14:24:43.186 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook       :137  [32m                  [0;39m ==>  Preparing: select * from book
+2024-01-22 14:24:43.187 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook       :137  [32m                  [0;39m ==> Parameters: 
+2024-01-22 14:24:43.189 TRACE com.tailai.mywiki.dao.BookMapper.searchBook       :143  [32m                  [0;39m <==    Columns: id, pic, name, category
+2024-01-22 14:24:43.189 TRACE com.tailai.mywiki.dao.BookMapper.searchBook       :143  [32m                  [0;39m <==        Row: 1, /image/cover2.png, name1, jisuanji
+2024-01-22 14:24:43.190 TRACE com.tailai.mywiki.dao.BookMapper.searchBook       :143  [32m                  [0;39m <==        Row: 2, /image/cover2.png, name2, xinlixue
+2024-01-22 14:24:43.191 TRACE com.tailai.mywiki.dao.BookMapper.searchBook       :143  [32m                  [0;39m <==        Row: 3, /image/cover2.png, 全程软件测试, 朱少民
+2024-01-22 14:24:43.192 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook       :137  [32m                  [0;39m <==      Total: 3
+2024-01-22 14:24:43.193 INFO  com.tailai.mywiki.config.MywikiApplication        :39   [32m                  [0;39m 总行数 3
+2024-01-22 14:24:43.193 INFO  com.tailai.mywiki.config.MywikiApplication        :40   [32m                  [0;39m 总页数 0
+2024-01-22 14:24:43.201 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：45 ms -------------
+2024-01-22 14:25:56.110 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2024-01-22 14:25:56.112 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :24   [32m                  [0;39m 请求地址: http://localhost:8888/book/search GET
+2024-01-22 14:25:56.112 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :25   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-01-22 14:25:56.125 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM book
+2024-01-22 14:25:56.126 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2024-01-22 14:25:56.129 TRACE com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2024-01-22 14:25:56.130 TRACE com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :143  [32m                  [0;39m <==        Row: 3
+2024-01-22 14:25:56.130 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :137  [32m                  [0;39m <==      Total: 1
+2024-01-22 14:25:56.131 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook       :137  [32m                  [0;39m ==>  Preparing: select * from book
+2024-01-22 14:25:56.131 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook       :137  [32m                  [0;39m ==> Parameters: 
+2024-01-22 14:25:56.137 TRACE com.tailai.mywiki.dao.BookMapper.searchBook       :143  [32m                  [0;39m <==    Columns: id, pic, name, category
+2024-01-22 14:25:56.138 TRACE com.tailai.mywiki.dao.BookMapper.searchBook       :143  [32m                  [0;39m <==        Row: 1, /image/cover2.png, name1, jisuanji
+2024-01-22 14:25:56.142 TRACE com.tailai.mywiki.dao.BookMapper.searchBook       :143  [32m                  [0;39m <==        Row: 2, /image/cover2.png, name2, xinlixue
+2024-01-22 14:25:56.142 TRACE com.tailai.mywiki.dao.BookMapper.searchBook       :143  [32m                  [0;39m <==        Row: 3, /image/cover2.png, 全程软件测试, 朱少民
+2024-01-22 14:25:56.143 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook       :137  [32m                  [0;39m <==      Total: 3
+2024-01-22 14:25:56.144 INFO  com.tailai.mywiki.config.MywikiApplication        :39   [32m                  [0;39m 总行数 3
+2024-01-22 14:25:56.144 INFO  com.tailai.mywiki.config.MywikiApplication        :40   [32m                  [0;39m 总页数 0
+2024-01-22 14:25:56.149 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：36 ms -------------
+2024-01-22 14:28:07.782 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2024-01-22 14:28:07.786 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :24   [32m                  [0;39m 请求地址: http://localhost:8888/favicon.ico GET
+2024-01-22 14:28:07.786 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :25   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-01-22 14:28:07.790 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：4 ms -------------
+2024-01-22 14:28:07.802 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2024-01-22 14:28:07.802 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :24   [32m                  [0;39m 请求地址: http://localhost:8888/error GET
+2024-01-22 14:28:07.803 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :25   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-01-22 14:28:07.840 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：37 ms -------------
+2024-01-22 14:28:13.140 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2024-01-22 14:28:13.140 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :24   [32m                  [0;39m 请求地址: http://localhost:8888/book/search GET
+2024-01-22 14:28:13.140 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :25   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-01-22 14:28:13.159 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM book
+2024-01-22 14:28:13.164 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2024-01-22 14:28:13.174 TRACE com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2024-01-22 14:28:13.175 TRACE com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :143  [32m                  [0;39m <==        Row: 3
+2024-01-22 14:28:13.176 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :137  [32m                  [0;39m <==      Total: 1
+2024-01-22 14:28:13.177 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook       :137  [32m                  [0;39m ==>  Preparing: select * from book
+2024-01-22 14:28:13.178 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook       :137  [32m                  [0;39m ==> Parameters: 
+2024-01-22 14:28:13.179 TRACE com.tailai.mywiki.dao.BookMapper.searchBook       :143  [32m                  [0;39m <==    Columns: id, pic, name, category
+2024-01-22 14:28:13.179 TRACE com.tailai.mywiki.dao.BookMapper.searchBook       :143  [32m                  [0;39m <==        Row: 1, /image/cover2.png, name1, jisuanji
+2024-01-22 14:28:13.182 TRACE com.tailai.mywiki.dao.BookMapper.searchBook       :143  [32m                  [0;39m <==        Row: 2, /image/cover2.png, name2, xinlixue
+2024-01-22 14:28:13.183 TRACE com.tailai.mywiki.dao.BookMapper.searchBook       :143  [32m                  [0;39m <==        Row: 3, /image/cover2.png, 全程软件测试, 朱少民
+2024-01-22 14:28:13.183 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook       :137  [32m                  [0;39m <==      Total: 3
+2024-01-22 14:28:13.184 INFO  com.tailai.mywiki.config.MywikiApplication        :39   [32m                  [0;39m 总行数 3
+2024-01-22 14:28:13.184 INFO  com.tailai.mywiki.config.MywikiApplication        :40   [32m                  [0;39m 总页数 0
+2024-01-22 14:28:13.189 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：48 ms -------------
+2024-01-22 14:30:44.481 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2024-01-22 14:30:44.487 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :24   [32m                  [0;39m 请求地址: http://localhost:8888/book/search GET
+2024-01-22 14:30:44.488 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :25   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-01-22 14:30:44.504 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM book
+2024-01-22 14:30:44.509 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2024-01-22 14:30:44.515 TRACE com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2024-01-22 14:30:44.515 TRACE com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :143  [32m                  [0;39m <==        Row: 3
+2024-01-22 14:30:44.517 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :137  [32m                  [0;39m <==      Total: 1
+2024-01-22 14:30:44.517 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook       :137  [32m                  [0;39m ==>  Preparing: select * from book
+2024-01-22 14:30:44.518 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook       :137  [32m                  [0;39m ==> Parameters: 
+2024-01-22 14:30:44.521 TRACE com.tailai.mywiki.dao.BookMapper.searchBook       :143  [32m                  [0;39m <==    Columns: id, pic, name, category
+2024-01-22 14:30:44.521 TRACE com.tailai.mywiki.dao.BookMapper.searchBook       :143  [32m                  [0;39m <==        Row: 1, /image/cover2.png, name1, jisuanji
+2024-01-22 14:30:44.523 TRACE com.tailai.mywiki.dao.BookMapper.searchBook       :143  [32m                  [0;39m <==        Row: 2, /image/cover2.png, name2, xinlixue
+2024-01-22 14:30:44.524 TRACE com.tailai.mywiki.dao.BookMapper.searchBook       :143  [32m                  [0;39m <==        Row: 3, /image/cover2.png, 全程软件测试, 朱少民
+2024-01-22 14:30:44.524 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook       :137  [32m                  [0;39m <==      Total: 3
+2024-01-22 14:30:44.525 INFO  com.tailai.mywiki.config.MywikiApplication        :39   [32m                  [0;39m 总行数 3
+2024-01-22 14:30:44.525 INFO  com.tailai.mywiki.config.MywikiApplication        :40   [32m                  [0;39m 总页数 0
+2024-01-22 14:30:44.535 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：47 ms -------------
+2024-01-22 14:31:08.938 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2024-01-22 14:31:08.939 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :24   [32m                  [0;39m 请求地址: http://localhost:8888/book/search GET
+2024-01-22 14:31:08.939 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :25   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-01-22 14:31:08.944 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM book
+2024-01-22 14:31:08.945 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2024-01-22 14:31:08.947 TRACE com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2024-01-22 14:31:08.948 TRACE com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :143  [32m                  [0;39m <==        Row: 3
+2024-01-22 14:31:08.948 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :137  [32m                  [0;39m <==      Total: 1
+2024-01-22 14:31:08.949 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook       :137  [32m                  [0;39m ==>  Preparing: select * from book
+2024-01-22 14:31:08.951 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook       :137  [32m                  [0;39m ==> Parameters: 
+2024-01-22 14:31:08.953 TRACE com.tailai.mywiki.dao.BookMapper.searchBook       :143  [32m                  [0;39m <==    Columns: id, pic, name, category
+2024-01-22 14:31:08.954 TRACE com.tailai.mywiki.dao.BookMapper.searchBook       :143  [32m                  [0;39m <==        Row: 1, /image/cover2.png, name1, jisuanji
+2024-01-22 14:31:08.954 TRACE com.tailai.mywiki.dao.BookMapper.searchBook       :143  [32m                  [0;39m <==        Row: 2, /image/cover2.png, name2, xinlixue
+2024-01-22 14:31:08.955 TRACE com.tailai.mywiki.dao.BookMapper.searchBook       :143  [32m                  [0;39m <==        Row: 3, /image/cover2.png, 全程软件测试, 朱少民
+2024-01-22 14:31:08.955 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook       :137  [32m                  [0;39m <==      Total: 3
+2024-01-22 14:31:08.957 INFO  com.tailai.mywiki.config.MywikiApplication        :39   [32m                  [0;39m 总行数 3
+2024-01-22 14:31:08.957 INFO  com.tailai.mywiki.config.MywikiApplication        :40   [32m                  [0;39m 总页数 0
+2024-01-22 14:31:08.960 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：21 ms -------------
+2024-01-22 14:31:14.281 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2024-01-22 14:31:14.282 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :24   [32m                  [0;39m 请求地址: http://localhost:8888/book/search GET
+2024-01-22 14:31:14.282 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :25   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-01-22 14:31:14.284 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM book
+2024-01-22 14:31:14.285 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2024-01-22 14:31:14.287 TRACE com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2024-01-22 14:31:14.288 TRACE com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :143  [32m                  [0;39m <==        Row: 3
+2024-01-22 14:31:14.288 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :137  [32m                  [0;39m <==      Total: 1
+2024-01-22 14:31:14.289 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook       :137  [32m                  [0;39m ==>  Preparing: select * from book
+2024-01-22 14:31:14.290 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook       :137  [32m                  [0;39m ==> Parameters: 
+2024-01-22 14:31:14.292 TRACE com.tailai.mywiki.dao.BookMapper.searchBook       :143  [32m                  [0;39m <==    Columns: id, pic, name, category
+2024-01-22 14:31:14.294 TRACE com.tailai.mywiki.dao.BookMapper.searchBook       :143  [32m                  [0;39m <==        Row: 1, /image/cover2.png, name1, jisuanji
+2024-01-22 14:31:14.295 TRACE com.tailai.mywiki.dao.BookMapper.searchBook       :143  [32m                  [0;39m <==        Row: 2, /image/cover2.png, name2, xinlixue
+2024-01-22 14:31:14.296 TRACE com.tailai.mywiki.dao.BookMapper.searchBook       :143  [32m                  [0;39m <==        Row: 3, /image/cover2.png, 全程软件测试, 朱少民
+2024-01-22 14:31:14.296 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook       :137  [32m                  [0;39m <==      Total: 3
+2024-01-22 14:31:14.297 INFO  com.tailai.mywiki.config.MywikiApplication        :39   [32m                  [0;39m 总行数 3
+2024-01-22 14:31:14.297 INFO  com.tailai.mywiki.config.MywikiApplication        :40   [32m                  [0;39m 总页数 0
+2024-01-22 14:31:14.298 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：16 ms -------------
+2024-01-22 14:31:30.682 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2024-01-22 14:31:30.683 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :24   [32m                  [0;39m 请求地址: http://localhost:8888/book/search GET
+2024-01-22 14:31:30.684 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :25   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-01-22 14:31:30.685 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM book
+2024-01-22 14:31:30.686 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2024-01-22 14:31:30.688 TRACE com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2024-01-22 14:31:30.688 TRACE com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :143  [32m                  [0;39m <==        Row: 3
+2024-01-22 14:31:30.688 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :137  [32m                  [0;39m <==      Total: 1
+2024-01-22 14:31:30.689 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook       :137  [32m                  [0;39m ==>  Preparing: select * from book
+2024-01-22 14:31:30.690 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook       :137  [32m                  [0;39m ==> Parameters: 
+2024-01-22 14:31:30.692 TRACE com.tailai.mywiki.dao.BookMapper.searchBook       :143  [32m                  [0;39m <==    Columns: id, pic, name, category
+2024-01-22 14:31:30.692 TRACE com.tailai.mywiki.dao.BookMapper.searchBook       :143  [32m                  [0;39m <==        Row: 1, /image/cover2.png, name1, jisuanji
+2024-01-22 14:31:30.693 TRACE com.tailai.mywiki.dao.BookMapper.searchBook       :143  [32m                  [0;39m <==        Row: 2, /image/cover2.png, name2, xinlixue
+2024-01-22 14:31:30.694 TRACE com.tailai.mywiki.dao.BookMapper.searchBook       :143  [32m                  [0;39m <==        Row: 3, /image/cover2.png, 全程软件测试, 朱少民
+2024-01-22 14:31:30.694 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook       :137  [32m                  [0;39m <==      Total: 3
+2024-01-22 14:31:30.696 INFO  com.tailai.mywiki.config.MywikiApplication        :39   [32m                  [0;39m 总行数 3
+2024-01-22 14:31:30.697 INFO  com.tailai.mywiki.config.MywikiApplication        :40   [32m                  [0;39m 总页数 0
+2024-01-22 14:31:30.698 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：14 ms -------------
+2024-01-22 14:34:43.973 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2024-01-22 14:34:43.973 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2024-01-22 14:34:43.979 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :24   [32m                  [0;39m 请求地址: http://localhost:8888/book/search GET
+2024-01-22 14:34:43.979 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :24   [32m                  [0;39m 请求地址: http://localhost:8888/book/search GET
+2024-01-22 14:34:43.980 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :25   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-01-22 14:34:43.980 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :25   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-01-22 14:34:44.015 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM book
+2024-01-22 14:34:44.015 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM book
+2024-01-22 14:34:44.019 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2024-01-22 14:34:44.019 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2024-01-22 14:34:44.022 TRACE com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2024-01-22 14:34:44.023 TRACE com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :143  [32m                  [0;39m <==        Row: 3
+2024-01-22 14:34:44.024 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :137  [32m                  [0;39m <==      Total: 1
+2024-01-22 14:34:44.038 TRACE com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2024-01-22 14:34:44.039 TRACE com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :143  [32m                  [0;39m <==        Row: 3
+2024-01-22 14:34:44.041 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :137  [32m                  [0;39m <==      Total: 1
+2024-01-22 14:34:44.048 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook       :137  [32m                  [0;39m ==>  Preparing: select * from book LIMIT ?
+2024-01-22 14:34:44.048 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook       :137  [32m                  [0;39m ==>  Preparing: select * from book LIMIT ?
+2024-01-22 14:34:44.052 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook       :137  [32m                  [0;39m ==> Parameters: 2(Integer)
+2024-01-22 14:34:44.052 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook       :137  [32m                  [0;39m ==> Parameters: 2(Integer)
+2024-01-22 14:34:44.053 TRACE com.tailai.mywiki.dao.BookMapper.searchBook       :143  [32m                  [0;39m <==    Columns: id, pic, name, category
+2024-01-22 14:34:44.054 TRACE com.tailai.mywiki.dao.BookMapper.searchBook       :143  [32m                  [0;39m <==        Row: 1, /image/cover2.png, name1, jisuanji
+2024-01-22 14:34:44.054 TRACE com.tailai.mywiki.dao.BookMapper.searchBook       :143  [32m                  [0;39m <==        Row: 2, /image/cover2.png, name2, xinlixue
+2024-01-22 14:34:44.055 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook       :137  [32m                  [0;39m <==      Total: 2
+2024-01-22 14:34:44.055 INFO  com.tailai.mywiki.config.MywikiApplication        :39   [32m                  [0;39m 总行数 3
+2024-01-22 14:34:44.055 INFO  com.tailai.mywiki.config.MywikiApplication        :40   [32m                  [0;39m 总页数 2
+2024-01-22 14:34:44.057 TRACE com.tailai.mywiki.dao.BookMapper.searchBook       :143  [32m                  [0;39m <==    Columns: id, pic, name, category
+2024-01-22 14:34:44.058 TRACE com.tailai.mywiki.dao.BookMapper.searchBook       :143  [32m                  [0;39m <==        Row: 1, /image/cover2.png, name1, jisuanji
+2024-01-22 14:34:44.059 TRACE com.tailai.mywiki.dao.BookMapper.searchBook       :143  [32m                  [0;39m <==        Row: 2, /image/cover2.png, name2, xinlixue
+2024-01-22 14:34:44.060 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook       :137  [32m                  [0;39m <==      Total: 2
+2024-01-22 14:34:44.060 INFO  com.tailai.mywiki.config.MywikiApplication        :39   [32m                  [0;39m 总行数 3
+2024-01-22 14:34:44.060 INFO  com.tailai.mywiki.config.MywikiApplication        :40   [32m                  [0;39m 总页数 2
+2024-01-22 14:34:44.061 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：81 ms -------------
+2024-01-22 14:34:44.061 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：81 ms -------------
+2024-01-22 14:35:23.622 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2024-01-22 14:35:23.624 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :24   [32m                  [0;39m 请求地址: http://localhost:8888/book/search GET
+2024-01-22 14:35:23.624 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :25   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-01-22 14:35:23.626 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM book
+2024-01-22 14:35:23.627 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2024-01-22 14:35:23.628 TRACE com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2024-01-22 14:35:23.629 TRACE com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :143  [32m                  [0;39m <==        Row: 3
+2024-01-22 14:35:23.629 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :137  [32m                  [0;39m <==      Total: 1
+2024-01-22 14:35:23.631 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook       :137  [32m                  [0;39m ==>  Preparing: select * from book LIMIT ?, ?
+2024-01-22 14:35:23.632 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook       :137  [32m                  [0;39m ==> Parameters: 2(Integer), 2(Integer)
+2024-01-22 14:35:23.633 TRACE com.tailai.mywiki.dao.BookMapper.searchBook       :143  [32m                  [0;39m <==    Columns: id, pic, name, category
+2024-01-22 14:35:23.634 TRACE com.tailai.mywiki.dao.BookMapper.searchBook       :143  [32m                  [0;39m <==        Row: 3, /image/cover2.png, 全程软件测试, 朱少民
+2024-01-22 14:35:23.634 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook       :137  [32m                  [0;39m <==      Total: 1
+2024-01-22 14:35:23.635 INFO  com.tailai.mywiki.config.MywikiApplication        :39   [32m                  [0;39m 总行数 3
+2024-01-22 14:35:23.636 INFO  com.tailai.mywiki.config.MywikiApplication        :40   [32m                  [0;39m 总页数 2
+2024-01-22 14:35:23.638 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：13 ms -------------
+2024-01-22 14:35:33.660 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2024-01-22 14:35:33.661 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :24   [32m                  [0;39m 请求地址: http://localhost:8888/book/search GET
+2024-01-22 14:35:33.661 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :25   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-01-22 14:35:33.665 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM book
+2024-01-22 14:35:33.667 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2024-01-22 14:35:33.673 TRACE com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2024-01-22 14:35:33.674 TRACE com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :143  [32m                  [0;39m <==        Row: 3
+2024-01-22 14:35:33.675 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :137  [32m                  [0;39m <==      Total: 1
+2024-01-22 14:35:33.676 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook       :137  [32m                  [0;39m ==>  Preparing: select * from book LIMIT ?
+2024-01-22 14:35:33.676 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook       :137  [32m                  [0;39m ==> Parameters: 2(Integer)
+2024-01-22 14:35:33.678 TRACE com.tailai.mywiki.dao.BookMapper.searchBook       :143  [32m                  [0;39m <==    Columns: id, pic, name, category
+2024-01-22 14:35:33.678 TRACE com.tailai.mywiki.dao.BookMapper.searchBook       :143  [32m                  [0;39m <==        Row: 1, /image/cover2.png, name1, jisuanji
+2024-01-22 14:35:33.679 TRACE com.tailai.mywiki.dao.BookMapper.searchBook       :143  [32m                  [0;39m <==        Row: 2, /image/cover2.png, name2, xinlixue
+2024-01-22 14:35:33.681 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook       :137  [32m                  [0;39m <==      Total: 2
+2024-01-22 14:35:33.682 INFO  com.tailai.mywiki.config.MywikiApplication        :39   [32m                  [0;39m 总行数 3
+2024-01-22 14:35:33.685 INFO  com.tailai.mywiki.config.MywikiApplication        :40   [32m                  [0;39m 总页数 2
+2024-01-22 14:35:33.690 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：29 ms -------------
+2024-01-22 14:36:43.826 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2024-01-22 14:36:43.833 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :24   [32m                  [0;39m 请求地址: http://localhost:8888/book/search GET
+2024-01-22 14:36:43.833 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :25   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-01-22 14:36:43.846 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM book
+2024-01-22 14:36:43.848 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2024-01-22 14:36:43.851 TRACE com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2024-01-22 14:36:43.852 TRACE com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :143  [32m                  [0;39m <==        Row: 3
+2024-01-22 14:36:43.853 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :137  [32m                  [0;39m <==      Total: 1
+2024-01-22 14:36:43.854 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook       :137  [32m                  [0;39m ==>  Preparing: select * from book LIMIT ?
+2024-01-22 14:36:43.854 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook       :137  [32m                  [0;39m ==> Parameters: 2(Integer)
+2024-01-22 14:36:43.857 TRACE com.tailai.mywiki.dao.BookMapper.searchBook       :143  [32m                  [0;39m <==    Columns: id, pic, name, category
+2024-01-22 14:36:43.857 TRACE com.tailai.mywiki.dao.BookMapper.searchBook       :143  [32m                  [0;39m <==        Row: 1, /image/cover2.png, name1, jisuanji
+2024-01-22 14:36:43.858 TRACE com.tailai.mywiki.dao.BookMapper.searchBook       :143  [32m                  [0;39m <==        Row: 2, /image/cover2.png, name2, xinlixue
+2024-01-22 14:36:43.858 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook       :137  [32m                  [0;39m <==      Total: 2
+2024-01-22 14:36:43.859 INFO  com.tailai.mywiki.config.MywikiApplication        :39   [32m                  [0;39m 总行数 3
+2024-01-22 14:36:43.859 INFO  com.tailai.mywiki.config.MywikiApplication        :40   [32m                  [0;39m 总页数 2
+2024-01-22 14:36:43.866 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：33 ms -------------
+2024-01-22 14:36:43.873 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2024-01-22 14:36:43.873 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :24   [32m                  [0;39m 请求地址: http://localhost:8888/book/search GET
+2024-01-22 14:36:43.873 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :25   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-01-22 14:36:43.883 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM book
+2024-01-22 14:36:43.884 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2024-01-22 14:36:43.885 TRACE com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2024-01-22 14:36:43.885 TRACE com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :143  [32m                  [0;39m <==        Row: 3
+2024-01-22 14:36:43.890 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :137  [32m                  [0;39m <==      Total: 1
+2024-01-22 14:36:43.891 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook       :137  [32m                  [0;39m ==>  Preparing: select * from book LIMIT ?
+2024-01-22 14:36:43.892 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook       :137  [32m                  [0;39m ==> Parameters: 2(Integer)
+2024-01-22 14:36:43.893 TRACE com.tailai.mywiki.dao.BookMapper.searchBook       :143  [32m                  [0;39m <==    Columns: id, pic, name, category
+2024-01-22 14:36:43.894 TRACE com.tailai.mywiki.dao.BookMapper.searchBook       :143  [32m                  [0;39m <==        Row: 1, /image/cover2.png, name1, jisuanji
+2024-01-22 14:36:43.895 TRACE com.tailai.mywiki.dao.BookMapper.searchBook       :143  [32m                  [0;39m <==        Row: 2, /image/cover2.png, name2, xinlixue
+2024-01-22 14:36:43.895 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook       :137  [32m                  [0;39m <==      Total: 2
+2024-01-22 14:36:43.901 INFO  com.tailai.mywiki.config.MywikiApplication        :39   [32m                  [0;39m 总行数 3
+2024-01-22 14:36:43.902 INFO  com.tailai.mywiki.config.MywikiApplication        :40   [32m                  [0;39m 总页数 2
+2024-01-22 14:36:43.906 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：32 ms -------------
+2024-01-22 14:36:54.248 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2024-01-22 14:36:54.249 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :24   [32m                  [0;39m 请求地址: http://localhost:8888/book/search GET
+2024-01-22 14:36:54.251 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :25   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-01-22 14:36:54.283 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM book
+2024-01-22 14:36:54.284 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2024-01-22 14:36:54.285 TRACE com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2024-01-22 14:36:54.285 TRACE com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :143  [32m                  [0;39m <==        Row: 3
+2024-01-22 14:36:54.286 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :137  [32m                  [0;39m <==      Total: 1
+2024-01-22 14:36:54.287 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook       :137  [32m                  [0;39m ==>  Preparing: select * from book LIMIT ?, ?
+2024-01-22 14:36:54.287 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook       :137  [32m                  [0;39m ==> Parameters: 2(Integer), 2(Integer)
+2024-01-22 14:36:54.288 TRACE com.tailai.mywiki.dao.BookMapper.searchBook       :143  [32m                  [0;39m <==    Columns: id, pic, name, category
+2024-01-22 14:36:54.291 TRACE com.tailai.mywiki.dao.BookMapper.searchBook       :143  [32m                  [0;39m <==        Row: 3, /image/cover2.png, 全程软件测试, 朱少民
+2024-01-22 14:36:54.292 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook       :137  [32m                  [0;39m <==      Total: 1
+2024-01-22 14:36:54.292 INFO  com.tailai.mywiki.config.MywikiApplication        :39   [32m                  [0;39m 总行数 3
+2024-01-22 14:36:54.292 INFO  com.tailai.mywiki.config.MywikiApplication        :40   [32m                  [0;39m 总页数 2
+2024-01-22 14:36:54.294 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：42 ms -------------
+2024-01-22 14:36:56.655 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2024-01-22 14:36:56.657 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :24   [32m                  [0;39m 请求地址: http://localhost:8888/book/search GET
+2024-01-22 14:36:56.657 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :25   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-01-22 14:36:56.663 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM book
+2024-01-22 14:36:56.666 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2024-01-22 14:36:56.667 TRACE com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2024-01-22 14:36:56.668 TRACE com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :143  [32m                  [0;39m <==        Row: 3
+2024-01-22 14:36:56.669 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :137  [32m                  [0;39m <==      Total: 1
+2024-01-22 14:36:56.673 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook       :137  [32m                  [0;39m ==>  Preparing: select * from book LIMIT ?
+2024-01-22 14:36:56.674 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook       :137  [32m                  [0;39m ==> Parameters: 2(Integer)
+2024-01-22 14:36:56.678 TRACE com.tailai.mywiki.dao.BookMapper.searchBook       :143  [32m                  [0;39m <==    Columns: id, pic, name, category
+2024-01-22 14:36:56.678 TRACE com.tailai.mywiki.dao.BookMapper.searchBook       :143  [32m                  [0;39m <==        Row: 1, /image/cover2.png, name1, jisuanji
+2024-01-22 14:36:56.680 TRACE com.tailai.mywiki.dao.BookMapper.searchBook       :143  [32m                  [0;39m <==        Row: 2, /image/cover2.png, name2, xinlixue
+2024-01-22 14:36:56.681 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook       :137  [32m                  [0;39m <==      Total: 2
+2024-01-22 14:36:56.682 INFO  com.tailai.mywiki.config.MywikiApplication        :39   [32m                  [0;39m 总行数 3
+2024-01-22 14:36:56.683 INFO  com.tailai.mywiki.config.MywikiApplication        :40   [32m                  [0;39m 总页数 2
+2024-01-22 14:36:56.685 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：27 ms -------------
+2024-01-22 14:38:47.512 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2024-01-22 14:38:47.522 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :24   [32m                  [0;39m 请求地址: http://localhost:8888/book/search GET
+2024-01-22 14:38:47.524 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :25   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-01-22 14:38:47.541 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM book
+2024-01-22 14:38:47.544 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2024-01-22 14:38:47.551 TRACE com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2024-01-22 14:38:47.553 TRACE com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :143  [32m                  [0;39m <==        Row: 3
+2024-01-22 14:38:47.555 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :137  [32m                  [0;39m <==      Total: 1
+2024-01-22 14:38:47.559 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook       :137  [32m                  [0;39m ==>  Preparing: select * from book LIMIT ?
+2024-01-22 14:38:47.560 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook       :137  [32m                  [0;39m ==> Parameters: 50(Integer)
+2024-01-22 14:38:47.563 TRACE com.tailai.mywiki.dao.BookMapper.searchBook       :143  [32m                  [0;39m <==    Columns: id, pic, name, category
+2024-01-22 14:38:47.563 TRACE com.tailai.mywiki.dao.BookMapper.searchBook       :143  [32m                  [0;39m <==        Row: 1, /image/cover2.png, name1, jisuanji
+2024-01-22 14:38:47.564 TRACE com.tailai.mywiki.dao.BookMapper.searchBook       :143  [32m                  [0;39m <==        Row: 2, /image/cover2.png, name2, xinlixue
+2024-01-22 14:38:47.565 TRACE com.tailai.mywiki.dao.BookMapper.searchBook       :143  [32m                  [0;39m <==        Row: 3, /image/cover2.png, 全程软件测试, 朱少民
+2024-01-22 14:38:47.567 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook       :137  [32m                  [0;39m <==      Total: 3
+2024-01-22 14:38:47.568 INFO  com.tailai.mywiki.config.MywikiApplication        :39   [32m                  [0;39m 总行数 3
+2024-01-22 14:38:47.570 INFO  com.tailai.mywiki.config.MywikiApplication        :40   [32m                  [0;39m 总页数 1
+2024-01-22 14:38:47.576 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：52 ms -------------
+2024-01-22 14:38:55.617 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2024-01-22 14:38:55.617 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :24   [32m                  [0;39m 请求地址: http://localhost:8888/book/search GET
+2024-01-22 14:38:55.618 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :25   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-01-22 14:38:55.622 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM book
+2024-01-22 14:38:55.622 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2024-01-22 14:38:55.624 TRACE com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2024-01-22 14:38:55.624 TRACE com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :143  [32m                  [0;39m <==        Row: 3
+2024-01-22 14:38:55.625 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :137  [32m                  [0;39m <==      Total: 1
+2024-01-22 14:38:55.626 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook       :137  [32m                  [0;39m ==>  Preparing: select * from book LIMIT ?
+2024-01-22 14:38:55.628 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook       :137  [32m                  [0;39m ==> Parameters: 2(Integer)
+2024-01-22 14:38:55.630 TRACE com.tailai.mywiki.dao.BookMapper.searchBook       :143  [32m                  [0;39m <==    Columns: id, pic, name, category
+2024-01-22 14:38:55.630 TRACE com.tailai.mywiki.dao.BookMapper.searchBook       :143  [32m                  [0;39m <==        Row: 1, /image/cover2.png, name1, jisuanji
+2024-01-22 14:38:55.631 TRACE com.tailai.mywiki.dao.BookMapper.searchBook       :143  [32m                  [0;39m <==        Row: 2, /image/cover2.png, name2, xinlixue
+2024-01-22 14:38:55.632 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook       :137  [32m                  [0;39m <==      Total: 2
+2024-01-22 14:38:55.637 INFO  com.tailai.mywiki.config.MywikiApplication        :39   [32m                  [0;39m 总行数 3
+2024-01-22 14:38:55.637 INFO  com.tailai.mywiki.config.MywikiApplication        :40   [32m                  [0;39m 总页数 2
+2024-01-22 14:38:55.639 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：21 ms -------------

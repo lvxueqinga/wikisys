@@ -71,13 +71,19 @@
        **/
       const handleQuery = (params: any) => {
         loading.value = true;
-        axios.get("http://localhost:8888/book/search", params).then((response) => {
+        axios.get("http://localhost:8888/book/search", {
+          params: {
+            page: params.page,
+            size: params.size
+          }
+        }).then((response) => {
           loading.value = false;
           const data = response.data;
-          ebooks.value = data;
+          ebooks.value = data.list;
 
           // 重置分页按钮
           pagination.value.current = params.page;
+          pagination.value.total= data.total;
         });
       };
 
@@ -93,7 +99,10 @@
       };
 
       onMounted(() => {
-        handleQuery({});
+        handleQuery({
+          page:1,
+          size:pagination.value.pageSize
+        });
       });
 
       return {

@@ -45,9 +45,14 @@ export default defineComponent({
 
     onMounted(() => {
       console.log("onMounted");
-      axios.get("http://localhost:8888/book/search").then((response) => {
+      axios.get("http://localhost:8888/book/search",{
+          params:{
+              page:1,
+              size:50
+          }
+      }).then((response) => {
         const data = response.data;
-        ebooks.value = data;
+        ebooks.value = data.list;
       });
     });
 
