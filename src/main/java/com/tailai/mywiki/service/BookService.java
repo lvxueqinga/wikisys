@@ -18,11 +18,11 @@ public interface BookService {
     PageResp<JSONObject> searchBook(BookReq req);
 
     //编辑
-    int editBook(Book book);
+    PageResp<JSONObject> editBook(Book book);
 
     //新增
-    int addBook(Book book);
+    PageResp<JSONObject> addBook(Book book);
 
     //删除
-    int delBook(Book book);
+    PageResp<JSONObject> delBook(Book book);
 }

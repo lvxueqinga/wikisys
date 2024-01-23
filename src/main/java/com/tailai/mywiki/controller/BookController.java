@@ -33,19 +33,19 @@ public class BookController {
 
     @PostMapping("/edit")
     @ApiOperation(value = "编辑",httpMethod = "POST")
-    public int search(@RequestBody Book book){
+    public PageResp<JSONObject> search(@Valid @RequestBody Book book){
         return  bookService.editBook(book);
     }
 
     @PostMapping("/add")
     @ApiOperation(value = "新增",httpMethod = "POST")
-    public int add(@RequestBody Book book){
+    public PageResp<JSONObject> add(@Valid @RequestBody Book book){
         return  bookService.addBook(book);
     }
 
     @PostMapping("/delete")
     @ApiOperation(value = "删除",httpMethod = "POST")
-    public int del(@RequestBody Book book){
+    public PageResp<JSONObject> del(@RequestBody Book book){
         return  bookService.delBook(book);
     }
 

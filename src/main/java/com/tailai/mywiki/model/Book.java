@@ -1,6 +1,10 @@
 package com.tailai.mywiki.model;
 import lombok.Data;
 
+import javax.validation.constraints.Max;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
+
 /**
  * book表结构
  *
@@ -11,6 +15,8 @@ import lombok.Data;
 @Data
 public class Book {
     private Integer id;
+    @NotNull(message = "名称不能为空")
+    @Size(max=50 , message = "名称不能超过50字")
     private String name;
     private String category;
     private String pic;

@@ -49,25 +49,48 @@ public class BookServiceImpl implements BookService {
     }
 
     @Override
-    public int editBook(Book book) {
+    public PageResp<JSONObject> editBook(Book book) {
+        PageResp<JSONObject> pageResp = new PageResp<>();
         int ans;
         if (ObjectUtils.isEmpty(book.getId())){
-
             ans = bookMapper.addBook(book);
         }else {
             ans = bookMapper.editBook(book);
         }
-        return ans;
+        if (ans == 0){
+            pageResp.setSuccess(false);
+        }else {
+            pageResp.setSuccess(true);
+        }
+
+        return pageResp;
     }
 
      @Override
-    public int addBook(Book book) {
-        return bookMapper.addBook(book);
+    public PageResp<JSONObject> addBook(Book book) {
+         PageResp<JSONObject> pageResp = new PageResp<>();
+         int ans= bookMapper.addBook(book);
+         if (ans == 0){
+             pageResp.setSuccess(false);
+         }else {
+             pageResp.setSuccess(true);
+         }
+
+         return pageResp;
     }
 
     @Override
-    public int delBook(Book book) {
-        return bookMapper.delBook(book);
+    public PageResp<JSONObject> delBook(Book book) {
+        PageResp<JSONObject> pageResp = new PageResp<>();
+        int ans=bookMapper.delBook(book);
+        if (ans == 0){
+            pageResp.setSuccess(false);
+        }else {
+            pageResp.setSuccess(true);
+        }
+
+        return pageResp;
+
     }
 
 

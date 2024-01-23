@@ -161,7 +161,8 @@
 
         axios.post("http://localhost:8888/book/edit", ebook.value).then((response) => {
           const data = response.data;
-          //成功后：
+          if (data.success){
+            //成功后：
             modalVisible.value = false;
             modalLoading.value = false;
 
@@ -170,6 +171,12 @@
               page:1,
               size:pagination.value.pageSize
             });
+          }else {
+            modalLoading.value = false;
+            message.error(data.message);
+          }
+
+
 
 
         });
