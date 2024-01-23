@@ -14,4 +14,5 @@ public class PageResp<T> {
     private long total;
     private Boolean success=true;
     private List<T> list;
+    private String message;
 }

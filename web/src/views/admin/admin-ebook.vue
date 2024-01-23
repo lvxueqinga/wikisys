@@ -73,7 +73,7 @@
       const ebooks = ref();
       const pagination = ref({
         current: 1,
-        pageSize: 2,
+        pageSize: 10,
         total: 0
       });
       const loading = ref(false);
@@ -113,11 +113,16 @@
         }).then((response) => {
           loading.value = false;
           const data = response.data;
-          ebooks.value = data.list;
+          if (data.success){
+            ebooks.value = data.list;
 
-          // 重置分页按钮
-          pagination.value.current = params.page;
-          pagination.value.total= data.total;
+            // 重置分页按钮
+            pagination.value.current = params.page;
+            pagination.value.total= data.total;
+          }else {
+            message.error(data.message);
+          }
+
         });
       };
 
