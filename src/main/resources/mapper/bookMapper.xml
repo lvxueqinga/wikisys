@@ -30,6 +30,13 @@
 
     </delete>
 
+    <select id="searchBookpara" resultType="com.alibaba.fastjson.JSONObject" >
+        select * from book where 1=1
+        <if test="name != null">
+            AND name like CONCAT('%', TRIM(#{name}), '%')
+        </if>
+    </select>
+
 
 
 

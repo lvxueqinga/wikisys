@@ -4,8 +4,27 @@
             :style="{ background: '#fff', padding: '24px', margin: 0, minHeight: '280px' }"
     >
       <p>
-        <a-button type="primary" @click="myadd" size="large">新增</a-button>
+      <a-form
+              layout="inline"
+              :model="param"
+      >
+        <a-form-item>
+          <a-input v-model:value="param.name" placeholder="名称">
+          </a-input>
+        </a-form-item>
+
+
+        <a-form-item>
+          <a-button type="primary" @click="searchpara({page:1,size:pagination.pageSize})" size="large">查询</a-button>
+
+        </a-form-item>
+        <a-form-item>
+          <a-button type="primary" @click="myadd" size="large" style="margin-left: 20px;">新增</a-button>
+        </a-form-item>
+      </a-form>
+
       </p>
+
       <a-table
               :columns="columns"
               :row-key="record => record.id"
@@ -194,7 +213,6 @@
         ebook.value=record;
         axios.post("http://localhost:8888/book/delete", ebook.value).then((response) => {
 
-          console.log("ebook.value：" + ebook.value);
           //成功后重新加载列表
           handleQuery({
             page:1,
@@ -206,6 +224,33 @@
       };
 
 
+      //搜索
+      const param = ref();
+      param.value={}
+
+      const searchpara = (params: any) => {
+        loading.value = true;
+        axios.get("http://localhost:8888/book/searchpara", {
+          params: {
+            page: params.page,
+            size: params.size,
+            name: param.value.name
+          }
+        }).then((response) => {
+          loading.value = false;
+          const data = response.data;
+          if (data.success){
+            ebooks.value = data.list;
+
+            // 重置分页按钮
+            pagination.value.current = params.page;
+            pagination.value.total= data.total;
+          }else {
+            message.error(data.message);
+          }
+
+        });
+      };
 
 
 
@@ -224,7 +269,8 @@
         handleModalOk,
         ebook,
 
-
+        param,
+        searchpara,
 
       }
     }

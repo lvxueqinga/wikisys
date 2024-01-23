@@ -93,5 +93,19 @@ public class BookServiceImpl implements BookService {
 
     }
 
+    @Override
+    public PageResp<JSONObject> searchBookwithName(BookReq req) {
+        PageHelper.startPage(req.getPage(),req.getSize());
+        List<JSONObject> ans = bookMapper.searchBookpara(req);
+
+        PageInfo<JSONObject> pageInfo = new PageInfo<>(ans);
+
+        PageResp<JSONObject> pageResp = new PageResp<>();
+        pageResp.setTotal(pageInfo.getTotal());
+        pageResp.setList(ans);
+
+        return pageResp;
+    }
+
 
 }

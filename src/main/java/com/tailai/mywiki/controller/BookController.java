@@ -49,4 +49,10 @@ public class BookController {
         return  bookService.delBook(book);
     }
 
+    @GetMapping("/searchpara")
+    @ApiOperation(value = "查询列表",httpMethod = "GET")
+    public PageResp<JSONObject> searchpara(BookReq req){
+        return  bookService.searchBookwithName(req);
+    }
+
 }

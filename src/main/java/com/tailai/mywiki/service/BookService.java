@@ -25,4 +25,7 @@ public interface BookService {
 
     //删除
     PageResp<JSONObject> delBook(Book book);
+
+    //查询
+    PageResp<JSONObject> searchBookwithName(BookReq req);
 }

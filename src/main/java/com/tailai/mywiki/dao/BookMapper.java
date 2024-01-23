@@ -25,4 +25,7 @@ public interface BookMapper {
 
     //删除电子书
     int delBook(Book book);
+
+    //搜索电子书
+    List<JSONObject> searchBookpara(BookReq req);
 }
