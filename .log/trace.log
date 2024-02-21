@@ -2572,3 +2572,610 @@ org.springframework.web.HttpRequestMethodNotSupportedException: Request method '
 2024-01-23 14:54:43.095 INFO  com.tailai.mywiki.config.MywikiApplication        :41   [32m                  [0;39m 总行数 9
 2024-01-23 14:54:43.095 INFO  com.tailai.mywiki.config.MywikiApplication        :42   [32m                  [0;39m 总页数 1
 2024-01-23 14:54:43.100 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：20 ms -------------
+2024-02-21 20:19:15.134 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 6.1.6.Final
+2024-02-21 20:19:15.141 INFO  com.tailai.mywiki.config.MywikiApplication        :55   [32m                  [0;39m Starting MywikiApplication using Java 1.8.0_402 on tailaideMBP with PID 9883 (/Users/tailai/Desktop/wikisys/target/classes started by tailai in /Users/tailai/Desktop/wikisys)
+2024-02-21 20:19:15.142 INFO  com.tailai.mywiki.config.MywikiApplication        :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2024-02-21 20:19:15.193 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-02-21 20:19:15.193 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-02-21 20:19:16.627 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8888 (http)
+2024-02-21 20:19:16.637 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8888"]
+2024-02-21 20:19:16.637 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2024-02-21 20:19:16.638 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2024-02-21 20:19:16.717 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2024-02-21 20:19:16.717 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1523 ms
+2024-02-21 20:19:17.393 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2024-02-21 20:19:17.429 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2024-02-21 20:19:17.543 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8888"]
+2024-02-21 20:19:17.562 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8888 (http) with context path ''
+2024-02-21 20:19:17.563 INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper:120  [32m                  [0;39m Context refreshed
+2024-02-21 20:19:17.577 INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper:123  [32m                  [0;39m Found 1 custom documentation plugin(s)
+2024-02-21 20:19:17.585 INFO  s.d.spring.web.scanners.ApiListingReferenceScanner:41   [32m                  [0;39m Scanning for api listing references
+2024-02-21 20:19:17.779 INFO  s.d.s.w.r.operation.CachingOperationNameGenerator :40   [32m                  [0;39m Generating unique operation named: helloUsingGET_1
+2024-02-21 20:19:17.780 INFO  s.d.s.w.r.operation.CachingOperationNameGenerator :40   [32m                  [0;39m Generating unique operation named: helloUsingGET_2
+2024-02-21 20:19:17.781 INFO  s.d.s.w.r.operation.CachingOperationNameGenerator :40   [32m                  [0;39m Generating unique operation named: helloUsingGET_3
+2024-02-21 20:19:17.782 INFO  s.d.s.w.r.operation.CachingOperationNameGenerator :40   [32m                  [0;39m Generating unique operation named: helloUsingGET_4
+2024-02-21 20:19:17.783 INFO  s.d.s.w.r.operation.CachingOperationNameGenerator :40   [32m                  [0;39m Generating unique operation named: helloUsingGET_5
+2024-02-21 20:19:17.783 INFO  s.d.s.w.r.operation.CachingOperationNameGenerator :40   [32m                  [0;39m Generating unique operation named: helloUsingGET_6
+2024-02-21 20:19:17.784 INFO  s.d.s.w.r.operation.CachingOperationNameGenerator :40   [32m                  [0;39m Generating unique operation named: helloUsingGET_7
+2024-02-21 20:19:17.801 INFO  com.tailai.mywiki.config.MywikiApplication        :61   [32m                  [0;39m Started MywikiApplication in 3.351 seconds (JVM running for 4.225)
+2024-02-21 20:19:17.804 INFO  com.tailai.mywiki.config.MywikiApplication        :24   [32m                  [0;39m 启动成功！！
+2024-02-21 20:19:17.804 INFO  com.tailai.mywiki.config.MywikiApplication        :25   [32m                  [0;39m 地址: 	http://127.0.0.1:8888
+2024-02-21 20:19:28.475 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-21 20:19:28.476 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2024-02-21 20:19:28.480 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 3 ms
+2024-02-21 20:19:28.505 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2024-02-21 20:19:28.506 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :24   [32m                  [0;39m 请求地址: http://127.0.0.1:8888/ GET
+2024-02-21 20:19:28.506 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :25   [32m                  [0;39m 远程地址: 127.0.0.1
+2024-02-21 20:19:28.507 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：0 ms -------------
+2024-02-21 20:19:28.515 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2024-02-21 20:19:28.516 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :24   [32m                  [0;39m 请求地址: http://127.0.0.1:8888/error GET
+2024-02-21 20:19:28.516 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :25   [32m                  [0;39m 远程地址: 127.0.0.1
+2024-02-21 20:19:28.550 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：34 ms -------------
+2024-02-21 20:19:28.737 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2024-02-21 20:19:28.738 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :24   [32m                  [0;39m 请求地址: http://127.0.0.1:8888/favicon.ico GET
+2024-02-21 20:19:28.739 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :25   [32m                  [0;39m 远程地址: 127.0.0.1
+2024-02-21 20:19:28.743 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：4 ms -------------
+2024-02-21 20:19:28.745 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2024-02-21 20:19:28.746 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :24   [32m                  [0;39m 请求地址: http://127.0.0.1:8888/error GET
+2024-02-21 20:19:28.747 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :25   [32m                  [0;39m 远程地址: 127.0.0.1
+2024-02-21 20:19:28.824 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：77 ms -------------
+2024-02-21 20:19:29.130 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2024-02-21 20:19:29.288 INFO  com.tailai.mywiki.config.MywikiApplication        :55   [32m                  [0;39m Starting MywikiApplication using Java 1.8.0_402 on tailaideMBP with PID 9883 (/Users/tailai/Desktop/wikisys/target/classes started by tailai in /Users/tailai/Desktop/wikisys)
+2024-02-21 20:19:29.289 INFO  com.tailai.mywiki.config.MywikiApplication        :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2024-02-21 20:19:29.437 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m No MyBatis mapper was found in '[com.tailai.mywiki.dao]' package. Please check your configuration.
+2024-02-21 20:19:29.487 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8888 (http)
+2024-02-21 20:19:29.487 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8888"]
+2024-02-21 20:19:29.488 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2024-02-21 20:19:29.488 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2024-02-21 20:19:29.495 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2024-02-21 20:19:29.496 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 203 ms
+2024-02-21 20:19:29.628 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2024-02-21 20:19:29.688 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:596  [32m                  [0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/Users/tailai/Desktop/wikisys/target/classes/mapper/bookMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [/Users/tailai/Desktop/wikisys/target/classes/mapper/bookMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.tailai.mywiki.model.Book'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.tailai.mywiki.model.Book
+2024-02-21 20:19:29.688 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2024-02-21 20:19:29.688 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2024-02-21 20:19:29.696 INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener:136  [32m                  [0;39m 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-02-21 20:19:29.721 ERROR org.springframework.boot.SpringApplication        :856  [32m                  [0;39m Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/Users/tailai/Desktop/wikisys/target/classes/mapper/bookMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [/Users/tailai/Desktop/wikisys/target/classes/mapper/bookMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.tailai.mywiki.model.Book'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.tailai.mywiki.model.Book
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:656)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:636)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1336)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1179)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:571)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:925)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:588)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:767)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326)
+	at com.tailai.mywiki.config.MywikiApplication.main(MywikiApplication.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/Users/tailai/Desktop/wikisys/target/classes/mapper/bookMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [/Users/tailai/Desktop/wikisys/target/classes/mapper/bookMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.tailai.mywiki.model.Book'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.tailai.mywiki.model.Book
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:651)
+	... 23 common frames omitted
+Caused by: org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/Users/tailai/Desktop/wikisys/target/classes/mapper/bookMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [/Users/tailai/Desktop/wikisys/target/classes/mapper/bookMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.tailai.mywiki.model.Book'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.tailai.mywiki.model.Book
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:612)
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:490)
+	at org.mybatis.spring.SqlSessionFactoryBean.getObject(SqlSessionFactoryBean.java:632)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration.sqlSessionFactory(MybatisAutoConfiguration.java:180)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$c5b9ae4a.CGLIB$sqlSessionFactory$2(<generated>)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$c5b9ae4a$$FastClassBySpringCGLIB$$99359748.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$c5b9ae4a.sqlSessionFactory(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 24 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [/Users/tailai/Desktop/wikisys/target/classes/mapper/bookMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.tailai.mywiki.model.Book'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.tailai.mywiki.model.Book
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:123)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.parse(XMLMapperBuilder.java:95)
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:610)
+	... 37 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.tailai.mywiki.model.Book'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.tailai.mywiki.model.Book
+	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:118)
+	at org.apache.ibatis.builder.xml.XMLStatementBuilder.parseStatementNode(XMLStatementBuilder.java:76)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.buildStatementFromContext(XMLMapperBuilder.java:138)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.buildStatementFromContext(XMLMapperBuilder.java:131)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:121)
+	... 39 common frames omitted
+Caused by: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.tailai.mywiki.model.Book'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.tailai.mywiki.model.Book
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:120)
+	at org.apache.ibatis.builder.BaseBuilder.resolveAlias(BaseBuilder.java:149)
+	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:116)
+	... 43 common frames omitted
+Caused by: java.lang.ClassNotFoundException: Cannot find class: com.tailai.mywiki.model.Book
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:200)
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:89)
+	at org.apache.ibatis.io.Resources.classForName(Resources.java:261)
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:116)
+	... 45 common frames omitted
+2024-02-21 20:19:32.193 INFO  com.tailai.mywiki.config.MywikiApplication        :55   [32m                  [0;39m Starting MywikiApplication using Java 1.8.0_402 on tailaideMBP with PID 9883 (/Users/tailai/Desktop/wikisys/target/classes started by tailai in /Users/tailai/Desktop/wikisys)
+2024-02-21 20:19:32.194 INFO  com.tailai.mywiki.config.MywikiApplication        :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2024-02-21 20:19:32.803 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8888 (http)
+2024-02-21 20:19:32.804 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8888"]
+2024-02-21 20:19:32.805 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2024-02-21 20:19:32.806 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2024-02-21 20:19:32.817 INFO  o.a.c.c.ContainerBase.[Tomcat-1].[localhost].[/]  :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2024-02-21 20:19:32.818 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 621 ms
+2024-02-21 20:19:33.132 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2024-02-21 20:19:33.149 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2024-02-21 20:19:33.239 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8888"]
+2024-02-21 20:19:33.243 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8888 (http) with context path ''
+2024-02-21 20:19:33.244 INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper:120  [32m                  [0;39m Context refreshed
+2024-02-21 20:19:33.244 INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper:123  [32m                  [0;39m Found 1 custom documentation plugin(s)
+2024-02-21 20:19:33.248 INFO  s.d.spring.web.scanners.ApiListingReferenceScanner:41   [32m                  [0;39m Scanning for api listing references
+2024-02-21 20:19:33.353 INFO  s.d.s.w.r.operation.CachingOperationNameGenerator :40   [32m                  [0;39m Generating unique operation named: helloUsingGET_1
+2024-02-21 20:19:33.355 INFO  s.d.s.w.r.operation.CachingOperationNameGenerator :40   [32m                  [0;39m Generating unique operation named: helloUsingGET_2
+2024-02-21 20:19:33.357 INFO  s.d.s.w.r.operation.CachingOperationNameGenerator :40   [32m                  [0;39m Generating unique operation named: helloUsingGET_3
+2024-02-21 20:19:33.359 INFO  s.d.s.w.r.operation.CachingOperationNameGenerator :40   [32m                  [0;39m Generating unique operation named: helloUsingGET_4
+2024-02-21 20:19:33.360 INFO  s.d.s.w.r.operation.CachingOperationNameGenerator :40   [32m                  [0;39m Generating unique operation named: helloUsingGET_5
+2024-02-21 20:19:33.363 INFO  s.d.s.w.r.operation.CachingOperationNameGenerator :40   [32m                  [0;39m Generating unique operation named: helloUsingGET_6
+2024-02-21 20:19:33.364 INFO  s.d.s.w.r.operation.CachingOperationNameGenerator :40   [32m                  [0;39m Generating unique operation named: helloUsingGET_7
+2024-02-21 20:19:33.374 INFO  com.tailai.mywiki.config.MywikiApplication        :61   [32m                  [0;39m Started MywikiApplication in 1.223 seconds (JVM running for 19.798)
+2024-02-21 20:19:33.378 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2024-02-21 20:19:33.379 INFO  com.tailai.mywiki.config.MywikiApplication        :24   [32m                  [0;39m 启动成功！！
+2024-02-21 20:19:33.379 INFO  com.tailai.mywiki.config.MywikiApplication        :25   [32m                  [0;39m 地址: 	http://127.0.0.1:8888
+2024-02-21 20:19:38.299 INFO  o.a.c.c.ContainerBase.[Tomcat-1].[localhost].[/]  :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-21 20:19:38.301 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2024-02-21 20:19:38.303 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 2 ms
+2024-02-21 20:19:38.304 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2024-02-21 20:19:38.305 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :24   [32m                  [0;39m 请求地址: http://127.0.0.1:8888/ GET
+2024-02-21 20:19:38.305 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :25   [32m                  [0;39m 远程地址: 127.0.0.1
+2024-02-21 20:19:38.306 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：0 ms -------------
+2024-02-21 20:19:38.309 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2024-02-21 20:19:38.310 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :24   [32m                  [0;39m 请求地址: http://127.0.0.1:8888/error GET
+2024-02-21 20:19:38.310 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :25   [32m                  [0;39m 远程地址: 127.0.0.1
+2024-02-21 20:19:38.322 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：12 ms -------------
+2024-02-21 20:20:15.541 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2024-02-21 20:20:15.542 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :24   [32m                  [0;39m 请求地址: http://127.0.0.1:8888/book/search GET
+2024-02-21 20:20:15.542 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :25   [32m                  [0;39m 远程地址: 127.0.0.1
+2024-02-21 20:20:15.661 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
+2024-02-21 20:20:16.749 ERROR com.zaxxer.hikari.pool.HikariPool                 :593  [32m                  [0;39m HikariPool-1 - Exception during pool initialization.
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:358)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:477)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:560)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at com.github.pagehelper.page.PageAutoDialect.getUrl(PageAutoDialect.java:181)
+	at com.github.pagehelper.page.PageAutoDialect.getDialect(PageAutoDialect.java:207)
+	at com.github.pagehelper.page.PageAutoDialect.initDelegateDialect(PageAutoDialect.java:103)
+	at com.github.pagehelper.PageHelper.skip(PageHelper.java:66)
+	at com.github.pagehelper.PageInterceptor.intercept(PageInterceptor.java:93)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:61)
+	at com.sun.proxy.$Proxy111.query(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
+	at com.sun.proxy.$Proxy86.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:223)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:147)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:80)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:152)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:85)
+	at com.sun.proxy.$Proxy106.searchBook(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
+	at com.sun.proxy.$Proxy107.searchBook(Unknown Source)
+	at com.tailai.mywiki.service.Impl.BookServiceImpl.searchBook(BookServiceImpl.java:38)
+	at com.tailai.mywiki.controller.BookController.search(BookController.java:31)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:893)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:807)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1061)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:961)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:89)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:144)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:956)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:826)
+	... 94 common frames omitted
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:607)
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:155)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:63)
+	... 97 common frames omitted
+2024-02-21 20:20:16.763 ERROR c.t.mywiki.controller.ControllerExceptionHandler  :61   [32m                  [0;39m 系统异常：
+org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: com.github.pagehelper.PageException: com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+### Cause: com.github.pagehelper.PageException: com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:92)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:440)
+	at com.sun.proxy.$Proxy86.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:223)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:147)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:80)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:152)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:85)
+	at com.sun.proxy.$Proxy106.searchBook(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
+	at com.sun.proxy.$Proxy107.searchBook(Unknown Source)
+	at com.tailai.mywiki.service.Impl.BookServiceImpl.searchBook(BookServiceImpl.java:38)
+	at com.tailai.mywiki.controller.BookController.search(BookController.java:31)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:893)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:807)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1061)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:961)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: com.github.pagehelper.PageException: com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+### Cause: com.github.pagehelper.PageException: com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:149)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
+	... 70 common frames omitted
+Caused by: com.github.pagehelper.PageException: com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.github.pagehelper.page.PageAutoDialect.getUrl(PageAutoDialect.java:184)
+	at com.github.pagehelper.page.PageAutoDialect.getDialect(PageAutoDialect.java:207)
+	at com.github.pagehelper.page.PageAutoDialect.initDelegateDialect(PageAutoDialect.java:103)
+	at com.github.pagehelper.PageHelper.skip(PageHelper.java:66)
+	at com.github.pagehelper.PageInterceptor.intercept(PageInterceptor.java:93)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:61)
+	at com.sun.proxy.$Proxy111.query(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	... 76 common frames omitted
+Caused by: com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:358)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:477)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:560)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at com.github.pagehelper.page.PageAutoDialect.getUrl(PageAutoDialect.java:181)
+	... 83 common frames omitted
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:89)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:144)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:956)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:826)
+	... 94 common frames omitted
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:607)
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:155)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:63)
+	... 97 common frames omitted
+2024-02-21 20:20:16.783 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m                  [0;39m Resolved [org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: com.github.pagehelper.PageException: com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+### Cause: com.github.pagehelper.PageException: com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.]
+2024-02-21 20:20:47.733 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2024-02-21 21:34:19.609 INFO  com.tailai.mywiki.config.MywikiApplication        :55   [32m                  [0;39m Starting MywikiApplication using Java 1.8.0_402 on tailaideMBP with PID 13796 (/Users/tailai/Desktop/wikisys/target/classes started by tailai in /Users/tailai/Desktop/wikisys)
+2024-02-21 21:34:19.618 INFO  com.tailai.mywiki.config.MywikiApplication        :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2024-02-21 21:34:19.617 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 6.1.6.Final
+2024-02-21 21:34:19.670 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-02-21 21:34:19.670 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-02-21 21:34:20.868 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8888 (http)
+2024-02-21 21:34:20.877 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8888"]
+2024-02-21 21:34:20.879 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2024-02-21 21:34:20.879 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2024-02-21 21:34:20.956 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2024-02-21 21:34:20.957 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1286 ms
+2024-02-21 21:34:22.234 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2024-02-21 21:34:22.272 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2024-02-21 21:34:22.428 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8888"]
+2024-02-21 21:34:22.465 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8888 (http) with context path ''
+2024-02-21 21:34:22.467 INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper:120  [32m                  [0;39m Context refreshed
+2024-02-21 21:34:22.494 INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper:123  [32m                  [0;39m Found 1 custom documentation plugin(s)
+2024-02-21 21:34:22.512 INFO  s.d.spring.web.scanners.ApiListingReferenceScanner:41   [32m                  [0;39m Scanning for api listing references
+2024-02-21 21:34:22.716 INFO  s.d.s.w.r.operation.CachingOperationNameGenerator :40   [32m                  [0;39m Generating unique operation named: helloUsingGET_1
+2024-02-21 21:34:22.718 INFO  s.d.s.w.r.operation.CachingOperationNameGenerator :40   [32m                  [0;39m Generating unique operation named: helloUsingGET_2
+2024-02-21 21:34:22.719 INFO  s.d.s.w.r.operation.CachingOperationNameGenerator :40   [32m                  [0;39m Generating unique operation named: helloUsingGET_3
+2024-02-21 21:34:22.720 INFO  s.d.s.w.r.operation.CachingOperationNameGenerator :40   [32m                  [0;39m Generating unique operation named: helloUsingGET_4
+2024-02-21 21:34:22.722 INFO  s.d.s.w.r.operation.CachingOperationNameGenerator :40   [32m                  [0;39m Generating unique operation named: helloUsingGET_5
+2024-02-21 21:34:22.724 INFO  s.d.s.w.r.operation.CachingOperationNameGenerator :40   [32m                  [0;39m Generating unique operation named: helloUsingGET_6
+2024-02-21 21:34:22.726 INFO  s.d.s.w.r.operation.CachingOperationNameGenerator :40   [32m                  [0;39m Generating unique operation named: helloUsingGET_7
+2024-02-21 21:34:22.751 INFO  com.tailai.mywiki.config.MywikiApplication        :61   [32m                  [0;39m Started MywikiApplication in 3.948 seconds (JVM running for 4.995)
+2024-02-21 21:34:22.755 INFO  com.tailai.mywiki.config.MywikiApplication        :24   [32m                  [0;39m 启动成功！！
+2024-02-21 21:34:22.756 INFO  com.tailai.mywiki.config.MywikiApplication        :25   [32m                  [0;39m 地址: 	http://127.0.0.1:8888
+2024-02-21 21:34:41.674 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-21 21:34:41.682 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2024-02-21 21:34:41.698 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 15 ms
+2024-02-21 21:34:41.879 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2024-02-21 21:34:41.881 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :24   [32m                  [0;39m 请求地址: http://localhost:8888/book/search GET
+2024-02-21 21:34:41.882 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :25   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-02-21 21:34:42.282 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
+2024-02-21 21:34:42.801 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
+2024-02-21 21:34:42.855 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM book
+2024-02-21 21:34:42.885 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2024-02-21 21:34:42.923 TRACE com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2024-02-21 21:34:42.923 TRACE com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :143  [32m                  [0;39m <==        Row: 2
+2024-02-21 21:34:42.925 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :137  [32m                  [0;39m <==      Total: 1
+2024-02-21 21:34:42.931 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook       :137  [32m                  [0;39m ==>  Preparing: select * from book LIMIT ?
+2024-02-21 21:34:42.932 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook       :137  [32m                  [0;39m ==> Parameters: 50(Integer)
+2024-02-21 21:34:42.933 TRACE com.tailai.mywiki.dao.BookMapper.searchBook       :143  [32m                  [0;39m <==    Columns: id, name, category, pic
+2024-02-21 21:34:42.933 TRACE com.tailai.mywiki.dao.BookMapper.searchBook       :143  [32m                  [0;39m <==        Row: 1, 1, 1, /image/cover1.png
+2024-02-21 21:34:42.937 TRACE com.tailai.mywiki.dao.BookMapper.searchBook       :143  [32m                  [0;39m <==        Row: 2, 2, 2, /image/cover1.png
+2024-02-21 21:34:42.937 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook       :137  [32m                  [0;39m <==      Total: 2
+2024-02-21 21:34:42.939 INFO  com.tailai.mywiki.config.MywikiApplication        :41   [32m                  [0;39m 总行数 2
+2024-02-21 21:34:42.940 INFO  com.tailai.mywiki.config.MywikiApplication        :42   [32m                  [0;39m 总页数 1
+2024-02-21 21:34:42.994 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：1112 ms -------------
+2024-02-21 21:34:44.602 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2024-02-21 21:34:44.602 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :24   [32m                  [0;39m 请求地址: http://localhost:8888/book/search GET
+2024-02-21 21:34:44.603 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :25   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-02-21 21:34:44.605 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM book
+2024-02-21 21:34:44.605 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2024-02-21 21:34:44.607 TRACE com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2024-02-21 21:34:44.608 TRACE com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :143  [32m                  [0;39m <==        Row: 2
+2024-02-21 21:34:44.609 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :137  [32m                  [0;39m <==      Total: 1
+2024-02-21 21:34:44.609 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook       :137  [32m                  [0;39m ==>  Preparing: select * from book LIMIT ?
+2024-02-21 21:34:44.610 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook       :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2024-02-21 21:34:44.611 TRACE com.tailai.mywiki.dao.BookMapper.searchBook       :143  [32m                  [0;39m <==    Columns: id, name, category, pic
+2024-02-21 21:34:44.611 TRACE com.tailai.mywiki.dao.BookMapper.searchBook       :143  [32m                  [0;39m <==        Row: 1, 1, 1, /image/cover1.png
+2024-02-21 21:34:44.612 TRACE com.tailai.mywiki.dao.BookMapper.searchBook       :143  [32m                  [0;39m <==        Row: 2, 2, 2, /image/cover1.png
+2024-02-21 21:34:44.612 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook       :137  [32m                  [0;39m <==      Total: 2
+2024-02-21 21:34:44.613 INFO  com.tailai.mywiki.config.MywikiApplication        :41   [32m                  [0;39m 总行数 2
+2024-02-21 21:34:44.613 INFO  com.tailai.mywiki.config.MywikiApplication        :42   [32m                  [0;39m 总页数 1
+2024-02-21 21:34:44.615 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：12 ms -------------
+2024-02-21 21:34:46.234 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2024-02-21 21:34:46.234 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :24   [32m                  [0;39m 请求地址: http://localhost:8888/book/searchpara GET
+2024-02-21 21:34:46.235 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :25   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-02-21 21:34:46.288 DEBUG c.t.mywiki.dao.BookMapper.searchBookpara_COUNT    :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM book WHERE 1 = 1
+2024-02-21 21:34:46.289 DEBUG c.t.mywiki.dao.BookMapper.searchBookpara_COUNT    :137  [32m                  [0;39m ==> Parameters: 
+2024-02-21 21:34:46.292 TRACE c.t.mywiki.dao.BookMapper.searchBookpara_COUNT    :143  [32m                  [0;39m <==    Columns: count(0)
+2024-02-21 21:34:46.293 TRACE c.t.mywiki.dao.BookMapper.searchBookpara_COUNT    :143  [32m                  [0;39m <==        Row: 2
+2024-02-21 21:34:46.294 DEBUG c.t.mywiki.dao.BookMapper.searchBookpara_COUNT    :137  [32m                  [0;39m <==      Total: 1
+2024-02-21 21:34:46.296 DEBUG com.tailai.mywiki.dao.BookMapper.searchBookpara   :137  [32m                  [0;39m ==>  Preparing: select * from book where 1=1 LIMIT ?
+2024-02-21 21:34:46.297 DEBUG com.tailai.mywiki.dao.BookMapper.searchBookpara   :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2024-02-21 21:34:46.302 TRACE com.tailai.mywiki.dao.BookMapper.searchBookpara   :143  [32m                  [0;39m <==    Columns: id, name, category, pic
+2024-02-21 21:34:46.303 TRACE com.tailai.mywiki.dao.BookMapper.searchBookpara   :143  [32m                  [0;39m <==        Row: 1, 1, 1, /image/cover1.png
+2024-02-21 21:34:46.304 TRACE com.tailai.mywiki.dao.BookMapper.searchBookpara   :143  [32m                  [0;39m <==        Row: 2, 2, 2, /image/cover1.png
+2024-02-21 21:34:46.305 DEBUG com.tailai.mywiki.dao.BookMapper.searchBookpara   :137  [32m                  [0;39m <==      Total: 2
+2024-02-21 21:34:46.308 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：73 ms -------------
+2024-02-21 21:34:49.124 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2024-02-21 21:34:49.125 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :24   [32m                  [0;39m 请求地址: http://localhost:8888/book/searchpara GET
+2024-02-21 21:34:49.125 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :25   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-02-21 21:34:49.140 DEBUG c.t.mywiki.dao.BookMapper.searchBookpara_COUNT    :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM book WHERE 1 = 1 AND name LIKE CONCAT('%', TRIM(?), '%')
+2024-02-21 21:34:49.141 DEBUG c.t.mywiki.dao.BookMapper.searchBookpara_COUNT    :137  [32m                  [0;39m ==> Parameters: 1(String)
+2024-02-21 21:34:49.153 TRACE c.t.mywiki.dao.BookMapper.searchBookpara_COUNT    :143  [32m                  [0;39m <==    Columns: count(0)
+2024-02-21 21:34:49.154 TRACE c.t.mywiki.dao.BookMapper.searchBookpara_COUNT    :143  [32m                  [0;39m <==        Row: 1
+2024-02-21 21:34:49.156 DEBUG c.t.mywiki.dao.BookMapper.searchBookpara_COUNT    :137  [32m                  [0;39m <==      Total: 1
+2024-02-21 21:34:49.157 DEBUG com.tailai.mywiki.dao.BookMapper.searchBookpara   :137  [32m                  [0;39m ==>  Preparing: select * from book where 1=1 AND name like CONCAT('%', TRIM(?), '%') LIMIT ?
+2024-02-21 21:34:49.159 DEBUG com.tailai.mywiki.dao.BookMapper.searchBookpara   :137  [32m                  [0;39m ==> Parameters: 1(String), 10(Integer)
+2024-02-21 21:34:49.164 TRACE com.tailai.mywiki.dao.BookMapper.searchBookpara   :143  [32m                  [0;39m <==    Columns: id, name, category, pic
+2024-02-21 21:34:49.168 TRACE com.tailai.mywiki.dao.BookMapper.searchBookpara   :143  [32m                  [0;39m <==        Row: 1, 1, 1, /image/cover1.png
+2024-02-21 21:34:49.170 DEBUG com.tailai.mywiki.dao.BookMapper.searchBookpara   :137  [32m                  [0;39m <==      Total: 1
+2024-02-21 21:34:49.174 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：49 ms -------------
+2024-02-21 21:35:03.627 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2024-02-21 21:35:03.629 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :24   [32m                  [0;39m 请求地址: http://localhost:8888/book/edit OPTIONS
+2024-02-21 21:35:03.629 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :25   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-02-21 21:35:03.631 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：1 ms -------------
+2024-02-21 21:35:03.641 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2024-02-21 21:35:03.642 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :24   [32m                  [0;39m 请求地址: http://localhost:8888/book/edit POST
+2024-02-21 21:35:03.642 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :25   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-02-21 21:35:03.718 DEBUG com.tailai.mywiki.dao.BookMapper.addBook          :137  [32m                  [0;39m ==>  Preparing: INSERT INTO book (name, category, pic,id) VALUES (?, ?, ?,?)
+2024-02-21 21:35:03.720 DEBUG com.tailai.mywiki.dao.BookMapper.addBook          :137  [32m                  [0;39m ==> Parameters: 测试(String), 计算机(String), /image/cover2.png(String), null
+2024-02-21 21:35:03.734 DEBUG com.tailai.mywiki.dao.BookMapper.addBook          :137  [32m                  [0;39m <==    Updates: 1
+2024-02-21 21:35:03.738 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：96 ms -------------
+2024-02-21 21:35:03.760 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2024-02-21 21:35:03.761 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :24   [32m                  [0;39m 请求地址: http://localhost:8888/book/search GET
+2024-02-21 21:35:03.761 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :25   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-02-21 21:35:03.764 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM book
+2024-02-21 21:35:03.765 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2024-02-21 21:35:03.770 TRACE com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2024-02-21 21:35:03.771 TRACE com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :143  [32m                  [0;39m <==        Row: 3
+2024-02-21 21:35:03.772 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :137  [32m                  [0;39m <==      Total: 1
+2024-02-21 21:35:03.774 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook       :137  [32m                  [0;39m ==>  Preparing: select * from book LIMIT ?
+2024-02-21 21:35:03.777 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook       :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2024-02-21 21:35:03.780 TRACE com.tailai.mywiki.dao.BookMapper.searchBook       :143  [32m                  [0;39m <==    Columns: id, name, category, pic
+2024-02-21 21:35:03.782 TRACE com.tailai.mywiki.dao.BookMapper.searchBook       :143  [32m                  [0;39m <==        Row: 1, 1, 1, /image/cover1.png
+2024-02-21 21:35:03.784 TRACE com.tailai.mywiki.dao.BookMapper.searchBook       :143  [32m                  [0;39m <==        Row: 2, 2, 2, /image/cover1.png
+2024-02-21 21:35:03.785 TRACE com.tailai.mywiki.dao.BookMapper.searchBook       :143  [32m                  [0;39m <==        Row: 3, 测试, 计算机, /image/cover2.png
+2024-02-21 21:35:03.786 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook       :137  [32m                  [0;39m <==      Total: 3
+2024-02-21 21:35:03.788 INFO  com.tailai.mywiki.config.MywikiApplication        :41   [32m                  [0;39m 总行数 3
+2024-02-21 21:35:03.788 INFO  com.tailai.mywiki.config.MywikiApplication        :42   [32m                  [0;39m 总页数 1
+2024-02-21 21:35:03.794 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：32 ms -------------
+2024-02-21 21:35:09.175 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2024-02-21 21:35:09.176 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :24   [32m                  [0;39m 请求地址: http://localhost:8888/book/search GET
+2024-02-21 21:35:09.177 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :25   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-02-21 21:35:09.183 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM book
+2024-02-21 21:35:09.184 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2024-02-21 21:35:09.187 TRACE com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2024-02-21 21:35:09.188 TRACE com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :143  [32m                  [0;39m <==        Row: 3
+2024-02-21 21:35:09.188 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :137  [32m                  [0;39m <==      Total: 1
+2024-02-21 21:35:09.190 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook       :137  [32m                  [0;39m ==>  Preparing: select * from book LIMIT ?
+2024-02-21 21:35:09.191 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook       :137  [32m                  [0;39m ==> Parameters: 50(Integer)
+2024-02-21 21:35:09.193 TRACE com.tailai.mywiki.dao.BookMapper.searchBook       :143  [32m                  [0;39m <==    Columns: id, name, category, pic
+2024-02-21 21:35:09.194 TRACE com.tailai.mywiki.dao.BookMapper.searchBook       :143  [32m                  [0;39m <==        Row: 1, 1, 1, /image/cover1.png
+2024-02-21 21:35:09.196 TRACE com.tailai.mywiki.dao.BookMapper.searchBook       :143  [32m                  [0;39m <==        Row: 2, 2, 2, /image/cover1.png
+2024-02-21 21:35:09.198 TRACE com.tailai.mywiki.dao.BookMapper.searchBook       :143  [32m                  [0;39m <==        Row: 3, 测试, 计算机, /image/cover2.png
+2024-02-21 21:35:09.199 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook       :137  [32m                  [0;39m <==      Total: 3
+2024-02-21 21:35:09.199 INFO  com.tailai.mywiki.config.MywikiApplication        :41   [32m                  [0;39m 总行数 3
+2024-02-21 21:35:09.200 INFO  com.tailai.mywiki.config.MywikiApplication        :42   [32m                  [0;39m 总页数 1
+2024-02-21 21:35:09.201 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：23 ms -------------
+2024-02-21 21:35:18.219 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2024-02-21 21:35:18.223 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
+2024-02-21 21:35:18.238 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.

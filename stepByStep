@@ -1,4 +1,27 @@
 目标： 图书管理系统 前端+后端
 prd：https://modao.cc/proto/design/pb2lrj6fxcaatyu3v
 
-操作步骤
+环境：
+后端 jdk8 + springboot2 + mysql
+数据库创建
+CREATE SCHEMA `wikisys` DEFAULT CHARACTER SET utf8mb4 ;
+表结构
+CREATE TABLE `wikisys`.`book` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `name` VARCHAR(100) NULL,
+  `category` VARCHAR(45) NULL,
+  `pic` VARCHAR(100) NULL,
+  PRIMARY KEY (`id`));
+ 增加一条数据
+ INSERT INTO `wikisys`.`book` (`id`, `name`, `category`, `pic`) VALUES ('1', '测试', '计算机', '/image/cover2.png');
+
+
+前端
+Step1 下载node https://nodejs.org/en
+Step2 配置淘宝镜像
+npm get registry  --显示当前的镜像网址
+npm config set registry http://registry.npm.taobao.org  -- 使用淘宝的镜像网址
+Step3 安装Vue CLI
+sudo npm install -g @vue/cli@4.5.9
+Step4 集成ant-design-vue
+npm install ant-design-vue@2.0.0-rc.3 --save
