@@ -1,0 +1,123 @@
+[
+  {
+    "description": "无参get",
+    "request": {
+      "uri": "/getdemo",
+      "method": "get"
+    },
+    "response": {
+      "text": "无参get请求"
+    }
+  },
+  {
+    "description": "有参get",
+    "request": {
+      "uri": "/getpara",
+      "method": "get",
+      "queries": {
+        "name": "张三",
+        "age": "18"
+      }
+    },
+    "response": {
+      "text": "18岁的张三哦"
+    }
+  },
+  {
+    "description": "带cookie带get",
+    "request": {
+      "uri": "/getwithcookie",
+      "method": "get",
+      "cookies": {
+        "login": "true"
+      }
+    },
+    "response": {
+      "text": "成功获取cookies！"
+    }
+  }
+  ,
+  {
+    "description": "重定向到百度",
+    "request": {
+      "uri": "/redirect"
+    },
+    "redirectTo": "https://www.baidu.com/"
+  }
+  ,
+  {
+    "description": "重定向到自己",
+    "request": {
+      "uri": "/redirect/to/mine"
+    },
+    "redirectTo": "/getdemo"
+  },
+
+
+  {
+    "description": "mock /book/search接口",
+    "request": {
+      "uri": "/book/search",
+      "method": "get",
+      "queries": {
+          "page": "1",
+          "size": "20"
+      }
+    },
+    "response":{
+      "headers":{
+        "Access-Control-Allow-Origin": "*"
+      },
+    "json":{
+      "total": "100",
+      "success": "true",
+      "list": [
+        {
+          "name": "mock1",
+          "id": "1",
+          "pic": "/image/cover1.png",
+          "category": "mock1"
+        },
+        {
+          "name": "mock2",
+          "id": "2",
+          "pic": "/image/cover1.png",
+          "category": "mock2"
+        },
+        {
+          "name": "mock测试",
+          "id": "3",
+          "pic": "/image/cover2.png",
+          "category": "mock计算机"
+        },
+        {
+          "name": "mock测试2",
+          "id": "4",
+          "pic": "/image/cover2.png",
+          "category": "mock计算机2"
+        }
+      ],
+      "message": "mock的数据"
+    }
+    }
+  }
+  ,
+
+  {
+    "description": "mock /book/search接口 遇到的问题",
+    "request": {
+      "uri": "/book/search2",
+      "method": "get",
+      "queries": {
+        "page": "1",
+        "size": "20"
+      }
+    },
+    "response":{
+      "headers":{
+        "Access-Control-Allow-Origin": "*"
+      },
+        "text": "添加headers， 解决CORS（跨源资源共享）导致不展示数据问题！"
+    }
+  }
+]

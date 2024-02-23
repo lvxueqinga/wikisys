@@ -1,0 +1,34 @@
+[
+  {
+    "description": "post请求带headers",
+    "request": {
+      "uri": "/postwithheader",
+      "method": "post",
+      "headers": {
+        "Accept-Language": "zh-CN",
+        "Content-Type": "application/json"
+      },
+      "json": {
+        "name": "李四",
+        "age": "30"
+      }
+    },
+    "response": {
+      "text": "你好李四"
+    }
+  },
+  {
+    "description": "post请求带参数",
+    "request": {
+      "uri": "/postpara",
+      "method": "post",
+      "forms": {
+        "name": "李四",
+        "age": "30"
+      }
+    },
+    "response": {
+      "text": "李四 good!"
+    }
+  }
+]

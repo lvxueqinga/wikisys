@@ -21,6 +21,9 @@
         <a-form-item>
           <a-button type="primary" @click="myadd" size="large" style="margin-left: 20px;">新增</a-button>
         </a-form-item>
+        <a-form-item>
+          <a-button type="primary" @click="mymock" size="large" style="margin-left: 20px;">mock测试</a-button>
+        </a-form-item>
       </a-form>
 
       </p>
@@ -224,6 +227,20 @@
         });
       };
 
+      //
+      const mymock = () => {
+        axios.get("http://localhost:8899/book/search", {
+          params: {
+            page: 1,
+            size: 20
+          }
+        }).then((response) => {
+
+          const data = response.data;
+          ebooks.value = data.list;
+
+        });
+      };
 
       //搜索
       const param = ref();
@@ -231,6 +248,7 @@
 
       const searchpara = (params: any) => {
         loading.value = true;
+
         axios.get("http://localhost:8888/book/searchpara", {
           params: {
             page: params.page,
@@ -266,6 +284,7 @@
         modalLoading,
         myedit,
         myadd,
+        mymock,
         mydelete,
         handleModalOk,
         ebook,

@@ -1,7 +1,7 @@
 目标： 图书管理系统 前端+后端
 prd：https://modao.cc/proto/design/pb2lrj6fxcaatyu3v
 
-环境：
+# 环境
 后端 jdk8 + springboot2 + mysql
 数据库创建
 CREATE SCHEMA `wikisys` DEFAULT CHARACTER SET utf8mb4 ;
