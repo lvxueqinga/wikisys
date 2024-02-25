@@ -24,6 +24,6 @@ public interface CategoryService {
     //删除
     PageResp<JSONObject> delCategory(Category category);
 
-    //查询
+    //查询2345
     PageResp<JSONObject> searchCategorywithName(CategoryReq req);
 }
