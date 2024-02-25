@@ -6,6 +6,7 @@ prd：https://modao.cc/proto/design/pb2lrj6fxcaatyu3v
 数据库创建
 CREATE SCHEMA `wikisys` DEFAULT CHARACTER SET utf8mb4 ;
 表结构
+##### book表
 CREATE TABLE `wikisys`.`book` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `name` VARCHAR(100) NULL,
@@ -14,6 +15,22 @@ CREATE TABLE `wikisys`.`book` (
   PRIMARY KEY (`id`));
  增加一条数据
  INSERT INTO `wikisys`.`book` (`id`, `name`, `category`, `pic`) VALUES ('1', '测试', '计算机', '/image/cover2.png');
+
+##### category表
+CREATE TABLE `wikisys`.`category` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `parent` INT NOT NULL DEFAULT 0 COMMENT '父id',
+  `name` VARCHAR(50) NOT NULL COMMENT '名称',
+  `sort` INT NULL COMMENT '排序',
+  PRIMARY KEY (`id`));
+  增加数据
+ INSERT INTO `wikisys`.`category` (`id`, `parent`, `name`, `sort`) VALUES ('1', '0', '前端开发', '1');
+ INSERT INTO `wikisys`.`category` (`id`, `parent`, `name`, `sort`) VALUES ('2', '1', 'Vue', '2');
+ INSERT INTO `wikisys`.`category` (`id`, `parent`, `name`, `sort`) VALUES ('3', '1', 'html', '3');
+ INSERT INTO `wikisys`.`category` (`id`, `parent`, `name`, `sort`) VALUES ('4', '0', '测试', '4');
+ INSERT INTO `wikisys`.`category` (`id`, `parent`, `name`, `sort`) VALUES ('5', '4', '黑盒测试', '5');
+ INSERT INTO `wikisys`.`category` (`id`, `parent`, `name`, `sort`) VALUES ('6', '4', '白盒测试', '6');
+ INSERT INTO `wikisys`.`category` (`id`, `parent`, `name`, `sort`) VALUES ('7', '4', '性能测试', '7');
 
 
 前端

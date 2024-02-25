@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<mapper namespace="com.tailai.mywiki.dao.CategoryMapper">
+    <select id="searchCategory" resultType="com.alibaba.fastjson.JSONObject" >
+        select * from category
+    </select>
+
+    <update id="editCategory" parameterType="com.tailai.mywiki.model.Category">
+        UPDATE category
+        SET
+        name = #{name},
+        parent = #{parent},
+        sort = #{sort}
+        WHERE id = #{id}
+    </update>
+
+    <insert id="addCategory" parameterType="com.tailai.mywiki.model.Category">
+
+        INSERT INTO category (name, parent, sort,id)
+        VALUES (#{name}, #{parent}, #{sort},#{id})
+    </insert>
+
+    <delete id="delCategory" parameterType="com.tailai.mywiki.model.Category">
+
+        delete from category where id = #{id}
+
+    </delete>
+
+    <select id="searchCategorypara" resultType="com.alibaba.fastjson.JSONObject" >
+        select * from category where 1=1
+        <if test="name != null">
+            AND name like CONCAT('%', TRIM(#{name}), '%')
+        </if>
+    </select>
+
+
+
+
+</mapper>
