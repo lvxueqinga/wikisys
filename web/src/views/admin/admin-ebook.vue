@@ -39,6 +39,10 @@
         <template #pic="{ text: pic }">
           <img v-if="pic" :src="pic" alt="avatar" />
         </template>
+        <template v-slot:category="{text, record}">
+          {{text.category}}
+<!--          {{ getCategoryName(record)}}-->
+        </template>
         <template v-slot:action="{ text, record }">
           <a-space size="small">
             <a-button type="primary" @click="myedit(record)">编辑</a-button>
@@ -77,6 +81,11 @@
       </a-form-item>
       <a-form-item label="分类">
         <a-input v-model:value="ebook.category" />
+        <a-cascader v-model:value="categoryIds"
+                    :field-names="{ label:'name' , value:'id',children:'children'}"
+                    :options="level1"
+        />
+
       </a-form-item>
     </a-form>
 
@@ -114,7 +123,7 @@
         {
           title: '分类',
           key: 'category',
-          dataIndex: 'category'
+          slots: {customRender: 'category'}
         },
         {
           title: '操作',
@@ -161,6 +170,7 @@
       };
 
       onMounted(() => {
+        handleQueryCategory();
         handleQuery({
           page:1,
           size:pagination.value.pageSize
@@ -169,17 +179,20 @@
 
       // 编辑表单
 
-      const ebook=ref({});
+      const categoryIds = ref();
+      const ebook=ref();
       const modalVisible = ref<boolean>(false);
       const modalLoading = ref<boolean>(false);
       const myedit = (record: any) => {
         modalVisible.value = true;
         ebook.value=Tool.copy(record);
+        categoryIds.value = [ebook.value.category];
       };
 
       const handleModalOk = () => {
 
         modalLoading.value = true;
+        ebook.value.category = categoryIds.value[1];
 
 
         axios.post("http://localhost:8888/book/edit", ebook.value).then((response) => {
@@ -198,9 +211,6 @@
             modalLoading.value = false;
             message.error(data.message);
           }
-
-
-
 
         });
 
@@ -271,6 +281,46 @@
         });
       };
 
+      const level1 = ref();
+      let categorys : any;
+
+      /**
+       * 查询所有分类
+       */
+      const handleQueryCategory = () => {
+        loading.value = true;
+        axios.get("http://localhost:8888/category/search", {
+          params: {
+
+          }
+        }).then((response) => {
+          loading.value = false;
+          const data = response.data;
+          if (data.success){
+            categorys = data.list;
+            console.log("原始数组：" ,categorys);
+            level1.value = [];
+            level1.value = Tool.array2Tree(categorys,0);
+            console.log("树形结构",level1.value);
+
+          }else {
+            message.error(data.message);
+          }
+
+        });
+      };
+
+      let result="";
+
+      const  getCategoryName=(cid: any) =>{
+        categorys.forEach((item: any)=> {
+          if (cid.category === item.id){
+            result = item.name;
+          }
+        });
+        return result;
+      };
+
 
 
       return {
@@ -291,6 +341,10 @@
 
         param,
         searchpara,
+
+        categoryIds,
+        level1,
+        getCategoryName,
 
       }
     }

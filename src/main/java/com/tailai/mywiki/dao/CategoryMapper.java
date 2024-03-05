@@ -28,4 +28,7 @@ public interface CategoryMapper {
 
     //搜索分类
     List<JSONObject> searchCategorypara(CategoryReq req);
+
+    //查询id对应的分类名称
+    String getCategoryName(int id);
 }

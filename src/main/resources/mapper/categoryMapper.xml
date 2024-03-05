@@ -37,6 +37,11 @@
         </if>
     </select>
 
+    <select id="getCategoryName" resultType="String" >
+        select name from category where id = #{id}
+
+    </select>
+
 
 
 

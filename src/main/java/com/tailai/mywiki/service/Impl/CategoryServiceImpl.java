@@ -106,4 +106,10 @@ public class CategoryServiceImpl implements CategoryService {
     }
 
 
+    @Override
+    public  String getCategoryName(int id){
+        return categoryMapper.getCategoryName(id);
+    }
+
+
 }

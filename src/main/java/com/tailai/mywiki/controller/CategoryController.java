@@ -55,4 +55,12 @@ public class CategoryController {
         return  categoryService.searchCategorywithName(req);
     }
 
+    @GetMapping("/get/name")
+    @ApiOperation(value = "查询分类名称",httpMethod = "GET")
+    public String searchpara(int id){
+        return  categoryService.getCategoryName(id);
+    }
+
+
+
 }
