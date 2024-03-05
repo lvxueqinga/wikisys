@@ -263,3 +263,180 @@
 2024-03-05 11:18:02.719 DEBUG c.tailai.mywiki.dao.CategoryMapper.searchCategory :137  [32m                  [0;39m <==      Total: 11
 2024-03-05 11:18:02.722 INFO  com.tailai.mywiki.config.MywikiApplication        :40   [32m                  [0;39m 总行数 11
 2024-03-05 11:18:02.754 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：132 ms -------------
+2024-03-05 11:31:01.184 WARN  com.zaxxer.hikari.pool.HikariPool                 :787  [32m                  [0;39m HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=53s441ms).
+2024-03-05 11:47:25.000 WARN  com.zaxxer.hikari.pool.HikariPool                 :787  [32m                  [0;39m HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m53s775ms).
+2024-03-05 12:03:48.858 WARN  com.zaxxer.hikari.pool.HikariPool                 :787  [32m                  [0;39m HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m53s846ms).
+2024-03-05 12:19:42.736 WARN  com.zaxxer.hikari.pool.HikariPool                 :787  [32m                  [0;39m HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m53s876ms).
+2024-03-05 12:35:43.779 WARN  com.zaxxer.hikari.pool.HikariPool                 :787  [32m                  [0;39m HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m31s65ms).
+2024-03-05 12:52:07.659 WARN  com.zaxxer.hikari.pool.HikariPool                 :787  [32m                  [0;39m HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m53s873ms).
+2024-03-05 13:08:01.530 WARN  com.zaxxer.hikari.pool.HikariPool                 :787  [32m                  [0;39m HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m53s871ms).
+2024-03-05 13:24:25.863 WARN  com.zaxxer.hikari.pool.HikariPool                 :787  [32m                  [0;39m HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m53s832ms).
+2024-03-05 13:29:13.943 WARN  com.zaxxer.hikari.pool.HikariPool                 :787  [32m                  [0;39m HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m18s87ms).
+2024-03-05 13:36:27.937 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2024-03-05 13:36:27.956 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :24   [32m                  [0;39m 请求地址: http://localhost:8888/category/search GET
+2024-03-05 13:36:27.958 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :25   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-03-05 13:36:27.994 DEBUG c.tailai.mywiki.dao.CategoryMapper.searchCategory :137  [32m                  [0;39m ==>  Preparing: select * from category
+2024-03-05 13:36:28.009 DEBUG c.tailai.mywiki.dao.CategoryMapper.searchCategory :137  [32m                  [0;39m ==> Parameters: 
+2024-03-05 13:36:28.072 TRACE c.tailai.mywiki.dao.CategoryMapper.searchCategory :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2024-03-05 13:36:28.073 TRACE c.tailai.mywiki.dao.CategoryMapper.searchCategory :143  [32m                  [0;39m <==        Row: 1, 0, 前端开发, 1
+2024-03-05 13:36:28.081 TRACE c.tailai.mywiki.dao.CategoryMapper.searchCategory :143  [32m                  [0;39m <==        Row: 2, 1, Vue, 2
+2024-03-05 13:36:28.082 TRACE c.tailai.mywiki.dao.CategoryMapper.searchCategory :143  [32m                  [0;39m <==        Row: 3, 1, html, 3
+2024-03-05 13:36:28.083 TRACE c.tailai.mywiki.dao.CategoryMapper.searchCategory :143  [32m                  [0;39m <==        Row: 4, 0, 测试, 4
+2024-03-05 13:36:28.084 TRACE c.tailai.mywiki.dao.CategoryMapper.searchCategory :143  [32m                  [0;39m <==        Row: 5, 4, 黑盒测试, 5
+2024-03-05 13:36:28.085 TRACE c.tailai.mywiki.dao.CategoryMapper.searchCategory :143  [32m                  [0;39m <==        Row: 6, 4, 白盒测试, 6
+2024-03-05 13:36:28.087 TRACE c.tailai.mywiki.dao.CategoryMapper.searchCategory :143  [32m                  [0;39m <==        Row: 7, 4, 性能测试, 8
+2024-03-05 13:36:28.088 TRACE c.tailai.mywiki.dao.CategoryMapper.searchCategory :143  [32m                  [0;39m <==        Row: 8, 4, 自动化测试, 8
+2024-03-05 13:36:28.091 TRACE c.tailai.mywiki.dao.CategoryMapper.searchCategory :143  [32m                  [0;39m <==        Row: 9, 1, 1, 1
+2024-03-05 13:36:28.092 TRACE c.tailai.mywiki.dao.CategoryMapper.searchCategory :143  [32m                  [0;39m <==        Row: 10, 1, 2, 2
+2024-03-05 13:36:28.092 TRACE c.tailai.mywiki.dao.CategoryMapper.searchCategory :143  [32m                  [0;39m <==        Row: 11, 1, 3, 3
+2024-03-05 13:36:28.096 DEBUG c.tailai.mywiki.dao.CategoryMapper.searchCategory :137  [32m                  [0;39m <==      Total: 11
+2024-03-05 13:36:28.097 INFO  com.tailai.mywiki.config.MywikiApplication        :40   [32m                  [0;39m 总行数 11
+2024-03-05 13:36:28.128 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：168 ms -------------
+2024-03-05 13:38:27.399 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2024-03-05 13:38:27.415 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :24   [32m                  [0;39m 请求地址: http://localhost:8888/category/search GET
+2024-03-05 13:38:27.416 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :25   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-03-05 13:38:27.449 DEBUG c.tailai.mywiki.dao.CategoryMapper.searchCategory :137  [32m                  [0;39m ==>  Preparing: select * from category
+2024-03-05 13:38:27.456 DEBUG c.tailai.mywiki.dao.CategoryMapper.searchCategory :137  [32m                  [0;39m ==> Parameters: 
+2024-03-05 13:38:27.479 TRACE c.tailai.mywiki.dao.CategoryMapper.searchCategory :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2024-03-05 13:38:27.480 TRACE c.tailai.mywiki.dao.CategoryMapper.searchCategory :143  [32m                  [0;39m <==        Row: 1, 0, 前端开发, 1
+2024-03-05 13:38:27.486 TRACE c.tailai.mywiki.dao.CategoryMapper.searchCategory :143  [32m                  [0;39m <==        Row: 2, 1, Vue, 2
+2024-03-05 13:38:27.487 TRACE c.tailai.mywiki.dao.CategoryMapper.searchCategory :143  [32m                  [0;39m <==        Row: 3, 1, html, 3
+2024-03-05 13:38:27.488 TRACE c.tailai.mywiki.dao.CategoryMapper.searchCategory :143  [32m                  [0;39m <==        Row: 4, 0, 测试, 4
+2024-03-05 13:38:27.490 TRACE c.tailai.mywiki.dao.CategoryMapper.searchCategory :143  [32m                  [0;39m <==        Row: 5, 4, 黑盒测试, 5
+2024-03-05 13:38:27.490 TRACE c.tailai.mywiki.dao.CategoryMapper.searchCategory :143  [32m                  [0;39m <==        Row: 6, 4, 白盒测试, 6
+2024-03-05 13:38:27.491 TRACE c.tailai.mywiki.dao.CategoryMapper.searchCategory :143  [32m                  [0;39m <==        Row: 7, 4, 性能测试, 8
+2024-03-05 13:38:27.492 TRACE c.tailai.mywiki.dao.CategoryMapper.searchCategory :143  [32m                  [0;39m <==        Row: 8, 4, 自动化测试, 8
+2024-03-05 13:38:27.495 TRACE c.tailai.mywiki.dao.CategoryMapper.searchCategory :143  [32m                  [0;39m <==        Row: 9, 1, 1, 1
+2024-03-05 13:38:27.498 TRACE c.tailai.mywiki.dao.CategoryMapper.searchCategory :143  [32m                  [0;39m <==        Row: 10, 1, 2, 2
+2024-03-05 13:38:27.498 TRACE c.tailai.mywiki.dao.CategoryMapper.searchCategory :143  [32m                  [0;39m <==        Row: 11, 1, 3, 3
+2024-03-05 13:38:27.500 DEBUG c.tailai.mywiki.dao.CategoryMapper.searchCategory :137  [32m                  [0;39m <==      Total: 11
+2024-03-05 13:38:27.503 INFO  com.tailai.mywiki.config.MywikiApplication        :40   [32m                  [0;39m 总行数 11
+2024-03-05 13:38:27.526 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：109 ms -------------
+2024-03-05 13:38:59.383 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2024-03-05 13:38:59.398 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :24   [32m                  [0;39m 请求地址: http://localhost:8888/category/search GET
+2024-03-05 13:38:59.399 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :25   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-03-05 13:38:59.429 DEBUG c.tailai.mywiki.dao.CategoryMapper.searchCategory :137  [32m                  [0;39m ==>  Preparing: select * from category
+2024-03-05 13:38:59.436 DEBUG c.tailai.mywiki.dao.CategoryMapper.searchCategory :137  [32m                  [0;39m ==> Parameters: 
+2024-03-05 13:38:59.449 TRACE c.tailai.mywiki.dao.CategoryMapper.searchCategory :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2024-03-05 13:38:59.451 TRACE c.tailai.mywiki.dao.CategoryMapper.searchCategory :143  [32m                  [0;39m <==        Row: 1, 0, 前端开发, 1
+2024-03-05 13:38:59.456 TRACE c.tailai.mywiki.dao.CategoryMapper.searchCategory :143  [32m                  [0;39m <==        Row: 2, 1, Vue, 2
+2024-03-05 13:38:59.459 TRACE c.tailai.mywiki.dao.CategoryMapper.searchCategory :143  [32m                  [0;39m <==        Row: 3, 1, html, 3
+2024-03-05 13:38:59.460 TRACE c.tailai.mywiki.dao.CategoryMapper.searchCategory :143  [32m                  [0;39m <==        Row: 4, 0, 测试, 4
+2024-03-05 13:38:59.462 TRACE c.tailai.mywiki.dao.CategoryMapper.searchCategory :143  [32m                  [0;39m <==        Row: 5, 4, 黑盒测试, 5
+2024-03-05 13:38:59.464 TRACE c.tailai.mywiki.dao.CategoryMapper.searchCategory :143  [32m                  [0;39m <==        Row: 6, 4, 白盒测试, 6
+2024-03-05 13:38:59.464 TRACE c.tailai.mywiki.dao.CategoryMapper.searchCategory :143  [32m                  [0;39m <==        Row: 7, 4, 性能测试, 8
+2024-03-05 13:38:59.465 TRACE c.tailai.mywiki.dao.CategoryMapper.searchCategory :143  [32m                  [0;39m <==        Row: 8, 4, 自动化测试, 8
+2024-03-05 13:38:59.466 TRACE c.tailai.mywiki.dao.CategoryMapper.searchCategory :143  [32m                  [0;39m <==        Row: 9, 1, 1, 1
+2024-03-05 13:38:59.466 TRACE c.tailai.mywiki.dao.CategoryMapper.searchCategory :143  [32m                  [0;39m <==        Row: 10, 1, 2, 2
+2024-03-05 13:38:59.467 TRACE c.tailai.mywiki.dao.CategoryMapper.searchCategory :143  [32m                  [0;39m <==        Row: 11, 1, 3, 3
+2024-03-05 13:38:59.468 DEBUG c.tailai.mywiki.dao.CategoryMapper.searchCategory :137  [32m                  [0;39m <==      Total: 11
+2024-03-05 13:38:59.469 INFO  com.tailai.mywiki.config.MywikiApplication        :40   [32m                  [0;39m 总行数 11
+2024-03-05 13:38:59.482 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：82 ms -------------
+2024-03-05 13:39:12.354 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2024-03-05 13:39:12.359 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :24   [32m                  [0;39m 请求地址: http://localhost:8888/category/search GET
+2024-03-05 13:39:12.359 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :25   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-03-05 13:39:12.422 DEBUG c.tailai.mywiki.dao.CategoryMapper.searchCategory :137  [32m                  [0;39m ==>  Preparing: select * from category
+2024-03-05 13:39:12.422 DEBUG c.tailai.mywiki.dao.CategoryMapper.searchCategory :137  [32m                  [0;39m ==> Parameters: 
+2024-03-05 13:39:12.427 TRACE c.tailai.mywiki.dao.CategoryMapper.searchCategory :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2024-03-05 13:39:12.427 TRACE c.tailai.mywiki.dao.CategoryMapper.searchCategory :143  [32m                  [0;39m <==        Row: 1, 0, 前端开发, 1
+2024-03-05 13:39:12.430 TRACE c.tailai.mywiki.dao.CategoryMapper.searchCategory :143  [32m                  [0;39m <==        Row: 2, 1, Vue, 2
+2024-03-05 13:39:12.431 TRACE c.tailai.mywiki.dao.CategoryMapper.searchCategory :143  [32m                  [0;39m <==        Row: 3, 1, html, 3
+2024-03-05 13:39:12.432 TRACE c.tailai.mywiki.dao.CategoryMapper.searchCategory :143  [32m                  [0;39m <==        Row: 4, 0, 测试, 4
+2024-03-05 13:39:12.432 TRACE c.tailai.mywiki.dao.CategoryMapper.searchCategory :143  [32m                  [0;39m <==        Row: 5, 4, 黑盒测试, 5
+2024-03-05 13:39:12.432 TRACE c.tailai.mywiki.dao.CategoryMapper.searchCategory :143  [32m                  [0;39m <==        Row: 6, 4, 白盒测试, 6
+2024-03-05 13:39:12.433 TRACE c.tailai.mywiki.dao.CategoryMapper.searchCategory :143  [32m                  [0;39m <==        Row: 7, 4, 性能测试, 8
+2024-03-05 13:39:12.435 TRACE c.tailai.mywiki.dao.CategoryMapper.searchCategory :143  [32m                  [0;39m <==        Row: 8, 4, 自动化测试, 8
+2024-03-05 13:39:12.437 TRACE c.tailai.mywiki.dao.CategoryMapper.searchCategory :143  [32m                  [0;39m <==        Row: 9, 1, 1, 1
+2024-03-05 13:39:12.438 TRACE c.tailai.mywiki.dao.CategoryMapper.searchCategory :143  [32m                  [0;39m <==        Row: 10, 1, 2, 2
+2024-03-05 13:39:12.438 TRACE c.tailai.mywiki.dao.CategoryMapper.searchCategory :143  [32m                  [0;39m <==        Row: 11, 1, 3, 3
+2024-03-05 13:39:12.439 DEBUG c.tailai.mywiki.dao.CategoryMapper.searchCategory :137  [32m                  [0;39m <==      Total: 11
+2024-03-05 13:39:12.442 INFO  com.tailai.mywiki.config.MywikiApplication        :40   [32m                  [0;39m 总行数 11
+2024-03-05 13:39:12.444 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：85 ms -------------
+2024-03-05 13:39:17.273 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2024-03-05 13:39:17.292 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
+2024-03-05 13:39:17.314 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
+2024-03-05 13:39:31.240 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 6.1.6.Final
+2024-03-05 13:39:31.254 INFO  com.tailai.mywiki.config.MywikiApplication        :55   [32m                  [0;39m Starting MywikiApplication using Java 1.8.0_402 on tailaideMBP with PID 41864 (/Users/tailai/Desktop/wikisys/target/classes started by tailai in /Users/tailai/Desktop/wikisys)
+2024-03-05 13:39:31.254 INFO  com.tailai.mywiki.config.MywikiApplication        :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2024-03-05 13:39:31.312 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-03-05 13:39:31.313 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-03-05 13:39:32.782 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8888 (http)
+2024-03-05 13:39:32.791 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8888"]
+2024-03-05 13:39:32.792 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2024-03-05 13:39:32.792 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2024-03-05 13:39:32.845 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2024-03-05 13:39:32.846 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1531 ms
+2024-03-05 13:39:33.582 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2024-03-05 13:39:33.624 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2024-03-05 13:39:33.843 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8888"]
+2024-03-05 13:39:33.911 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8888 (http) with context path ''
+2024-03-05 13:39:33.917 INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper:120  [32m                  [0;39m Context refreshed
+2024-03-05 13:39:33.939 INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper:123  [32m                  [0;39m Found 1 custom documentation plugin(s)
+2024-03-05 13:39:33.963 INFO  s.d.spring.web.scanners.ApiListingReferenceScanner:41   [32m                  [0;39m Scanning for api listing references
+2024-03-05 13:39:34.220 INFO  s.d.s.w.r.operation.CachingOperationNameGenerator :40   [32m                  [0;39m Generating unique operation named: addUsingPOST_1
+2024-03-05 13:39:34.225 INFO  s.d.s.w.r.operation.CachingOperationNameGenerator :40   [32m                  [0;39m Generating unique operation named: delUsingPOST_1
+2024-03-05 13:39:34.228 INFO  s.d.s.w.r.operation.CachingOperationNameGenerator :40   [32m                  [0;39m Generating unique operation named: searchUsingPOST_1
+2024-03-05 13:39:34.231 INFO  s.d.s.w.r.operation.CachingOperationNameGenerator :40   [32m                  [0;39m Generating unique operation named: searchUsingGET_1
+2024-03-05 13:39:34.237 INFO  s.d.s.w.r.operation.CachingOperationNameGenerator :40   [32m                  [0;39m Generating unique operation named: helloUsingGET_1
+2024-03-05 13:39:34.237 INFO  s.d.s.w.r.operation.CachingOperationNameGenerator :40   [32m                  [0;39m Generating unique operation named: helloUsingGET_2
+2024-03-05 13:39:34.238 INFO  s.d.s.w.r.operation.CachingOperationNameGenerator :40   [32m                  [0;39m Generating unique operation named: helloUsingGET_3
+2024-03-05 13:39:34.239 INFO  s.d.s.w.r.operation.CachingOperationNameGenerator :40   [32m                  [0;39m Generating unique operation named: helloUsingGET_4
+2024-03-05 13:39:34.240 INFO  s.d.s.w.r.operation.CachingOperationNameGenerator :40   [32m                  [0;39m Generating unique operation named: helloUsingGET_5
+2024-03-05 13:39:34.240 INFO  s.d.s.w.r.operation.CachingOperationNameGenerator :40   [32m                  [0;39m Generating unique operation named: helloUsingGET_6
+2024-03-05 13:39:34.241 INFO  s.d.s.w.r.operation.CachingOperationNameGenerator :40   [32m                  [0;39m Generating unique operation named: helloUsingGET_7
+2024-03-05 13:39:34.267 INFO  com.tailai.mywiki.config.MywikiApplication        :61   [32m                  [0;39m Started MywikiApplication in 3.465 seconds (JVM running for 4.322)
+2024-03-05 13:39:34.272 INFO  com.tailai.mywiki.config.MywikiApplication        :24   [32m                  [0;39m 启动成功！！
+2024-03-05 13:39:34.273 INFO  com.tailai.mywiki.config.MywikiApplication        :25   [32m                  [0;39m 地址: 	http://127.0.0.1:8888
+2024-03-05 13:40:09.318 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-05 13:40:09.325 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2024-03-05 13:40:09.336 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 10 ms
+2024-03-05 13:40:09.419 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2024-03-05 13:40:09.420 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :24   [32m                  [0;39m 请求地址: http://localhost:8888/category/search GET
+2024-03-05 13:40:09.421 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :25   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-03-05 13:40:09.489 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
+2024-03-05 13:40:09.698 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
+2024-03-05 13:40:09.707 DEBUG c.tailai.mywiki.dao.CategoryMapper.searchCategory :137  [32m                  [0;39m ==>  Preparing: select * from category
+2024-03-05 13:40:09.731 DEBUG c.tailai.mywiki.dao.CategoryMapper.searchCategory :137  [32m                  [0;39m ==> Parameters: 
+2024-03-05 13:40:09.751 TRACE c.tailai.mywiki.dao.CategoryMapper.searchCategory :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2024-03-05 13:40:09.751 TRACE c.tailai.mywiki.dao.CategoryMapper.searchCategory :143  [32m                  [0;39m <==        Row: 1, 0, 前端开发, 1
+2024-03-05 13:40:09.756 TRACE c.tailai.mywiki.dao.CategoryMapper.searchCategory :143  [32m                  [0;39m <==        Row: 2, 1, Vue, 2
+2024-03-05 13:40:09.756 TRACE c.tailai.mywiki.dao.CategoryMapper.searchCategory :143  [32m                  [0;39m <==        Row: 3, 1, html, 3
+2024-03-05 13:40:09.756 TRACE c.tailai.mywiki.dao.CategoryMapper.searchCategory :143  [32m                  [0;39m <==        Row: 4, 0, 测试, 4
+2024-03-05 13:40:09.757 TRACE c.tailai.mywiki.dao.CategoryMapper.searchCategory :143  [32m                  [0;39m <==        Row: 5, 4, 黑盒测试, 5
+2024-03-05 13:40:09.757 TRACE c.tailai.mywiki.dao.CategoryMapper.searchCategory :143  [32m                  [0;39m <==        Row: 6, 4, 白盒测试, 6
+2024-03-05 13:40:09.758 TRACE c.tailai.mywiki.dao.CategoryMapper.searchCategory :143  [32m                  [0;39m <==        Row: 7, 4, 性能测试, 8
+2024-03-05 13:40:09.758 TRACE c.tailai.mywiki.dao.CategoryMapper.searchCategory :143  [32m                  [0;39m <==        Row: 8, 4, 自动化测试, 8
+2024-03-05 13:40:09.758 TRACE c.tailai.mywiki.dao.CategoryMapper.searchCategory :143  [32m                  [0;39m <==        Row: 9, 1, 1, 1
+2024-03-05 13:40:09.759 TRACE c.tailai.mywiki.dao.CategoryMapper.searchCategory :143  [32m                  [0;39m <==        Row: 10, 1, 2, 2
+2024-03-05 13:40:09.759 TRACE c.tailai.mywiki.dao.CategoryMapper.searchCategory :143  [32m                  [0;39m <==        Row: 11, 1, 3, 3
+2024-03-05 13:40:09.759 DEBUG c.tailai.mywiki.dao.CategoryMapper.searchCategory :137  [32m                  [0;39m <==      Total: 11
+2024-03-05 13:40:09.765 INFO  com.tailai.mywiki.config.MywikiApplication        :40   [32m                  [0;39m 总行数 11
+2024-03-05 13:40:09.823 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：402 ms -------------
+2024-03-05 13:40:42.792 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2024-03-05 13:40:42.793 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :24   [32m                  [0;39m 请求地址: http://localhost:8888/category/edit POST
+2024-03-05 13:40:42.794 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :25   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-03-05 13:40:42.896 DEBUG com.tailai.mywiki.dao.CategoryMapper.addCategory  :137  [32m                  [0;39m ==>  Preparing: INSERT INTO category (name, parent, sort,id) VALUES (?, ?, ?,?)
+2024-03-05 13:40:42.899 DEBUG com.tailai.mywiki.dao.CategoryMapper.addCategory  :137  [32m                  [0;39m ==> Parameters: 后端开发(String), 0(Integer), 5(Integer), null
+2024-03-05 13:40:42.939 DEBUG com.tailai.mywiki.dao.CategoryMapper.addCategory  :137  [32m                  [0;39m <==    Updates: 1
+2024-03-05 13:40:42.941 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：147 ms -------------
+2024-03-05 13:40:42.990 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2024-03-05 13:40:42.991 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :24   [32m                  [0;39m 请求地址: http://localhost:8888/category/search GET
+2024-03-05 13:40:42.991 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :25   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-03-05 13:40:42.991 DEBUG c.tailai.mywiki.dao.CategoryMapper.searchCategory :137  [32m                  [0;39m ==>  Preparing: select * from category
+2024-03-05 13:40:42.992 DEBUG c.tailai.mywiki.dao.CategoryMapper.searchCategory :137  [32m                  [0;39m ==> Parameters: 
+2024-03-05 13:40:42.993 TRACE c.tailai.mywiki.dao.CategoryMapper.searchCategory :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2024-03-05 13:40:42.994 TRACE c.tailai.mywiki.dao.CategoryMapper.searchCategory :143  [32m                  [0;39m <==        Row: 1, 0, 前端开发, 1
+2024-03-05 13:40:42.995 TRACE c.tailai.mywiki.dao.CategoryMapper.searchCategory :143  [32m                  [0;39m <==        Row: 2, 1, Vue, 2
+2024-03-05 13:40:42.995 TRACE c.tailai.mywiki.dao.CategoryMapper.searchCategory :143  [32m                  [0;39m <==        Row: 3, 1, html, 3
+2024-03-05 13:40:42.997 TRACE c.tailai.mywiki.dao.CategoryMapper.searchCategory :143  [32m                  [0;39m <==        Row: 4, 0, 测试, 4
+2024-03-05 13:40:42.998 TRACE c.tailai.mywiki.dao.CategoryMapper.searchCategory :143  [32m                  [0;39m <==        Row: 5, 4, 黑盒测试, 5
+2024-03-05 13:40:42.999 TRACE c.tailai.mywiki.dao.CategoryMapper.searchCategory :143  [32m                  [0;39m <==        Row: 6, 4, 白盒测试, 6
+2024-03-05 13:40:43.000 TRACE c.tailai.mywiki.dao.CategoryMapper.searchCategory :143  [32m                  [0;39m <==        Row: 7, 4, 性能测试, 8
+2024-03-05 13:40:43.002 TRACE c.tailai.mywiki.dao.CategoryMapper.searchCategory :143  [32m                  [0;39m <==        Row: 8, 4, 自动化测试, 8
+2024-03-05 13:40:43.004 TRACE c.tailai.mywiki.dao.CategoryMapper.searchCategory :143  [32m                  [0;39m <==        Row: 9, 1, 1, 1
+2024-03-05 13:40:43.005 TRACE c.tailai.mywiki.dao.CategoryMapper.searchCategory :143  [32m                  [0;39m <==        Row: 10, 1, 2, 2
+2024-03-05 13:40:43.006 TRACE c.tailai.mywiki.dao.CategoryMapper.searchCategory :143  [32m                  [0;39m <==        Row: 11, 1, 3, 3
+2024-03-05 13:40:43.007 TRACE c.tailai.mywiki.dao.CategoryMapper.searchCategory :143  [32m                  [0;39m <==        Row: 12, 0, 后端开发, 5
+2024-03-05 13:40:43.008 DEBUG c.tailai.mywiki.dao.CategoryMapper.searchCategory :137  [32m                  [0;39m <==      Total: 12
+2024-03-05 13:40:43.009 INFO  com.tailai.mywiki.config.MywikiApplication        :40   [32m                  [0;39m 总行数 12
+2024-03-05 13:40:43.011 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：20 ms -------------
