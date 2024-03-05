@@ -40,8 +40,9 @@
           <img v-if="pic" :src="pic" alt="avatar" />
         </template>
         <template v-slot:category="{text, record}">
-          {{text.category}}
-<!--          {{ getCategoryName(record)}}-->
+<!--          {{text.category}}-->
+<!--          {{record}}}-->
+          {{ getCategoryName(record.category)}}
         </template>
         <template v-slot:action="{ text, record }">
           <a-space size="small">
@@ -313,8 +314,9 @@
       let result="";
 
       const  getCategoryName=(cid: any) =>{
+
         categorys.forEach((item: any)=> {
-          if (cid.category === item.id){
+          if (Number(item.id) === Number(cid)){
             result = item.name;
           }
         });
