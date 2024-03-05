@@ -13,7 +13,7 @@ import com.tailai.mywiki.resp.PageResp;
 public interface CategoryService {
 
     //查询全部
-    PageResp<JSONObject> searchCategory(CategoryReq req);
+    PageResp<JSONObject> searchCategory();
 
     //编辑
     PageResp<JSONObject> editCategory(Category category);

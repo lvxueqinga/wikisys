@@ -15,7 +15,7 @@ import java.util.List;
 @Repository
 public interface CategoryMapper {
     //查询全部
-    List<JSONObject> searchCategory(CategoryReq req);
+    List<JSONObject> searchCategory();
 
     //编辑分类
     int editCategory(Category category);

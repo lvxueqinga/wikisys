@@ -31,14 +31,13 @@ public class CategoryServiceImpl implements CategoryService {
     private CategoryMapper categoryMapper;
 
     @Override
-    public PageResp<JSONObject> searchCategory(CategoryReq req) {
+    public PageResp<JSONObject> searchCategory() {
 
-        PageHelper.startPage(req.getPage(),req.getSize());
-        List<JSONObject> ans = categoryMapper.searchCategory(req);
+
+        List<JSONObject> ans = categoryMapper.searchCategory();
 
         PageInfo<JSONObject> pageInfo = new PageInfo<>(ans);
         LOG.info("总行数 {}",pageInfo.getTotal());
-        LOG.info("总页数 {}",pageInfo.getPages());
 
         PageResp<JSONObject> pageResp = new PageResp<>();
         pageResp.setTotal(pageInfo.getTotal());

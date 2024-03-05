@@ -27,8 +27,8 @@ public class CategoryController {
 
     @GetMapping("/search")
     @ApiOperation(value = "查询列表",httpMethod = "GET")
-    public PageResp<JSONObject> search(@Valid CategoryReq req){
-        return  categoryService.searchCategory(req);
+    public PageResp<JSONObject> search(){
+        return  categoryService.searchCategory();
     }
 
     @PostMapping("/edit")
