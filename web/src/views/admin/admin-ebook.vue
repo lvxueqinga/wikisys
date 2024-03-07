@@ -26,6 +26,7 @@
         </a-form-item>
       </a-form>
 
+
       </p>
 
       <a-table
@@ -93,6 +94,21 @@
 
   </a-modal>
 
+  <a-modal
+          v-model:visible="isdoc"
+          title="电子书编辑内容"
+          :confirm-loading="modalLoading"
+          @ok="handleDocModalOk"
+  >
+
+    <div id="content"></div>
+
+
+
+  </a-modal>
+
+
+
 </template>
 
 <script lang="ts">
@@ -100,6 +116,7 @@
   import axios from 'axios';
   import { message } from 'ant-design-vue';
   import {Tool} from "@/util/tool";
+  import E from 'wangeditor'
 
   export default defineComponent({
     name: 'AdminEbook',
@@ -177,6 +194,9 @@
           page:1,
           size:pagination.value.pageSize
         });
+
+
+
       });
 
       // 编辑表单
@@ -185,14 +205,27 @@
       const ebook=ref();
       const modalVisible = ref<boolean>(false);
       const modalLoading = ref<boolean>(false);
+      const isdoc = ref(false);
+      const editor = new E('#content');
+
+
 
       //编辑电子书内容
       const myeditContent = (record: any) => {
         // 表单可见
+        isdoc.value = true;
+        setTimeout(function () {
+          editor.create();
+        })
 
         // 拷贝电子书内容 进行展示
-
+        // todo
       };
+      const handleDocModalOk = () => {
+        isdoc.value = false;
+        //编辑内容
+      };
+
 
       const myedit = (record: any) => {
         modalVisible.value = true;
@@ -350,6 +383,8 @@
         mydelete,
         handleModalOk,
         ebook,
+        myeditContent,
+        handleDocModalOk,
 
         param,
         searchpara,
@@ -357,6 +392,7 @@
         categoryIds,
         level1,
         getCategoryName,
+        isdoc
 
       }
     }
