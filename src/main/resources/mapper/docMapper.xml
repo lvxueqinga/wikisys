@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<mapper namespace="com.tailai.mywiki.dao.DocMapper">
+    <select id="searchDoc" resultType="com.alibaba.fastjson.JSONObject" >
+        select * from doc
+        WHERE ebookid = #{ebookid}
+    </select>
+
+    <update id="editDoc" parameterType="com.tailai.mywiki.model.Doc">
+        UPDATE doc
+        SET
+        content = #{content}
+        WHERE ebookid = #{ebookid}
+    </update>
+
+
+
+
+
+
+</mapper>

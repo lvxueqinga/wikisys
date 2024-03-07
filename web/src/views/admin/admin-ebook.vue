@@ -47,6 +47,7 @@
         <template v-slot:action="{ text, record }">
           <a-space size="small">
             <a-button type="primary" @click="myedit(record)">编辑</a-button>
+            <a-button type="primary" @click="myeditContent(record)">编辑内容</a-button>
 
             <a-popconfirm
                     title="是否删除"
@@ -184,6 +185,15 @@
       const ebook=ref();
       const modalVisible = ref<boolean>(false);
       const modalLoading = ref<boolean>(false);
+
+      //编辑电子书内容
+      const myeditContent = (record: any) => {
+        // 表单可见
+
+        // 拷贝电子书内容 进行展示
+
+      };
+
       const myedit = (record: any) => {
         modalVisible.value = true;
         ebook.value=Tool.copy(record);
@@ -316,7 +326,7 @@
       const  getCategoryName=(cid: any) =>{
 
         categorys.forEach((item: any)=> {
-          if (Number(item.id) === Number(cid)){
+          if (item.id == cid){
             result = item.name;
           }
         });

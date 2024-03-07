@@ -6,7 +6,7 @@ prd：https://modao.cc/proto/design/pb2lrj6fxcaatyu3v
 数据库创建
 CREATE SCHEMA `wikisys` DEFAULT CHARACTER SET utf8mb4 ;
 表结构
-##### book表
+##### book 电子书列表
 CREATE TABLE `wikisys`.`book` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `name` VARCHAR(100) NULL,
@@ -16,7 +16,7 @@ CREATE TABLE `wikisys`.`book` (
  增加一条数据
  INSERT INTO `wikisys`.`book` (`id`, `name`, `category`, `pic`) VALUES ('1', '测试', '计算机', '/image/cover2.png');
 
-##### category表
+##### category 分类表
 CREATE TABLE `wikisys`.`category` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `parent` INT NOT NULL DEFAULT 0 COMMENT '父id',
@@ -31,6 +31,17 @@ CREATE TABLE `wikisys`.`category` (
  INSERT INTO `wikisys`.`category` (`id`, `parent`, `name`, `sort`) VALUES ('5', '4', '黑盒测试', '5');
  INSERT INTO `wikisys`.`category` (`id`, `parent`, `name`, `sort`) VALUES ('6', '4', '白盒测试', '6');
  INSERT INTO `wikisys`.`category` (`id`, `parent`, `name`, `sort`) VALUES ('7', '4', '性能测试', '7');
+
+##### 电子书内容doc表
+CREATE TABLE `wikisys`.`doc` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `ebookid` INT NULL COMMENT '电子书id',
+  `name` VARCHAR(45) NULL COMMENT '名称',
+  `view_count` INT NULL DEFAULT 0 COMMENT '阅读数',
+  `content` VARCHAR(45) NULL COMMENT '内容',
+  PRIMARY KEY (`id`));
+
+
 
 
 前端

@@ -6,7 +6,7 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
 /**
- * book表结构
+ * category表结构
  *
  * @program：mywiki
  * @author: lvxueqing
