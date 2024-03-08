@@ -53,3 +53,5 @@ Step3 安装Vue CLI
 sudo npm install -g @vue/cli@4.5.9
 Step4 集成ant-design-vue
 npm install ant-design-vue@2.0.0-rc.3 --save
+集成富文本编辑器 wangeditor
+npm i wangeditor@4.6.3 --save

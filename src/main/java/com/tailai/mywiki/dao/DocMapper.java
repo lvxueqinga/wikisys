@@ -14,10 +14,12 @@ import java.util.List;
 @Repository
 public interface DocMapper {
     //查询内容
-    List<JSONObject> searchDoc(Doc doc);
+    String searchDoc(Doc doc);
 
     //编辑内容
     int editDoc(Doc doc);
+
+
 
 
 }

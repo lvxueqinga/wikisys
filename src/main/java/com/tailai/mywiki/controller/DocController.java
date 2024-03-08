@@ -26,8 +26,7 @@ public class DocController {
 
     @PostMapping("/content")
     @ApiOperation(value = "查询内容",httpMethod = "POST")
-    public PageResp<JSONObject> search(@Valid @RequestBody Doc doc){
-        System.out.println(doc.getEbookid());
+    public String search(@Valid @RequestBody Doc doc){
         return  docService.searchDoc(doc);
     }
 

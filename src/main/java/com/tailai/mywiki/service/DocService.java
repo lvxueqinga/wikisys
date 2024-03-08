@@ -14,7 +14,8 @@ import javax.validation.Valid;
 public interface DocService {
 
     //查询内容
-    PageResp<JSONObject> searchDoc(@Valid Doc doc);
+    String searchDoc(@Valid Doc doc);
+
 
     //编辑
     PageResp<JSONObject> editDoc(Doc doc);

@@ -28,19 +28,12 @@ public class DocServiceImpl implements DocService {
     private DocMapper docMapper;
 
     @Override
-    public PageResp<JSONObject> searchDoc(Doc doc) {
+    public String searchDoc(Doc doc) {
 
 
-        List<JSONObject> ans = docMapper.searchDoc(doc);
+        String ans = docMapper.searchDoc(doc);
 
-        PageInfo<JSONObject> pageInfo = new PageInfo<>(ans);
-        LOG.info("总行数 {}",pageInfo.getTotal());
-
-        PageResp<JSONObject> pageResp = new PageResp<>();
-        pageResp.setTotal(pageInfo.getTotal());
-        pageResp.setList(ans);
-
-        return pageResp;
+        return ans;
     }
 
     @Override
@@ -58,6 +51,8 @@ public class DocServiceImpl implements DocService {
 
         return pageResp;
     }
+
+
 
 
 }

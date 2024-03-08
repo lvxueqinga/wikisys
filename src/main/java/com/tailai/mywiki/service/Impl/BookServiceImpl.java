@@ -5,7 +5,9 @@ import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.tailai.mywiki.config.MywikiApplication;
 import com.tailai.mywiki.dao.BookMapper;
+import com.tailai.mywiki.dao.DocMapper;
 import com.tailai.mywiki.model.Book;
+import com.tailai.mywiki.model.Doc;
 import com.tailai.mywiki.req.BookReq;
 import com.tailai.mywiki.resp.PageResp;
 import com.tailai.mywiki.service.BookService;
@@ -30,6 +32,7 @@ public class BookServiceImpl implements BookService {
 
     @Autowired
     private BookMapper bookMapper;
+
 
     @Override
     public PageResp<JSONObject> searchBook(BookReq req) {
@@ -74,6 +77,7 @@ public class BookServiceImpl implements BookService {
              pageResp.setSuccess(false);
          }else {
              pageResp.setSuccess(true);
+
          }
 
          return pageResp;

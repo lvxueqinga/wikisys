@@ -5,17 +5,27 @@
 
 
 <mapper namespace="com.tailai.mywiki.dao.DocMapper">
-    <select id="searchDoc" resultType="com.alibaba.fastjson.JSONObject" >
-        select * from doc
+    <select id="searchDoc" resultType="String" >
+        select content from doc
         WHERE ebookid = #{ebookid}
     </select>
 
-    <update id="editDoc" parameterType="com.tailai.mywiki.model.Doc">
-        UPDATE doc
-        SET
-        content = #{content}
-        WHERE ebookid = #{ebookid}
-    </update>
+    <insert id="editDoc" parameterType="com.tailai.mywiki.model.Doc">
+        insert into doc (ebookid, content)
+        VALUES (
+                #{ebookid}, #{content}
+               )
+        ON DUPLICATE KEY UPDATE
+                         content=VALUES(content)
+    </insert>
+
+<!--    <update id="editDoc" parameterType="com.tailai.mywiki.model.Doc">-->
+<!--        UPDATE doc-->
+<!--        SET-->
+<!--        content = #{content}-->
+<!--        WHERE ebookid = #{ebookid}-->
+<!--            ON DUPLICATE KEY UPDATE-->
+<!--    </update>-->
 
 
 
