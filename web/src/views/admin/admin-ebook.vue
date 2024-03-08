@@ -41,8 +41,7 @@
           <img v-if="pic" :src="pic" alt="avatar" />
         </template>
         <template v-slot:category="{text, record}">
-<!--          {{text.category}}-->
-<!--          {{record}}}-->
+
           {{ getCategoryName(record.category)}}
         </template>
         <template v-slot:action="{ text, record }">
@@ -61,9 +60,20 @@
                 删除
               </a-button>
             </a-popconfirm>
-
-
           </a-space>
+
+          <a-modal
+              v-model:visible="isdoc"
+              title="电子书编辑内容"
+              :confirm-loading="modalLoading"
+              @ok="handleDocModalOk(record)"
+              :width="1150">
+
+            <div id="content" :style="{ width: '1100px' }"></div>
+
+          </a-modal>
+
+
         </template>
       </a-table>
     </a-layout-content>
@@ -91,19 +101,6 @@
 
       </a-form-item>
     </a-form>
-
-  </a-modal>
-
-  <a-modal
-          v-model:visible="isdoc"
-          title="电子书编辑内容"
-          :confirm-loading="modalLoading"
-          @ok="handleDocModalOk"
-  >
-
-    <div id="content"></div>
-
-
 
   </a-modal>
 
@@ -206,8 +203,7 @@
       const modalVisible = ref<boolean>(false);
       const modalLoading = ref<boolean>(false);
       const isdoc = ref(false);
-      const editor = new E('#content');
-
+      const  editor = new E('#content');
 
 
       //编辑电子书内容
@@ -215,15 +211,51 @@
         // 表单可见
         isdoc.value = true;
         setTimeout(function () {
+
+          // if(editor){
+          //   editor.destroy();
+          //
+          // }
+          //
           editor.create();
+
         })
 
-        // 拷贝电子书内容 进行展示
-        // todo
+
+        // 调接口取 电子书内容
+        axios.post("http://localhost:8888/doc/content", {"ebookid":record.id}).then((response) => {
+          const mycontent = response.data;
+          console.log("response.data   ",response.data)
+          if(mycontent == null || mycontent==""){
+            editor.txt.html(" ");
+          }else {
+            editor.txt.html(mycontent);
+          }
+
+
+        });
+
       };
-      const handleDocModalOk = () => {
-        isdoc.value = false;
-        //编辑内容
+      const handleDocModalOk = (record: any) => {
+        //编辑保存内容
+        let content =editor.txt.html();
+        axios.post("http://localhost:8888/doc/edit", {"ebookid":record.id,"content":content}).then((response) => {
+          const data = response.data;
+          if (data.success){
+            //成功后：
+            isdoc.value = false;
+            handleQuery({
+              page:1,
+              size:pagination.value.pageSize
+            });
+            // editor.destroy();
+
+          }else {
+            message.error(data.message);
+          }
+
+
+        });
       };
 
 
