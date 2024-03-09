@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<mapper namespace="com.tailai.mywiki.dao.alarm.ScopeMapper">
+    <select id="searchScope" resultType="com.alibaba.fastjson.JSONObject" >
+        select * from scope
+    </select>
+
+
+
+    <select id="searchScopepara" resultType="com.alibaba.fastjson.JSONObject" >
+        select * from scope where 1=1
+        <if test="scope_name != null">
+            AND scope_name like CONCAT('%', TRIM(#{scope_name}), '%')
+        </if>
+        <if test="brand != null">
+            AND brand like CONCAT('%', TRIM(#{brand}), '%')
+        </if>
+        <if test="is_monitor != null">
+            AND is_monitor=#{is_monitor}
+        </if>
+        <if test="is_alarm != null">
+            AND is_alarm=#{is_alarm}
+        </if>
+    </select>
+
+
+
+
+</mapper>
