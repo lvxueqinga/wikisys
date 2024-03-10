@@ -1,0 +1,1212 @@
+2024-03-09 19:27:52.659 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 6.1.6.Final
+2024-03-09 19:27:52.677 INFO  com.tailai.mywiki.config.MywikiApplication        :55   [32m                  [0;39m Starting MywikiApplication using Java 1.8.0_402 on tailaideMBP with PID 62756 (/Users/tailai/Desktop/wikisys/target/classes started by tailai in /Users/tailai/Desktop/wikisys)
+2024-03-09 19:27:52.678 INFO  com.tailai.mywiki.config.MywikiApplication        :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2024-03-09 19:27:52.738 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-03-09 19:27:52.739 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-03-09 19:27:54.072 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8888 (http)
+2024-03-09 19:27:54.082 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8888"]
+2024-03-09 19:27:54.083 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2024-03-09 19:27:54.084 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2024-03-09 19:27:54.155 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2024-03-09 19:27:54.156 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1416 ms
+2024-03-09 19:27:54.958 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2024-03-09 19:27:55.006 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2024-03-09 19:27:55.196 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8888"]
+2024-03-09 19:27:55.226 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8888 (http) with context path ''
+2024-03-09 19:27:55.227 INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper:120  [32m                  [0;39m Context refreshed
+2024-03-09 19:27:55.242 INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper:123  [32m                  [0;39m Found 1 custom documentation plugin(s)
+2024-03-09 19:27:55.251 INFO  s.d.spring.web.scanners.ApiListingReferenceScanner:41   [32m                  [0;39m Scanning for api listing references
+2024-03-09 19:27:55.479 INFO  s.d.s.w.r.operation.CachingOperationNameGenerator :40   [32m                  [0;39m Generating unique operation named: addUsingPOST_1
+2024-03-09 19:27:55.482 INFO  s.d.s.w.r.operation.CachingOperationNameGenerator :40   [32m                  [0;39m Generating unique operation named: delUsingPOST_1
+2024-03-09 19:27:55.485 INFO  s.d.s.w.r.operation.CachingOperationNameGenerator :40   [32m                  [0;39m Generating unique operation named: searchUsingPOST_1
+2024-03-09 19:27:55.487 INFO  s.d.s.w.r.operation.CachingOperationNameGenerator :40   [32m                  [0;39m Generating unique operation named: searchUsingGET_1
+2024-03-09 19:27:55.490 INFO  s.d.s.w.r.operation.CachingOperationNameGenerator :40   [32m                  [0;39m Generating unique operation named: searchparaUsingGET_1
+2024-03-09 19:27:55.498 INFO  s.d.s.w.r.operation.CachingOperationNameGenerator :40   [32m                  [0;39m Generating unique operation named: searchUsingPOST_2
+2024-03-09 19:27:55.500 INFO  s.d.s.w.r.operation.CachingOperationNameGenerator :40   [32m                  [0;39m Generating unique operation named: searchUsingGET_2
+2024-03-09 19:27:55.504 ERROR s.d.s.readers.operation.OperationHttpMethodReader :52   [32m                  [0;39m Invalid http method: PostValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@788082a4]
+java.lang.IllegalArgumentException: No enum constant org.springframework.web.bind.annotation.RequestMethod.Post
+	at java.lang.Enum.valueOf(Enum.java:238)
+	at org.springframework.web.bind.annotation.RequestMethod.valueOf(RequestMethod.java:35)
+	at springfox.documentation.swagger.readers.operation.OperationHttpMethodReader.apply(OperationHttpMethodReader.java:49)
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsManager.operation(DocumentationPluginsManager.java:123)
+	at springfox.documentation.spring.web.readers.operation.ApiOperationReader.read(ApiOperationReader.java:73)
+	at springfox.documentation.spring.web.scanners.CachingOperationReader$1.load(CachingOperationReader.java:50)
+	at springfox.documentation.spring.web.scanners.CachingOperationReader$1.load(CachingOperationReader.java:48)
+	at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3527)
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2319)
+	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2282)
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2197)
+	at com.google.common.cache.LocalCache.get(LocalCache.java:3937)
+	at com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:3941)
+	at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:4824)
+	at com.google.common.cache.LocalCache$LocalLoadingCache.getUnchecked(LocalCache.java:4830)
+	at springfox.documentation.spring.web.scanners.CachingOperationReader.read(CachingOperationReader.java:57)
+	at springfox.documentation.spring.web.scanners.ApiDescriptionReader.read(ApiDescriptionReader.java:66)
+	at springfox.documentation.spring.web.scanners.ApiListingScanner.scan(ApiListingScanner.java:89)
+	at springfox.documentation.spring.web.scanners.ApiDocumentationScanner.scan(ApiDocumentationScanner.java:70)
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.scanDocumentation(DocumentationPluginsBootstrapper.java:85)
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:127)
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178)
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:54)
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356)
+	at java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155)
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:942)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:591)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:767)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326)
+	at com.tailai.mywiki.config.MywikiApplication.main(MywikiApplication.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+2024-03-09 19:27:55.506 INFO  s.d.s.w.r.operation.CachingOperationNameGenerator :40   [32m                  [0;39m Generating unique operation named: searchparaUsingPOST_1
+2024-03-09 19:27:55.509 INFO  s.d.s.w.r.operation.CachingOperationNameGenerator :40   [32m                  [0;39m Generating unique operation named: helloUsingGET_1
+2024-03-09 19:27:55.510 INFO  s.d.s.w.r.operation.CachingOperationNameGenerator :40   [32m                  [0;39m Generating unique operation named: helloUsingGET_2
+2024-03-09 19:27:55.511 INFO  s.d.s.w.r.operation.CachingOperationNameGenerator :40   [32m                  [0;39m Generating unique operation named: helloUsingGET_3
+2024-03-09 19:27:55.512 INFO  s.d.s.w.r.operation.CachingOperationNameGenerator :40   [32m                  [0;39m Generating unique operation named: helloUsingGET_4
+2024-03-09 19:27:55.513 INFO  s.d.s.w.r.operation.CachingOperationNameGenerator :40   [32m                  [0;39m Generating unique operation named: helloUsingGET_5
+2024-03-09 19:27:55.513 INFO  s.d.s.w.r.operation.CachingOperationNameGenerator :40   [32m                  [0;39m Generating unique operation named: helloUsingGET_6
+2024-03-09 19:27:55.514 INFO  s.d.s.w.r.operation.CachingOperationNameGenerator :40   [32m                  [0;39m Generating unique operation named: helloUsingGET_7
+2024-03-09 19:27:55.534 INFO  com.tailai.mywiki.config.MywikiApplication        :61   [32m                  [0;39m Started MywikiApplication in 3.308 seconds (JVM running for 4.189)
+2024-03-09 19:27:55.537 INFO  com.tailai.mywiki.config.MywikiApplication        :24   [32m                  [0;39m 启动成功！！
+2024-03-09 19:27:55.538 INFO  com.tailai.mywiki.config.MywikiApplication        :25   [32m                  [0;39m 地址: 	http://127.0.0.1:8888
+2024-03-09 19:31:05.393 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-09 19:31:05.398 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2024-03-09 19:31:05.622 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 224 ms
+2024-03-09 19:31:05.721 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2024-03-09 19:31:05.721 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2024-03-09 19:31:05.727 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :24   [32m                  [0;39m 请求地址: http://localhost:8888/category/search GET
+2024-03-09 19:31:05.727 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :24   [32m                  [0;39m 请求地址: http://localhost:8888/book/search GET
+2024-03-09 19:31:05.728 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :25   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-03-09 19:31:05.728 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :25   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-03-09 19:31:05.897 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
+2024-03-09 19:31:06.686 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
+2024-03-09 19:31:06.707 DEBUG c.tailai.mywiki.dao.CategoryMapper.searchCategory :137  [32m                  [0;39m ==>  Preparing: select * from category
+2024-03-09 19:31:06.872 DEBUG c.tailai.mywiki.dao.CategoryMapper.searchCategory :137  [32m                  [0;39m ==> Parameters: 
+2024-03-09 19:31:06.931 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM book
+2024-03-09 19:31:06.932 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2024-03-09 19:31:06.983 TRACE c.tailai.mywiki.dao.CategoryMapper.searchCategory :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2024-03-09 19:31:06.983 TRACE com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2024-03-09 19:31:06.983 TRACE com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :143  [32m                  [0;39m <==        Row: 6
+2024-03-09 19:31:06.984 TRACE c.tailai.mywiki.dao.CategoryMapper.searchCategory :143  [32m                  [0;39m <==        Row: 1, 0, 前端开发, 1
+2024-03-09 19:31:07.001 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :137  [32m                  [0;39m <==      Total: 1
+2024-03-09 19:31:07.007 TRACE c.tailai.mywiki.dao.CategoryMapper.searchCategory :143  [32m                  [0;39m <==        Row: 2, 1, Vue, 2
+2024-03-09 19:31:07.008 TRACE c.tailai.mywiki.dao.CategoryMapper.searchCategory :143  [32m                  [0;39m <==        Row: 3, 1, html, 3
+2024-03-09 19:31:07.009 TRACE c.tailai.mywiki.dao.CategoryMapper.searchCategory :143  [32m                  [0;39m <==        Row: 4, 0, 测试, 4
+2024-03-09 19:31:07.011 TRACE c.tailai.mywiki.dao.CategoryMapper.searchCategory :143  [32m                  [0;39m <==        Row: 5, 4, 黑盒测试, 5
+2024-03-09 19:31:07.011 TRACE c.tailai.mywiki.dao.CategoryMapper.searchCategory :143  [32m                  [0;39m <==        Row: 6, 4, 白盒测试, 6
+2024-03-09 19:31:07.013 TRACE c.tailai.mywiki.dao.CategoryMapper.searchCategory :143  [32m                  [0;39m <==        Row: 7, 4, 性能测试, 8
+2024-03-09 19:31:07.014 TRACE c.tailai.mywiki.dao.CategoryMapper.searchCategory :143  [32m                  [0;39m <==        Row: 8, 4, 自动化测试, 8
+2024-03-09 19:31:07.014 TRACE c.tailai.mywiki.dao.CategoryMapper.searchCategory :143  [32m                  [0;39m <==        Row: 12, 0, 后端开发, 5
+2024-03-09 19:31:07.015 DEBUG c.tailai.mywiki.dao.CategoryMapper.searchCategory :137  [32m                  [0;39m <==      Total: 9
+2024-03-09 19:31:07.027 INFO  com.tailai.mywiki.config.MywikiApplication        :40   [32m                  [0;39m 总行数 9
+2024-03-09 19:31:07.034 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook       :137  [32m                  [0;39m ==>  Preparing: select * from book LIMIT ?
+2024-03-09 19:31:07.035 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook       :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2024-03-09 19:31:07.050 TRACE com.tailai.mywiki.dao.BookMapper.searchBook       :143  [32m                  [0;39m <==    Columns: id, name, category, pic
+2024-03-09 19:31:07.051 TRACE com.tailai.mywiki.dao.BookMapper.searchBook       :143  [32m                  [0;39m <==        Row: 1, 1, 2, /image/cover1.png
+2024-03-09 19:31:07.052 TRACE com.tailai.mywiki.dao.BookMapper.searchBook       :143  [32m                  [0;39m <==        Row: 2, 2, null, /image/cover1.png
+2024-03-09 19:31:07.054 TRACE com.tailai.mywiki.dao.BookMapper.searchBook       :143  [32m                  [0;39m <==        Row: 3, 测试, 4, /image/cover2.png
+2024-03-09 19:31:07.055 TRACE com.tailai.mywiki.dao.BookMapper.searchBook       :143  [32m                  [0;39m <==        Row: 4, 5, 5, 5
+2024-03-09 19:31:07.056 TRACE com.tailai.mywiki.dao.BookMapper.searchBook       :143  [32m                  [0;39m <==        Row: 5, new一个电子书, 3, 无
+2024-03-09 19:31:07.057 TRACE com.tailai.mywiki.dao.BookMapper.searchBook       :143  [32m                  [0;39m <==        Row: 6, 1234er5tytre, 6, null
+2024-03-09 19:31:07.057 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook       :137  [32m                  [0;39m <==      Total: 6
+2024-03-09 19:31:07.058 INFO  com.tailai.mywiki.config.MywikiApplication        :44   [32m                  [0;39m 总行数 6
+2024-03-09 19:31:07.058 INFO  com.tailai.mywiki.config.MywikiApplication        :45   [32m                  [0;39m 总页数 1
+2024-03-09 19:31:07.275 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：1547 ms -------------
+2024-03-09 19:31:07.275 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：1547 ms -------------
+2024-03-09 19:53:33.193 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2024-03-09 19:53:33.193 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2024-03-09 19:53:33.218 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :24   [32m                  [0;39m 请求地址: http://localhost:8888/book/search GET
+2024-03-09 19:53:33.218 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :24   [32m                  [0;39m 请求地址: http://localhost:8888/category/search GET
+2024-03-09 19:53:33.219 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :25   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-03-09 19:53:33.219 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :25   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-03-09 19:53:33.260 DEBUG c.tailai.mywiki.dao.CategoryMapper.searchCategory :137  [32m                  [0;39m ==>  Preparing: select * from category
+2024-03-09 19:53:33.268 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM book
+2024-03-09 19:53:33.270 DEBUG c.tailai.mywiki.dao.CategoryMapper.searchCategory :137  [32m                  [0;39m ==> Parameters: 
+2024-03-09 19:53:33.270 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2024-03-09 19:53:33.361 TRACE com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2024-03-09 19:53:33.361 TRACE c.tailai.mywiki.dao.CategoryMapper.searchCategory :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2024-03-09 19:53:33.362 TRACE c.tailai.mywiki.dao.CategoryMapper.searchCategory :143  [32m                  [0;39m <==        Row: 1, 0, 前端开发, 1
+2024-03-09 19:53:33.362 TRACE com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :143  [32m                  [0;39m <==        Row: 6
+2024-03-09 19:53:33.364 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :137  [32m                  [0;39m <==      Total: 1
+2024-03-09 19:53:33.366 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook       :137  [32m                  [0;39m ==>  Preparing: select * from book LIMIT ?
+2024-03-09 19:53:33.367 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook       :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2024-03-09 19:53:33.372 TRACE com.tailai.mywiki.dao.BookMapper.searchBook       :143  [32m                  [0;39m <==    Columns: id, name, category, pic
+2024-03-09 19:53:33.373 TRACE com.tailai.mywiki.dao.BookMapper.searchBook       :143  [32m                  [0;39m <==        Row: 1, 1, 2, /image/cover1.png
+2024-03-09 19:53:33.390 TRACE com.tailai.mywiki.dao.BookMapper.searchBook       :143  [32m                  [0;39m <==        Row: 2, 2, null, /image/cover1.png
+2024-03-09 19:53:33.390 TRACE c.tailai.mywiki.dao.CategoryMapper.searchCategory :143  [32m                  [0;39m <==        Row: 2, 1, Vue, 2
+2024-03-09 19:53:33.391 TRACE c.tailai.mywiki.dao.CategoryMapper.searchCategory :143  [32m                  [0;39m <==        Row: 3, 1, html, 3
+2024-03-09 19:53:33.391 TRACE com.tailai.mywiki.dao.BookMapper.searchBook       :143  [32m                  [0;39m <==        Row: 3, 测试, 4, /image/cover2.png
+2024-03-09 19:53:33.392 TRACE c.tailai.mywiki.dao.CategoryMapper.searchCategory :143  [32m                  [0;39m <==        Row: 4, 0, 测试, 4
+2024-03-09 19:53:33.392 TRACE com.tailai.mywiki.dao.BookMapper.searchBook       :143  [32m                  [0;39m <==        Row: 4, 5, 5, 5
+2024-03-09 19:53:33.392 TRACE c.tailai.mywiki.dao.CategoryMapper.searchCategory :143  [32m                  [0;39m <==        Row: 5, 4, 黑盒测试, 5
+2024-03-09 19:53:33.392 TRACE com.tailai.mywiki.dao.BookMapper.searchBook       :143  [32m                  [0;39m <==        Row: 5, new一个电子书, 3, 无
+2024-03-09 19:53:33.392 TRACE c.tailai.mywiki.dao.CategoryMapper.searchCategory :143  [32m                  [0;39m <==        Row: 6, 4, 白盒测试, 6
+2024-03-09 19:53:33.392 TRACE com.tailai.mywiki.dao.BookMapper.searchBook       :143  [32m                  [0;39m <==        Row: 6, 1234er5tytre, 6, null
+2024-03-09 19:53:33.393 TRACE c.tailai.mywiki.dao.CategoryMapper.searchCategory :143  [32m                  [0;39m <==        Row: 7, 4, 性能测试, 8
+2024-03-09 19:53:33.393 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook       :137  [32m                  [0;39m <==      Total: 6
+2024-03-09 19:53:33.394 TRACE c.tailai.mywiki.dao.CategoryMapper.searchCategory :143  [32m                  [0;39m <==        Row: 8, 4, 自动化测试, 8
+2024-03-09 19:53:33.394 INFO  com.tailai.mywiki.config.MywikiApplication        :44   [32m                  [0;39m 总行数 6
+2024-03-09 19:53:33.394 TRACE c.tailai.mywiki.dao.CategoryMapper.searchCategory :143  [32m                  [0;39m <==        Row: 12, 0, 后端开发, 5
+2024-03-09 19:53:33.394 INFO  com.tailai.mywiki.config.MywikiApplication        :45   [32m                  [0;39m 总页数 1
+2024-03-09 19:53:33.394 DEBUG c.tailai.mywiki.dao.CategoryMapper.searchCategory :137  [32m                  [0;39m <==      Total: 9
+2024-03-09 19:53:33.395 INFO  com.tailai.mywiki.config.MywikiApplication        :40   [32m                  [0;39m 总行数 9
+2024-03-09 19:53:33.405 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：186 ms -------------
+2024-03-09 19:53:33.406 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：187 ms -------------
+2024-03-09 20:03:32.254 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2024-03-09 20:03:32.254 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2024-03-09 20:03:32.275 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :24   [32m                  [0;39m 请求地址: http://localhost:8888/book/search GET
+2024-03-09 20:03:32.275 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :24   [32m                  [0;39m 请求地址: http://localhost:8888/category/search GET
+2024-03-09 20:03:32.276 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :25   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-03-09 20:03:32.276 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :25   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-03-09 20:03:32.294 DEBUG c.tailai.mywiki.dao.CategoryMapper.searchCategory :137  [32m                  [0;39m ==>  Preparing: select * from category
+2024-03-09 20:03:32.300 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM book
+2024-03-09 20:03:32.300 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2024-03-09 20:03:32.300 DEBUG c.tailai.mywiki.dao.CategoryMapper.searchCategory :137  [32m                  [0;39m ==> Parameters: 
+2024-03-09 20:03:32.345 TRACE c.tailai.mywiki.dao.CategoryMapper.searchCategory :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2024-03-09 20:03:32.345 TRACE com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2024-03-09 20:03:32.346 TRACE com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :143  [32m                  [0;39m <==        Row: 6
+2024-03-09 20:03:32.346 TRACE c.tailai.mywiki.dao.CategoryMapper.searchCategory :143  [32m                  [0;39m <==        Row: 1, 0, 前端开发, 1
+2024-03-09 20:03:32.348 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook_COUNT :137  [32m                  [0;39m <==      Total: 1
+2024-03-09 20:03:32.349 TRACE c.tailai.mywiki.dao.CategoryMapper.searchCategory :143  [32m                  [0;39m <==        Row: 2, 1, Vue, 2
+2024-03-09 20:03:32.352 TRACE c.tailai.mywiki.dao.CategoryMapper.searchCategory :143  [32m                  [0;39m <==        Row: 3, 1, html, 3
+2024-03-09 20:03:32.353 TRACE c.tailai.mywiki.dao.CategoryMapper.searchCategory :143  [32m                  [0;39m <==        Row: 4, 0, 测试, 4
+2024-03-09 20:03:32.352 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook       :137  [32m                  [0;39m ==>  Preparing: select * from book LIMIT ?
+2024-03-09 20:03:32.354 TRACE c.tailai.mywiki.dao.CategoryMapper.searchCategory :143  [32m                  [0;39m <==        Row: 5, 4, 黑盒测试, 5
+2024-03-09 20:03:32.355 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook       :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2024-03-09 20:03:32.355 TRACE c.tailai.mywiki.dao.CategoryMapper.searchCategory :143  [32m                  [0;39m <==        Row: 6, 4, 白盒测试, 6
+2024-03-09 20:03:32.356 TRACE c.tailai.mywiki.dao.CategoryMapper.searchCategory :143  [32m                  [0;39m <==        Row: 7, 4, 性能测试, 8
+2024-03-09 20:03:32.356 TRACE c.tailai.mywiki.dao.CategoryMapper.searchCategory :143  [32m                  [0;39m <==        Row: 8, 4, 自动化测试, 8
+2024-03-09 20:03:32.358 TRACE c.tailai.mywiki.dao.CategoryMapper.searchCategory :143  [32m                  [0;39m <==        Row: 12, 0, 后端开发, 5
+2024-03-09 20:03:32.359 DEBUG c.tailai.mywiki.dao.CategoryMapper.searchCategory :137  [32m                  [0;39m <==      Total: 9
+2024-03-09 20:03:32.360 INFO  com.tailai.mywiki.config.MywikiApplication        :40   [32m                  [0;39m 总行数 9
+2024-03-09 20:03:32.361 TRACE com.tailai.mywiki.dao.BookMapper.searchBook       :143  [32m                  [0;39m <==    Columns: id, name, category, pic
+2024-03-09 20:03:32.362 TRACE com.tailai.mywiki.dao.BookMapper.searchBook       :143  [32m                  [0;39m <==        Row: 1, 1, 2, /image/cover1.png
+2024-03-09 20:03:32.363 TRACE com.tailai.mywiki.dao.BookMapper.searchBook       :143  [32m                  [0;39m <==        Row: 2, 2, null, /image/cover1.png
+2024-03-09 20:03:32.364 TRACE com.tailai.mywiki.dao.BookMapper.searchBook       :143  [32m                  [0;39m <==        Row: 3, 测试, 4, /image/cover2.png
+2024-03-09 20:03:32.365 TRACE com.tailai.mywiki.dao.BookMapper.searchBook       :143  [32m                  [0;39m <==        Row: 4, 5, 5, 5
+2024-03-09 20:03:32.365 TRACE com.tailai.mywiki.dao.BookMapper.searchBook       :143  [32m                  [0;39m <==        Row: 5, new一个电子书, 3, 无
+2024-03-09 20:03:32.366 TRACE com.tailai.mywiki.dao.BookMapper.searchBook       :143  [32m                  [0;39m <==        Row: 6, 1234er5tytre, 6, null
+2024-03-09 20:03:32.366 DEBUG com.tailai.mywiki.dao.BookMapper.searchBook       :137  [32m                  [0;39m <==      Total: 6
+2024-03-09 20:03:32.367 INFO  com.tailai.mywiki.config.MywikiApplication        :44   [32m                  [0;39m 总行数 6
+2024-03-09 20:03:32.367 INFO  com.tailai.mywiki.config.MywikiApplication        :45   [32m                  [0;39m 总页数 1
+2024-03-09 20:03:32.370 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：94 ms -------------
+2024-03-09 20:03:32.370 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：94 ms -------------
+2024-03-09 20:15:31.515 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2024-03-09 20:15:31.528 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :24   [32m                  [0;39m 请求地址: http://localhost:8888/scope/search GET
+2024-03-09 20:15:31.529 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :25   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-03-09 20:15:31.711 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM scope
+2024-03-09 20:15:31.713 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:137  [32m                  [0;39m ==> Parameters: 
+2024-03-09 20:15:31.737 TRACE c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2024-03-09 20:15:31.738 TRACE c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:143  [32m                  [0;39m <==        Row: 5
+2024-03-09 20:15:31.739 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:137  [32m                  [0;39m <==      Total: 1
+2024-03-09 20:15:31.742 DEBUG c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :137  [32m                  [0;39m ==>  Preparing: select * from scope LIMIT ?
+2024-03-09 20:15:31.743 DEBUG c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :137  [32m                  [0;39m ==> Parameters: 20(Integer)
+2024-03-09 20:15:31.745 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==    Columns: scope_id, scope_name, brand, is_monitor, is_alarm
+2024-03-09 20:15:31.745 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100001, 良品铺子20店, 良品铺子, 1, 0
+2024-03-09 20:15:31.749 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100002, 良品铺子40店, 良品铺子, 0, 0
+2024-03-09 20:15:31.751 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100003, 良品铺子36店, 良品铺子, 1, 1
+2024-03-09 20:15:31.751 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100004, 良品铺子01店, 良品铺子, 1, 1
+2024-03-09 20:15:31.752 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100005, 良品铺子30店, 良品铺子, 1, 1
+2024-03-09 20:15:31.752 DEBUG c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :137  [32m                  [0;39m <==      Total: 5
+2024-03-09 20:15:31.753 INFO  com.tailai.mywiki.config.MywikiApplication        :36   [32m                  [0;39m 总行数 5
+2024-03-09 20:15:31.754 INFO  com.tailai.mywiki.config.MywikiApplication        :37   [32m                  [0;39m 总页数 1
+2024-03-09 20:15:31.765 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：235 ms -------------
+2024-03-09 20:20:45.524 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2024-03-09 20:20:45.533 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :24   [32m                  [0;39m 请求地址: http://localhost:8888/scope/search GET
+2024-03-09 20:20:45.534 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :25   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-03-09 20:20:45.567 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM scope
+2024-03-09 20:20:45.578 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:137  [32m                  [0;39m ==> Parameters: 
+2024-03-09 20:20:45.610 TRACE c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2024-03-09 20:20:45.613 TRACE c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:143  [32m                  [0;39m <==        Row: 5
+2024-03-09 20:20:45.616 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:137  [32m                  [0;39m <==      Total: 1
+2024-03-09 20:20:45.618 DEBUG c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :137  [32m                  [0;39m ==>  Preparing: select * from scope LIMIT ?
+2024-03-09 20:20:45.619 DEBUG c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2024-03-09 20:20:45.623 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==    Columns: scope_id, scope_name, brand, is_monitor, is_alarm
+2024-03-09 20:20:45.624 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100001, 良品铺子20店, 良品铺子, 1, 0
+2024-03-09 20:20:45.627 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100002, 良品铺子40店, 良品铺子, 0, 0
+2024-03-09 20:20:45.629 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100003, 良品铺子36店, 良品铺子, 1, 1
+2024-03-09 20:20:45.647 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100004, 良品铺子01店, 良品铺子, 1, 1
+2024-03-09 20:20:45.649 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100005, 良品铺子30店, 良品铺子, 1, 1
+2024-03-09 20:20:45.650 DEBUG c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :137  [32m                  [0;39m <==      Total: 5
+2024-03-09 20:20:45.651 INFO  com.tailai.mywiki.config.MywikiApplication        :36   [32m                  [0;39m 总行数 5
+2024-03-09 20:20:45.652 INFO  com.tailai.mywiki.config.MywikiApplication        :37   [32m                  [0;39m 总页数 1
+2024-03-09 20:20:45.688 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：153 ms -------------
+2024-03-09 20:21:38.550 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2024-03-09 20:21:38.564 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :24   [32m                  [0;39m 请求地址: http://localhost:8888/scope/search GET
+2024-03-09 20:21:38.564 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :25   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-03-09 20:21:38.602 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM scope
+2024-03-09 20:21:38.608 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:137  [32m                  [0;39m ==> Parameters: 
+2024-03-09 20:21:38.639 TRACE c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2024-03-09 20:21:38.666 TRACE c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:143  [32m                  [0;39m <==        Row: 5
+2024-03-09 20:21:38.669 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:137  [32m                  [0;39m <==      Total: 1
+2024-03-09 20:21:38.680 DEBUG c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :137  [32m                  [0;39m ==>  Preparing: select * from scope LIMIT ?
+2024-03-09 20:21:38.681 DEBUG c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2024-03-09 20:21:38.683 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==    Columns: scope_id, scope_name, brand, is_monitor, is_alarm
+2024-03-09 20:21:38.684 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100001, 良品铺子20店, 良品铺子, 1, 0
+2024-03-09 20:21:38.692 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100002, 良品铺子40店, 良品铺子, 0, 0
+2024-03-09 20:21:38.695 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100003, 良品铺子36店, 良品铺子, 1, 1
+2024-03-09 20:21:38.696 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100004, 良品铺子01店, 良品铺子, 1, 1
+2024-03-09 20:21:38.697 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100005, 良品铺子30店, 良品铺子, 1, 1
+2024-03-09 20:21:38.700 DEBUG c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :137  [32m                  [0;39m <==      Total: 5
+2024-03-09 20:21:38.703 INFO  com.tailai.mywiki.config.MywikiApplication        :36   [32m                  [0;39m 总行数 5
+2024-03-09 20:21:38.703 INFO  com.tailai.mywiki.config.MywikiApplication        :37   [32m                  [0;39m 总页数 1
+2024-03-09 20:21:38.719 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：154 ms -------------
+2024-03-09 20:23:24.749 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2024-03-09 20:23:24.765 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :24   [32m                  [0;39m 请求地址: http://localhost:8888/scope/search GET
+2024-03-09 20:23:24.766 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :25   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-03-09 20:23:24.798 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM scope
+2024-03-09 20:23:24.825 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:137  [32m                  [0;39m ==> Parameters: 
+2024-03-09 20:23:24.855 TRACE c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2024-03-09 20:23:24.856 TRACE c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:143  [32m                  [0;39m <==        Row: 5
+2024-03-09 20:23:24.858 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:137  [32m                  [0;39m <==      Total: 1
+2024-03-09 20:23:24.880 DEBUG c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :137  [32m                  [0;39m ==>  Preparing: select * from scope LIMIT ?
+2024-03-09 20:23:24.885 DEBUG c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2024-03-09 20:23:24.902 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==    Columns: scope_id, scope_name, brand, is_monitor, is_alarm
+2024-03-09 20:23:24.905 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100001, 良品铺子20店, 良品铺子, 1, 0
+2024-03-09 20:23:24.909 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100002, 良品铺子40店, 良品铺子, 0, 0
+2024-03-09 20:23:24.912 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100003, 良品铺子36店, 良品铺子, 1, 1
+2024-03-09 20:23:24.914 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100004, 良品铺子01店, 良品铺子, 1, 1
+2024-03-09 20:23:24.916 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100005, 良品铺子30店, 良品铺子, 1, 1
+2024-03-09 20:23:24.918 DEBUG c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :137  [32m                  [0;39m <==      Total: 5
+2024-03-09 20:23:24.927 INFO  com.tailai.mywiki.config.MywikiApplication        :36   [32m                  [0;39m 总行数 5
+2024-03-09 20:23:24.927 INFO  com.tailai.mywiki.config.MywikiApplication        :37   [32m                  [0;39m 总页数 1
+2024-03-09 20:23:24.938 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：170 ms -------------
+2024-03-09 20:24:46.044 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2024-03-09 20:24:46.052 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :24   [32m                  [0;39m 请求地址: http://localhost:8888/scope/search GET
+2024-03-09 20:24:46.052 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :25   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-03-09 20:24:46.107 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM scope
+2024-03-09 20:24:46.120 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:137  [32m                  [0;39m ==> Parameters: 
+2024-03-09 20:24:46.170 TRACE c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2024-03-09 20:24:46.173 TRACE c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:143  [32m                  [0;39m <==        Row: 5
+2024-03-09 20:24:46.175 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:137  [32m                  [0;39m <==      Total: 1
+2024-03-09 20:24:46.179 DEBUG c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :137  [32m                  [0;39m ==>  Preparing: select * from scope LIMIT ?
+2024-03-09 20:24:46.180 DEBUG c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2024-03-09 20:24:46.191 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==    Columns: scope_id, scope_name, brand, is_monitor, is_alarm
+2024-03-09 20:24:46.192 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100001, 良品铺子20店, 良品铺子, 1, 0
+2024-03-09 20:24:46.193 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100002, 良品铺子40店, 良品铺子, 0, 0
+2024-03-09 20:24:46.193 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100003, 良品铺子36店, 良品铺子, 1, 1
+2024-03-09 20:24:46.195 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100004, 良品铺子01店, 良品铺子, 1, 1
+2024-03-09 20:24:46.195 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100005, 良品铺子30店, 良品铺子, 1, 1
+2024-03-09 20:24:46.196 DEBUG c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :137  [32m                  [0;39m <==      Total: 5
+2024-03-09 20:24:46.196 INFO  com.tailai.mywiki.config.MywikiApplication        :36   [32m                  [0;39m 总行数 5
+2024-03-09 20:24:46.196 INFO  com.tailai.mywiki.config.MywikiApplication        :37   [32m                  [0;39m 总页数 1
+2024-03-09 20:24:46.203 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：150 ms -------------
+2024-03-09 20:26:43.100 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2024-03-09 20:26:43.106 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :24   [32m                  [0;39m 请求地址: http://localhost:8888/scope/search GET
+2024-03-09 20:26:43.106 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :25   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-03-09 20:26:43.181 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM scope
+2024-03-09 20:26:43.197 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:137  [32m                  [0;39m ==> Parameters: 
+2024-03-09 20:26:43.211 TRACE c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2024-03-09 20:26:43.213 TRACE c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:143  [32m                  [0;39m <==        Row: 5
+2024-03-09 20:26:43.214 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:137  [32m                  [0;39m <==      Total: 1
+2024-03-09 20:26:43.218 DEBUG c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :137  [32m                  [0;39m ==>  Preparing: select * from scope LIMIT ?
+2024-03-09 20:26:43.219 DEBUG c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2024-03-09 20:26:43.223 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==    Columns: scope_id, scope_name, brand, is_monitor, is_alarm
+2024-03-09 20:26:43.224 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100001, 良品铺子20店, 良品铺子, 1, 0
+2024-03-09 20:26:43.225 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100002, 良品铺子40店, 良品铺子, 0, 0
+2024-03-09 20:26:43.227 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100003, 良品铺子36店, 良品铺子, 1, 1
+2024-03-09 20:26:43.228 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100004, 良品铺子01店, 良品铺子, 1, 1
+2024-03-09 20:26:43.228 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100005, 良品铺子30店, 良品铺子, 1, 1
+2024-03-09 20:26:43.229 DEBUG c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :137  [32m                  [0;39m <==      Total: 5
+2024-03-09 20:26:43.230 INFO  com.tailai.mywiki.config.MywikiApplication        :36   [32m                  [0;39m 总行数 5
+2024-03-09 20:26:43.230 INFO  com.tailai.mywiki.config.MywikiApplication        :37   [32m                  [0;39m 总页数 1
+2024-03-09 20:26:43.239 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：132 ms -------------
+2024-03-09 20:26:49.159 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2024-03-09 20:26:49.161 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :24   [32m                  [0;39m 请求地址: http://localhost:8888/scope/search GET
+2024-03-09 20:26:49.161 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :25   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-03-09 20:26:49.164 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM scope
+2024-03-09 20:26:49.166 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:137  [32m                  [0;39m ==> Parameters: 
+2024-03-09 20:26:49.176 TRACE c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2024-03-09 20:26:49.182 TRACE c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:143  [32m                  [0;39m <==        Row: 5
+2024-03-09 20:26:49.183 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:137  [32m                  [0;39m <==      Total: 1
+2024-03-09 20:26:49.187 DEBUG c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :137  [32m                  [0;39m ==>  Preparing: select * from scope LIMIT ?
+2024-03-09 20:26:49.190 DEBUG c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2024-03-09 20:26:49.193 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==    Columns: scope_id, scope_name, brand, is_monitor, is_alarm
+2024-03-09 20:26:49.194 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100001, 良品铺子20店, 良品铺子, 1, 0
+2024-03-09 20:26:49.196 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100002, 良品铺子40店, 良品铺子, 0, 0
+2024-03-09 20:26:49.196 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100003, 良品铺子36店, 良品铺子, 1, 1
+2024-03-09 20:26:49.198 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100004, 良品铺子01店, 良品铺子, 1, 1
+2024-03-09 20:26:49.199 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100005, 良品铺子30店, 良品铺子, 1, 1
+2024-03-09 20:26:49.200 DEBUG c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :137  [32m                  [0;39m <==      Total: 5
+2024-03-09 20:26:49.201 INFO  com.tailai.mywiki.config.MywikiApplication        :36   [32m                  [0;39m 总行数 5
+2024-03-09 20:26:49.202 INFO  com.tailai.mywiki.config.MywikiApplication        :37   [32m                  [0;39m 总页数 1
+2024-03-09 20:26:49.206 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：44 ms -------------
+2024-03-09 20:29:15.372 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2024-03-09 20:29:15.381 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :24   [32m                  [0;39m 请求地址: http://localhost:8888/scope/search GET
+2024-03-09 20:29:15.381 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :25   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-03-09 20:29:15.422 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM scope
+2024-03-09 20:29:15.425 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:137  [32m                  [0;39m ==> Parameters: 
+2024-03-09 20:29:15.436 TRACE c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2024-03-09 20:29:15.437 TRACE c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:143  [32m                  [0;39m <==        Row: 5
+2024-03-09 20:29:15.439 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:137  [32m                  [0;39m <==      Total: 1
+2024-03-09 20:29:15.441 DEBUG c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :137  [32m                  [0;39m ==>  Preparing: select * from scope LIMIT ?
+2024-03-09 20:29:15.442 DEBUG c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2024-03-09 20:29:15.445 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==    Columns: scope_id, scope_name, brand, is_monitor, is_alarm
+2024-03-09 20:29:15.447 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100001, 良品铺子20店, 良品铺子, 1, 0
+2024-03-09 20:29:15.449 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100002, 良品铺子40店, 良品铺子, 0, 0
+2024-03-09 20:29:15.450 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100003, 良品铺子36店, 良品铺子, 1, 1
+2024-03-09 20:29:15.451 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100004, 良品铺子01店, 良品铺子, 1, 1
+2024-03-09 20:29:15.456 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100005, 良品铺子30店, 良品铺子, 1, 1
+2024-03-09 20:29:15.463 DEBUG c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :137  [32m                  [0;39m <==      Total: 5
+2024-03-09 20:29:15.465 INFO  com.tailai.mywiki.config.MywikiApplication        :36   [32m                  [0;39m 总行数 5
+2024-03-09 20:29:15.465 INFO  com.tailai.mywiki.config.MywikiApplication        :37   [32m                  [0;39m 总页数 1
+2024-03-09 20:29:15.479 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：97 ms -------------
+2024-03-09 20:29:31.680 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2024-03-09 20:29:31.681 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :24   [32m                  [0;39m 请求地址: http://localhost:8888/scope/search GET
+2024-03-09 20:29:31.683 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :25   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-03-09 20:29:31.686 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM scope
+2024-03-09 20:29:31.687 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:137  [32m                  [0;39m ==> Parameters: 
+2024-03-09 20:29:31.695 TRACE c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2024-03-09 20:29:31.697 TRACE c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:143  [32m                  [0;39m <==        Row: 5
+2024-03-09 20:29:31.698 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:137  [32m                  [0;39m <==      Total: 1
+2024-03-09 20:29:31.700 DEBUG c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :137  [32m                  [0;39m ==>  Preparing: select * from scope LIMIT ?
+2024-03-09 20:29:31.702 DEBUG c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2024-03-09 20:29:31.708 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==    Columns: scope_id, scope_name, brand, is_monitor, is_alarm
+2024-03-09 20:29:31.709 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100001, 良品铺子20店, 良品铺子, 1, 0
+2024-03-09 20:29:31.710 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100002, 良品铺子40店, 良品铺子, 0, 0
+2024-03-09 20:29:31.711 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100003, 良品铺子36店, 良品铺子, 1, 1
+2024-03-09 20:29:31.711 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100004, 良品铺子01店, 良品铺子, 1, 1
+2024-03-09 20:29:31.712 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100005, 良品铺子30店, 良品铺子, 1, 1
+2024-03-09 20:29:31.714 DEBUG c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :137  [32m                  [0;39m <==      Total: 5
+2024-03-09 20:29:31.715 INFO  com.tailai.mywiki.config.MywikiApplication        :36   [32m                  [0;39m 总行数 5
+2024-03-09 20:29:31.715 INFO  com.tailai.mywiki.config.MywikiApplication        :37   [32m                  [0;39m 总页数 1
+2024-03-09 20:29:31.722 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：36 ms -------------
+2024-03-09 20:35:14.892 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2024-03-09 20:35:14.938 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :24   [32m                  [0;39m 请求地址: http://localhost:8888/scope/search GET
+2024-03-09 20:35:14.940 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :25   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-03-09 20:35:15.054 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM scope
+2024-03-09 20:35:15.057 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:137  [32m                  [0;39m ==> Parameters: 
+2024-03-09 20:35:15.085 TRACE c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2024-03-09 20:35:15.086 TRACE c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:143  [32m                  [0;39m <==        Row: 5
+2024-03-09 20:35:15.089 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:137  [32m                  [0;39m <==      Total: 1
+2024-03-09 20:35:15.093 DEBUG c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :137  [32m                  [0;39m ==>  Preparing: select * from scope LIMIT ?
+2024-03-09 20:35:15.094 DEBUG c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2024-03-09 20:35:15.096 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==    Columns: scope_id, scope_name, brand, is_monitor, is_alarm
+2024-03-09 20:35:15.097 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100001, 良品铺子20店, 良品铺子, 1, 0
+2024-03-09 20:35:15.098 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100002, 良品铺子40店, 良品铺子, 0, 0
+2024-03-09 20:35:15.098 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100003, 良品铺子36店, 良品铺子, 1, 1
+2024-03-09 20:35:15.099 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100004, 良品铺子01店, 良品铺子, 1, 1
+2024-03-09 20:35:15.099 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100005, 良品铺子30店, 良品铺子, 1, 1
+2024-03-09 20:35:15.100 DEBUG c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :137  [32m                  [0;39m <==      Total: 5
+2024-03-09 20:35:15.102 INFO  com.tailai.mywiki.config.MywikiApplication        :36   [32m                  [0;39m 总行数 5
+2024-03-09 20:35:15.103 INFO  com.tailai.mywiki.config.MywikiApplication        :37   [32m                  [0;39m 总页数 1
+2024-03-09 20:35:15.119 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：178 ms -------------
+2024-03-09 20:35:15.124 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2024-03-09 20:35:15.126 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :24   [32m                  [0;39m 请求地址: http://localhost:8888/scope/search GET
+2024-03-09 20:35:15.126 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :25   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-03-09 20:35:15.129 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM scope
+2024-03-09 20:35:15.130 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:137  [32m                  [0;39m ==> Parameters: 
+2024-03-09 20:35:15.138 TRACE c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2024-03-09 20:35:15.139 TRACE c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:143  [32m                  [0;39m <==        Row: 5
+2024-03-09 20:35:15.140 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:137  [32m                  [0;39m <==      Total: 1
+2024-03-09 20:35:15.141 DEBUG c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :137  [32m                  [0;39m ==>  Preparing: select * from scope LIMIT ?
+2024-03-09 20:35:15.142 DEBUG c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2024-03-09 20:35:15.147 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==    Columns: scope_id, scope_name, brand, is_monitor, is_alarm
+2024-03-09 20:35:15.152 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100001, 良品铺子20店, 良品铺子, 1, 0
+2024-03-09 20:35:15.158 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100002, 良品铺子40店, 良品铺子, 0, 0
+2024-03-09 20:35:15.159 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100003, 良品铺子36店, 良品铺子, 1, 1
+2024-03-09 20:35:15.160 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100004, 良品铺子01店, 良品铺子, 1, 1
+2024-03-09 20:35:15.161 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100005, 良品铺子30店, 良品铺子, 1, 1
+2024-03-09 20:35:15.161 DEBUG c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :137  [32m                  [0;39m <==      Total: 5
+2024-03-09 20:35:15.165 INFO  com.tailai.mywiki.config.MywikiApplication        :36   [32m                  [0;39m 总行数 5
+2024-03-09 20:35:15.165 INFO  com.tailai.mywiki.config.MywikiApplication        :37   [32m                  [0;39m 总页数 1
+2024-03-09 20:35:15.168 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：42 ms -------------
+2024-03-09 20:36:58.822 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2024-03-09 20:36:58.833 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :24   [32m                  [0;39m 请求地址: http://localhost:8888/scope/search GET
+2024-03-09 20:36:58.833 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :25   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-03-09 20:36:58.865 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM scope
+2024-03-09 20:36:58.871 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:137  [32m                  [0;39m ==> Parameters: 
+2024-03-09 20:36:58.889 TRACE c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2024-03-09 20:36:58.891 TRACE c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:143  [32m                  [0;39m <==        Row: 5
+2024-03-09 20:36:58.893 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:137  [32m                  [0;39m <==      Total: 1
+2024-03-09 20:36:58.895 DEBUG c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :137  [32m                  [0;39m ==>  Preparing: select * from scope LIMIT ?
+2024-03-09 20:36:58.897 DEBUG c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2024-03-09 20:36:58.901 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==    Columns: scope_id, scope_name, brand, is_monitor, is_alarm
+2024-03-09 20:36:58.902 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100001, 良品铺子20店, 良品铺子, 1, 0
+2024-03-09 20:36:58.906 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100002, 良品铺子40店, 良品铺子, 0, 0
+2024-03-09 20:36:58.907 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100003, 良品铺子36店, 良品铺子, 1, 1
+2024-03-09 20:36:58.908 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100004, 良品铺子01店, 良品铺子, 1, 1
+2024-03-09 20:36:58.909 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100005, 良品铺子30店, 良品铺子, 1, 1
+2024-03-09 20:36:58.910 DEBUG c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :137  [32m                  [0;39m <==      Total: 5
+2024-03-09 20:36:58.911 INFO  com.tailai.mywiki.config.MywikiApplication        :36   [32m                  [0;39m 总行数 5
+2024-03-09 20:36:58.912 INFO  com.tailai.mywiki.config.MywikiApplication        :37   [32m                  [0;39m 总页数 1
+2024-03-09 20:36:59.008 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：174 ms -------------
+2024-03-09 20:36:59.023 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2024-03-09 20:36:59.023 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :24   [32m                  [0;39m 请求地址: http://localhost:8888/scope/search GET
+2024-03-09 20:36:59.023 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :25   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-03-09 20:36:59.040 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM scope
+2024-03-09 20:36:59.041 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:137  [32m                  [0;39m ==> Parameters: 
+2024-03-09 20:36:59.048 TRACE c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2024-03-09 20:36:59.049 TRACE c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:143  [32m                  [0;39m <==        Row: 5
+2024-03-09 20:36:59.054 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:137  [32m                  [0;39m <==      Total: 1
+2024-03-09 20:36:59.056 DEBUG c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :137  [32m                  [0;39m ==>  Preparing: select * from scope LIMIT ?
+2024-03-09 20:36:59.062 DEBUG c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2024-03-09 20:36:59.065 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==    Columns: scope_id, scope_name, brand, is_monitor, is_alarm
+2024-03-09 20:36:59.066 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100001, 良品铺子20店, 良品铺子, 1, 0
+2024-03-09 20:36:59.068 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100002, 良品铺子40店, 良品铺子, 0, 0
+2024-03-09 20:36:59.068 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100003, 良品铺子36店, 良品铺子, 1, 1
+2024-03-09 20:36:59.070 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100004, 良品铺子01店, 良品铺子, 1, 1
+2024-03-09 20:36:59.070 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100005, 良品铺子30店, 良品铺子, 1, 1
+2024-03-09 20:36:59.070 DEBUG c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :137  [32m                  [0;39m <==      Total: 5
+2024-03-09 20:36:59.071 INFO  com.tailai.mywiki.config.MywikiApplication        :36   [32m                  [0;39m 总行数 5
+2024-03-09 20:36:59.072 INFO  com.tailai.mywiki.config.MywikiApplication        :37   [32m                  [0;39m 总页数 1
+2024-03-09 20:36:59.077 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：53 ms -------------
+2024-03-09 20:36:59.085 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2024-03-09 20:36:59.088 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :24   [32m                  [0;39m 请求地址: http://localhost:8888/scope/search GET
+2024-03-09 20:36:59.090 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :25   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-03-09 20:36:59.097 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM scope
+2024-03-09 20:36:59.099 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:137  [32m                  [0;39m ==> Parameters: 
+2024-03-09 20:36:59.104 TRACE c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2024-03-09 20:36:59.104 TRACE c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:143  [32m                  [0;39m <==        Row: 5
+2024-03-09 20:36:59.106 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:137  [32m                  [0;39m <==      Total: 1
+2024-03-09 20:36:59.107 DEBUG c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :137  [32m                  [0;39m ==>  Preparing: select * from scope LIMIT ?
+2024-03-09 20:36:59.110 DEBUG c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2024-03-09 20:36:59.113 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==    Columns: scope_id, scope_name, brand, is_monitor, is_alarm
+2024-03-09 20:36:59.114 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100001, 良品铺子20店, 良品铺子, 1, 0
+2024-03-09 20:36:59.115 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100002, 良品铺子40店, 良品铺子, 0, 0
+2024-03-09 20:36:59.117 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100003, 良品铺子36店, 良品铺子, 1, 1
+2024-03-09 20:36:59.117 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100004, 良品铺子01店, 良品铺子, 1, 1
+2024-03-09 20:36:59.119 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100005, 良品铺子30店, 良品铺子, 1, 1
+2024-03-09 20:36:59.121 DEBUG c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :137  [32m                  [0;39m <==      Total: 5
+2024-03-09 20:36:59.122 INFO  com.tailai.mywiki.config.MywikiApplication        :36   [32m                  [0;39m 总行数 5
+2024-03-09 20:36:59.123 INFO  com.tailai.mywiki.config.MywikiApplication        :37   [32m                  [0;39m 总页数 1
+2024-03-09 20:36:59.125 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：34 ms -------------
+2024-03-09 20:37:28.970 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2024-03-09 20:37:28.974 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :24   [32m                  [0;39m 请求地址: http://localhost:8888/scope/search GET
+2024-03-09 20:37:28.975 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :25   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-03-09 20:37:28.986 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM scope
+2024-03-09 20:37:28.992 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:137  [32m                  [0;39m ==> Parameters: 
+2024-03-09 20:37:29.005 TRACE c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2024-03-09 20:37:29.005 TRACE c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:143  [32m                  [0;39m <==        Row: 5
+2024-03-09 20:37:29.006 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:137  [32m                  [0;39m <==      Total: 1
+2024-03-09 20:37:29.011 DEBUG c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :137  [32m                  [0;39m ==>  Preparing: select * from scope LIMIT ?
+2024-03-09 20:37:29.014 DEBUG c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2024-03-09 20:37:29.023 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==    Columns: scope_id, scope_name, brand, is_monitor, is_alarm
+2024-03-09 20:37:29.027 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100001, 良品铺子20店, 良品铺子, 1, 0
+2024-03-09 20:37:29.028 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100002, 良品铺子40店, 良品铺子, 0, 0
+2024-03-09 20:37:29.028 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100003, 良品铺子36店, 良品铺子, 1, 1
+2024-03-09 20:37:29.031 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100004, 良品铺子01店, 良品铺子, 1, 1
+2024-03-09 20:37:29.033 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100005, 良品铺子30店, 良品铺子, 1, 1
+2024-03-09 20:37:29.034 DEBUG c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :137  [32m                  [0;39m <==      Total: 5
+2024-03-09 20:37:29.040 INFO  com.tailai.mywiki.config.MywikiApplication        :36   [32m                  [0;39m 总行数 5
+2024-03-09 20:37:29.041 INFO  com.tailai.mywiki.config.MywikiApplication        :37   [32m                  [0;39m 总页数 1
+2024-03-09 20:37:29.042 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：66 ms -------------
+2024-03-09 20:38:23.971 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2024-03-09 20:38:23.993 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :24   [32m                  [0;39m 请求地址: http://localhost:8888/scope/search GET
+2024-03-09 20:38:23.994 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :25   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-03-09 20:38:24.126 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM scope
+2024-03-09 20:38:24.130 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:137  [32m                  [0;39m ==> Parameters: 
+2024-03-09 20:38:24.153 TRACE c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2024-03-09 20:38:24.154 TRACE c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:143  [32m                  [0;39m <==        Row: 5
+2024-03-09 20:38:24.156 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:137  [32m                  [0;39m <==      Total: 1
+2024-03-09 20:38:24.171 DEBUG c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :137  [32m                  [0;39m ==>  Preparing: select * from scope LIMIT ?
+2024-03-09 20:38:24.173 DEBUG c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2024-03-09 20:38:24.176 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==    Columns: scope_id, scope_name, brand, is_monitor, is_alarm
+2024-03-09 20:38:24.177 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100001, 良品铺子20店, 良品铺子, 1, 0
+2024-03-09 20:38:24.179 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100002, 良品铺子40店, 良品铺子, 0, 0
+2024-03-09 20:38:24.180 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100003, 良品铺子36店, 良品铺子, 1, 1
+2024-03-09 20:38:24.181 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100004, 良品铺子01店, 良品铺子, 1, 1
+2024-03-09 20:38:24.181 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100005, 良品铺子30店, 良品铺子, 1, 1
+2024-03-09 20:38:24.182 DEBUG c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :137  [32m                  [0;39m <==      Total: 5
+2024-03-09 20:38:24.183 INFO  com.tailai.mywiki.config.MywikiApplication        :36   [32m                  [0;39m 总行数 5
+2024-03-09 20:38:24.184 INFO  com.tailai.mywiki.config.MywikiApplication        :37   [32m                  [0;39m 总页数 1
+2024-03-09 20:38:24.192 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：196 ms -------------
+2024-03-09 20:38:29.658 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2024-03-09 20:38:29.659 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :24   [32m                  [0;39m 请求地址: http://localhost:8888/scope/search GET
+2024-03-09 20:38:29.664 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :25   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-03-09 20:38:29.697 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM scope
+2024-03-09 20:38:29.701 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:137  [32m                  [0;39m ==> Parameters: 
+2024-03-09 20:38:29.726 TRACE c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2024-03-09 20:38:29.726 TRACE c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:143  [32m                  [0;39m <==        Row: 5
+2024-03-09 20:38:29.733 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:137  [32m                  [0;39m <==      Total: 1
+2024-03-09 20:38:29.734 DEBUG c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :137  [32m                  [0;39m ==>  Preparing: select * from scope LIMIT ?
+2024-03-09 20:38:29.734 DEBUG c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2024-03-09 20:38:29.741 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==    Columns: scope_id, scope_name, brand, is_monitor, is_alarm
+2024-03-09 20:38:29.742 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100001, 良品铺子20店, 良品铺子, 1, 0
+2024-03-09 20:38:29.746 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100002, 良品铺子40店, 良品铺子, 0, 0
+2024-03-09 20:38:29.746 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100003, 良品铺子36店, 良品铺子, 1, 1
+2024-03-09 20:38:29.747 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100004, 良品铺子01店, 良品铺子, 1, 1
+2024-03-09 20:38:29.748 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100005, 良品铺子30店, 良品铺子, 1, 1
+2024-03-09 20:38:29.751 DEBUG c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :137  [32m                  [0;39m <==      Total: 5
+2024-03-09 20:38:29.769 INFO  com.tailai.mywiki.config.MywikiApplication        :36   [32m                  [0;39m 总行数 5
+2024-03-09 20:38:29.772 INFO  com.tailai.mywiki.config.MywikiApplication        :37   [32m                  [0;39m 总页数 1
+2024-03-09 20:38:29.774 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：107 ms -------------
+2024-03-09 20:38:32.456 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2024-03-09 20:38:32.457 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :24   [32m                  [0;39m 请求地址: http://localhost:8888/scope/search GET
+2024-03-09 20:38:32.458 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :25   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-03-09 20:38:32.468 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM scope
+2024-03-09 20:38:32.478 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:137  [32m                  [0;39m ==> Parameters: 
+2024-03-09 20:38:32.490 TRACE c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2024-03-09 20:38:32.491 TRACE c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:143  [32m                  [0;39m <==        Row: 5
+2024-03-09 20:38:32.491 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:137  [32m                  [0;39m <==      Total: 1
+2024-03-09 20:38:32.493 DEBUG c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :137  [32m                  [0;39m ==>  Preparing: select * from scope LIMIT ?
+2024-03-09 20:38:32.494 DEBUG c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2024-03-09 20:38:32.497 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==    Columns: scope_id, scope_name, brand, is_monitor, is_alarm
+2024-03-09 20:38:32.498 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100001, 良品铺子20店, 良品铺子, 1, 0
+2024-03-09 20:38:32.498 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100002, 良品铺子40店, 良品铺子, 0, 0
+2024-03-09 20:38:32.499 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100003, 良品铺子36店, 良品铺子, 1, 1
+2024-03-09 20:38:32.501 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100004, 良品铺子01店, 良品铺子, 1, 1
+2024-03-09 20:38:32.502 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100005, 良品铺子30店, 良品铺子, 1, 1
+2024-03-09 20:38:32.505 DEBUG c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :137  [32m                  [0;39m <==      Total: 5
+2024-03-09 20:38:32.506 INFO  com.tailai.mywiki.config.MywikiApplication        :36   [32m                  [0;39m 总行数 5
+2024-03-09 20:38:32.506 INFO  com.tailai.mywiki.config.MywikiApplication        :37   [32m                  [0;39m 总页数 1
+2024-03-09 20:38:32.508 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：49 ms -------------
+2024-03-09 20:41:11.351 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2024-03-09 20:41:11.358 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :24   [32m                  [0;39m 请求地址: http://localhost:8888/scope/search GET
+2024-03-09 20:41:11.358 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :25   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-03-09 20:41:11.435 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM scope
+2024-03-09 20:41:11.451 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:137  [32m                  [0;39m ==> Parameters: 
+2024-03-09 20:41:11.492 TRACE c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2024-03-09 20:41:11.495 TRACE c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:143  [32m                  [0;39m <==        Row: 5
+2024-03-09 20:41:11.499 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:137  [32m                  [0;39m <==      Total: 1
+2024-03-09 20:41:11.501 DEBUG c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :137  [32m                  [0;39m ==>  Preparing: select * from scope LIMIT ?
+2024-03-09 20:41:11.504 DEBUG c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2024-03-09 20:41:11.515 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==    Columns: scope_id, scope_name, brand, is_monitor, is_alarm
+2024-03-09 20:41:11.516 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100001, 良品铺子20店, 良品铺子, 1, 0
+2024-03-09 20:41:11.518 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100002, 良品铺子40店, 良品铺子, 0, 0
+2024-03-09 20:41:11.519 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100003, 良品铺子36店, 良品铺子, 1, 1
+2024-03-09 20:41:11.520 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100004, 良品铺子01店, 良品铺子, 1, 1
+2024-03-09 20:41:11.521 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100005, 良品铺子30店, 良品铺子, 1, 1
+2024-03-09 20:41:11.521 DEBUG c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :137  [32m                  [0;39m <==      Total: 5
+2024-03-09 20:41:11.522 INFO  com.tailai.mywiki.config.MywikiApplication        :36   [32m                  [0;39m 总行数 5
+2024-03-09 20:41:11.526 INFO  com.tailai.mywiki.config.MywikiApplication        :37   [32m                  [0;39m 总页数 1
+2024-03-09 20:41:11.541 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：182 ms -------------
+2024-03-09 20:41:18.137 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2024-03-09 20:41:18.140 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :24   [32m                  [0;39m 请求地址: http://localhost:8888/scope/search GET
+2024-03-09 20:41:18.141 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :25   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-03-09 20:41:18.164 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM scope
+2024-03-09 20:41:18.165 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:137  [32m                  [0;39m ==> Parameters: 
+2024-03-09 20:41:18.176 TRACE c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2024-03-09 20:41:18.177 TRACE c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:143  [32m                  [0;39m <==        Row: 5
+2024-03-09 20:41:18.178 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:137  [32m                  [0;39m <==      Total: 1
+2024-03-09 20:41:18.189 DEBUG c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :137  [32m                  [0;39m ==>  Preparing: select * from scope LIMIT ?
+2024-03-09 20:41:18.190 DEBUG c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2024-03-09 20:41:18.194 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==    Columns: scope_id, scope_name, brand, is_monitor, is_alarm
+2024-03-09 20:41:18.194 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100001, 良品铺子20店, 良品铺子, 1, 0
+2024-03-09 20:41:18.196 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100002, 良品铺子40店, 良品铺子, 0, 0
+2024-03-09 20:41:18.196 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100003, 良品铺子36店, 良品铺子, 1, 1
+2024-03-09 20:41:18.197 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100004, 良品铺子01店, 良品铺子, 1, 1
+2024-03-09 20:41:18.197 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100005, 良品铺子30店, 良品铺子, 1, 1
+2024-03-09 20:41:18.200 DEBUG c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :137  [32m                  [0;39m <==      Total: 5
+2024-03-09 20:41:18.201 INFO  com.tailai.mywiki.config.MywikiApplication        :36   [32m                  [0;39m 总行数 5
+2024-03-09 20:41:18.208 INFO  com.tailai.mywiki.config.MywikiApplication        :37   [32m                  [0;39m 总页数 1
+2024-03-09 20:41:18.215 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：73 ms -------------
+2024-03-09 20:41:27.673 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2024-03-09 20:41:27.674 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :24   [32m                  [0;39m 请求地址: http://localhost:8888/scope/searchpara OPTIONS
+2024-03-09 20:41:27.675 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :25   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-03-09 20:41:27.686 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：10 ms -------------
+2024-03-09 20:41:27.818 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2024-03-09 20:41:27.818 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :24   [32m                  [0;39m 请求地址: http://localhost:8888/scope/searchpara POST
+2024-03-09 20:41:27.819 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :25   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-03-09 20:41:28.287 DEBUG c.t.m.dao.alarm.ScopeMapper.searchScopepara_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM scope WHERE 1 = 1 AND scope_name LIKE CONCAT('%', TRIM(?), '%') AND brand LIKE CONCAT('%', TRIM(?), '%')
+2024-03-09 20:41:28.293 DEBUG c.t.m.dao.alarm.ScopeMapper.searchScopepara_COUNT :137  [32m                  [0;39m ==> Parameters: 20(String), (String)
+2024-03-09 20:41:28.316 TRACE c.t.m.dao.alarm.ScopeMapper.searchScopepara_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2024-03-09 20:41:28.316 TRACE c.t.m.dao.alarm.ScopeMapper.searchScopepara_COUNT :143  [32m                  [0;39m <==        Row: 1
+2024-03-09 20:41:28.317 DEBUG c.t.m.dao.alarm.ScopeMapper.searchScopepara_COUNT :137  [32m                  [0;39m <==      Total: 1
+2024-03-09 20:41:28.318 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScopepara  :137  [32m                  [0;39m ==>  Preparing: select * from scope where 1=1 AND scope_name like CONCAT('%', TRIM(?), '%') AND brand like CONCAT('%', TRIM(?), '%')
+2024-03-09 20:41:28.319 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScopepara  :137  [32m                  [0;39m ==> Parameters: 20(String), (String)
+2024-03-09 20:41:28.320 TRACE c.t.mywiki.dao.alarm.ScopeMapper.searchScopepara  :143  [32m                  [0;39m <==    Columns: scope_id, scope_name, brand, is_monitor, is_alarm
+2024-03-09 20:41:28.320 TRACE c.t.mywiki.dao.alarm.ScopeMapper.searchScopepara  :143  [32m                  [0;39m <==        Row: 100001, 良品铺子20店, 良品铺子, 1, 0
+2024-03-09 20:41:28.322 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScopepara  :137  [32m                  [0;39m <==      Total: 1
+2024-03-09 20:41:28.325 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：506 ms -------------
+2024-03-09 20:41:48.435 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2024-03-09 20:41:48.435 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :24   [32m                  [0;39m 请求地址: http://localhost:8888/scope/searchpara POST
+2024-03-09 20:41:48.436 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :25   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-03-09 20:41:48.445 DEBUG c.t.m.dao.alarm.ScopeMapper.searchScopepara_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM scope WHERE 1 = 1 AND scope_name LIKE CONCAT('%', TRIM(?), '%') AND brand LIKE CONCAT('%', TRIM(?), '%')
+2024-03-09 20:41:48.446 DEBUG c.t.m.dao.alarm.ScopeMapper.searchScopepara_COUNT :137  [32m                  [0;39m ==> Parameters: (String), 铺子(String)
+2024-03-09 20:41:48.452 TRACE c.t.m.dao.alarm.ScopeMapper.searchScopepara_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2024-03-09 20:41:48.453 TRACE c.t.m.dao.alarm.ScopeMapper.searchScopepara_COUNT :143  [32m                  [0;39m <==        Row: 5
+2024-03-09 20:41:48.454 DEBUG c.t.m.dao.alarm.ScopeMapper.searchScopepara_COUNT :137  [32m                  [0;39m <==      Total: 1
+2024-03-09 20:41:48.456 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScopepara  :137  [32m                  [0;39m ==>  Preparing: select * from scope where 1=1 AND scope_name like CONCAT('%', TRIM(?), '%') AND brand like CONCAT('%', TRIM(?), '%')
+2024-03-09 20:41:48.457 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScopepara  :137  [32m                  [0;39m ==> Parameters: (String), 铺子(String)
+2024-03-09 20:41:48.462 TRACE c.t.mywiki.dao.alarm.ScopeMapper.searchScopepara  :143  [32m                  [0;39m <==    Columns: scope_id, scope_name, brand, is_monitor, is_alarm
+2024-03-09 20:41:48.462 TRACE c.t.mywiki.dao.alarm.ScopeMapper.searchScopepara  :143  [32m                  [0;39m <==        Row: 100001, 良品铺子20店, 良品铺子, 1, 0
+2024-03-09 20:41:48.463 TRACE c.t.mywiki.dao.alarm.ScopeMapper.searchScopepara  :143  [32m                  [0;39m <==        Row: 100002, 良品铺子40店, 良品铺子, 0, 0
+2024-03-09 20:41:48.463 TRACE c.t.mywiki.dao.alarm.ScopeMapper.searchScopepara  :143  [32m                  [0;39m <==        Row: 100003, 良品铺子36店, 良品铺子, 1, 1
+2024-03-09 20:41:48.463 TRACE c.t.mywiki.dao.alarm.ScopeMapper.searchScopepara  :143  [32m                  [0;39m <==        Row: 100004, 良品铺子01店, 良品铺子, 1, 1
+2024-03-09 20:41:48.464 TRACE c.t.mywiki.dao.alarm.ScopeMapper.searchScopepara  :143  [32m                  [0;39m <==        Row: 100005, 良品铺子30店, 良品铺子, 1, 1
+2024-03-09 20:41:48.466 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScopepara  :137  [32m                  [0;39m <==      Total: 5
+2024-03-09 20:41:48.468 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：32 ms -------------
+2024-03-09 20:41:53.557 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2024-03-09 20:41:53.557 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :24   [32m                  [0;39m 请求地址: http://localhost:8888/scope/searchpara POST
+2024-03-09 20:41:53.558 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :25   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-03-09 20:41:53.608 ERROR c.t.mywiki.controller.ControllerExceptionHandler  :61   [32m                  [0;39m 系统异常：
+org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.lang.Boolean` from String "1": only "true" or "false" recognized; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `java.lang.Boolean` from String "1": only "true" or "false" recognized
+ at [Source: (PushbackInputStream); line: 1, column: 42] (through reference chain: com.tailai.mywiki.req.alarm.ScopeReq["is_monitor"])
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.readJavaType(AbstractJackson2HttpMessageConverter.java:285)
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.read(AbstractJackson2HttpMessageConverter.java:243)
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver.readWithMessageConverters(AbstractMessageConverterMethodArgumentResolver.java:205)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.readWithMessageConverters(RequestResponseBodyMethodProcessor.java:158)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:131)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:121)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:170)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:137)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:893)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:807)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1061)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:961)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `java.lang.Boolean` from String "1": only "true" or "false" recognized
+ at [Source: (PushbackInputStream); line: 1, column: 42] (through reference chain: com.tailai.mywiki.req.alarm.ScopeReq["is_monitor"])
+	at com.fasterxml.jackson.databind.exc.InvalidFormatException.from(InvalidFormatException.java:67)
+	at com.fasterxml.jackson.databind.DeserializationContext.weirdStringException(DeserializationContext.java:1702)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleWeirdStringValue(DeserializationContext.java:947)
+	at com.fasterxml.jackson.databind.deser.std.NumberDeserializers$BooleanDeserializer._parseBoolean(NumberDeserializers.java:256)
+	at com.fasterxml.jackson.databind.deser.std.NumberDeserializers$BooleanDeserializer.deserialize(NumberDeserializers.java:204)
+	at com.fasterxml.jackson.databind.deser.std.NumberDeserializers$BooleanDeserializer.deserialize(NumberDeserializers.java:180)
+	at com.fasterxml.jackson.databind.deser.impl.MethodProperty.deserializeAndSet(MethodProperty.java:129)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserializeFromObject(BeanDeserializer.java:371)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:164)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4526)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3521)
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.readJavaType(AbstractJackson2HttpMessageConverter.java:274)
+	... 51 common frames omitted
+2024-03-09 20:41:53.624 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m                  [0;39m Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.lang.Boolean` from String "1": only "true" or "false" recognized; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `java.lang.Boolean` from String "1": only "true" or "false" recognized
+ at [Source: (PushbackInputStream); line: 1, column: 42] (through reference chain: com.tailai.mywiki.req.alarm.ScopeReq["is_monitor"])]
+2024-03-09 20:42:02.526 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2024-03-09 20:42:02.527 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :24   [32m                  [0;39m 请求地址: http://localhost:8888/scope/searchpara POST
+2024-03-09 20:42:02.529 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :25   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-03-09 20:42:02.537 DEBUG c.t.m.dao.alarm.ScopeMapper.searchScopepara_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM scope WHERE 1 = 1 AND scope_name LIKE CONCAT('%', TRIM(?), '%') AND brand LIKE CONCAT('%', TRIM(?), '%') AND is_monitor = ?
+2024-03-09 20:42:02.539 DEBUG c.t.m.dao.alarm.ScopeMapper.searchScopepara_COUNT :137  [32m                  [0;39m ==> Parameters: (String), (String), true(Boolean)
+2024-03-09 20:42:02.546 TRACE c.t.m.dao.alarm.ScopeMapper.searchScopepara_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2024-03-09 20:42:02.547 TRACE c.t.m.dao.alarm.ScopeMapper.searchScopepara_COUNT :143  [32m                  [0;39m <==        Row: 4
+2024-03-09 20:42:02.547 DEBUG c.t.m.dao.alarm.ScopeMapper.searchScopepara_COUNT :137  [32m                  [0;39m <==      Total: 1
+2024-03-09 20:42:02.551 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScopepara  :137  [32m                  [0;39m ==>  Preparing: select * from scope where 1=1 AND scope_name like CONCAT('%', TRIM(?), '%') AND brand like CONCAT('%', TRIM(?), '%') AND is_monitor=?
+2024-03-09 20:42:02.553 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScopepara  :137  [32m                  [0;39m ==> Parameters: (String), (String), true(Boolean)
+2024-03-09 20:42:02.556 TRACE c.t.mywiki.dao.alarm.ScopeMapper.searchScopepara  :143  [32m                  [0;39m <==    Columns: scope_id, scope_name, brand, is_monitor, is_alarm
+2024-03-09 20:42:02.556 TRACE c.t.mywiki.dao.alarm.ScopeMapper.searchScopepara  :143  [32m                  [0;39m <==        Row: 100001, 良品铺子20店, 良品铺子, 1, 0
+2024-03-09 20:42:02.557 TRACE c.t.mywiki.dao.alarm.ScopeMapper.searchScopepara  :143  [32m                  [0;39m <==        Row: 100003, 良品铺子36店, 良品铺子, 1, 1
+2024-03-09 20:42:02.557 TRACE c.t.mywiki.dao.alarm.ScopeMapper.searchScopepara  :143  [32m                  [0;39m <==        Row: 100004, 良品铺子01店, 良品铺子, 1, 1
+2024-03-09 20:42:02.561 TRACE c.t.mywiki.dao.alarm.ScopeMapper.searchScopepara  :143  [32m                  [0;39m <==        Row: 100005, 良品铺子30店, 良品铺子, 1, 1
+2024-03-09 20:42:02.563 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScopepara  :137  [32m                  [0;39m <==      Total: 4
+2024-03-09 20:42:02.565 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：35 ms -------------
+2024-03-09 20:42:14.116 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2024-03-09 20:42:14.117 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :24   [32m                  [0;39m 请求地址: http://localhost:8888/scope/searchpara POST
+2024-03-09 20:42:14.117 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :25   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-03-09 20:42:14.128 DEBUG c.t.m.dao.alarm.ScopeMapper.searchScopepara_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM scope WHERE 1 = 1 AND scope_name LIKE CONCAT('%', TRIM(?), '%') AND brand LIKE CONCAT('%', TRIM(?), '%') AND is_monitor = ?
+2024-03-09 20:42:14.128 DEBUG c.t.m.dao.alarm.ScopeMapper.searchScopepara_COUNT :137  [32m                  [0;39m ==> Parameters: (String), (String), false(Boolean)
+2024-03-09 20:42:14.129 TRACE c.t.m.dao.alarm.ScopeMapper.searchScopepara_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2024-03-09 20:42:14.131 TRACE c.t.m.dao.alarm.ScopeMapper.searchScopepara_COUNT :143  [32m                  [0;39m <==        Row: 1
+2024-03-09 20:42:14.131 DEBUG c.t.m.dao.alarm.ScopeMapper.searchScopepara_COUNT :137  [32m                  [0;39m <==      Total: 1
+2024-03-09 20:42:14.131 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScopepara  :137  [32m                  [0;39m ==>  Preparing: select * from scope where 1=1 AND scope_name like CONCAT('%', TRIM(?), '%') AND brand like CONCAT('%', TRIM(?), '%') AND is_monitor=?
+2024-03-09 20:42:14.132 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScopepara  :137  [32m                  [0;39m ==> Parameters: (String), (String), false(Boolean)
+2024-03-09 20:42:14.135 TRACE c.t.mywiki.dao.alarm.ScopeMapper.searchScopepara  :143  [32m                  [0;39m <==    Columns: scope_id, scope_name, brand, is_monitor, is_alarm
+2024-03-09 20:42:14.135 TRACE c.t.mywiki.dao.alarm.ScopeMapper.searchScopepara  :143  [32m                  [0;39m <==        Row: 100002, 良品铺子40店, 良品铺子, 0, 0
+2024-03-09 20:42:14.139 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScopepara  :137  [32m                  [0;39m <==      Total: 1
+2024-03-09 20:42:14.141 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：24 ms -------------
+2024-03-09 20:43:54.420 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2024-03-09 20:43:54.426 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :24   [32m                  [0;39m 请求地址: http://localhost:8888/scope/search GET
+2024-03-09 20:43:54.429 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :25   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-03-09 20:43:54.461 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM scope
+2024-03-09 20:43:54.464 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:137  [32m                  [0;39m ==> Parameters: 
+2024-03-09 20:43:54.473 TRACE c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2024-03-09 20:43:54.473 TRACE c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:143  [32m                  [0;39m <==        Row: 5
+2024-03-09 20:43:54.475 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:137  [32m                  [0;39m <==      Total: 1
+2024-03-09 20:43:54.479 DEBUG c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :137  [32m                  [0;39m ==>  Preparing: select * from scope LIMIT ?
+2024-03-09 20:43:54.481 DEBUG c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2024-03-09 20:43:54.487 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==    Columns: scope_id, scope_name, brand, is_monitor, is_alarm
+2024-03-09 20:43:54.489 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100001, 良品铺子20店, 良品铺子, 1, 0
+2024-03-09 20:43:54.491 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100002, 良品铺子40店, 良品铺子, 0, 0
+2024-03-09 20:43:54.492 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100003, 良品铺子36店, 良品铺子, 1, 1
+2024-03-09 20:43:54.493 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100004, 良品铺子01店, 良品铺子, 1, 1
+2024-03-09 20:43:54.495 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100005, 良品铺子30店, 良品铺子, 1, 1
+2024-03-09 20:43:54.496 DEBUG c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :137  [32m                  [0;39m <==      Total: 5
+2024-03-09 20:43:54.497 INFO  com.tailai.mywiki.config.MywikiApplication        :36   [32m                  [0;39m 总行数 5
+2024-03-09 20:43:54.497 INFO  com.tailai.mywiki.config.MywikiApplication        :37   [32m                  [0;39m 总页数 1
+2024-03-09 20:43:54.514 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：85 ms -------------
+2024-03-09 20:43:54.525 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2024-03-09 20:43:54.525 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :24   [32m                  [0;39m 请求地址: http://localhost:8888/scope/search GET
+2024-03-09 20:43:54.525 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :25   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-03-09 20:43:54.531 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM scope
+2024-03-09 20:43:54.531 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:137  [32m                  [0;39m ==> Parameters: 
+2024-03-09 20:43:54.538 TRACE c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2024-03-09 20:43:54.539 TRACE c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:143  [32m                  [0;39m <==        Row: 5
+2024-03-09 20:43:54.539 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:137  [32m                  [0;39m <==      Total: 1
+2024-03-09 20:43:54.541 DEBUG c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :137  [32m                  [0;39m ==>  Preparing: select * from scope LIMIT ?
+2024-03-09 20:43:54.542 DEBUG c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2024-03-09 20:43:54.543 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==    Columns: scope_id, scope_name, brand, is_monitor, is_alarm
+2024-03-09 20:43:54.543 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100001, 良品铺子20店, 良品铺子, 1, 0
+2024-03-09 20:43:54.544 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100002, 良品铺子40店, 良品铺子, 0, 0
+2024-03-09 20:43:54.544 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100003, 良品铺子36店, 良品铺子, 1, 1
+2024-03-09 20:43:54.544 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100004, 良品铺子01店, 良品铺子, 1, 1
+2024-03-09 20:43:54.545 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100005, 良品铺子30店, 良品铺子, 1, 1
+2024-03-09 20:43:54.547 DEBUG c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :137  [32m                  [0;39m <==      Total: 5
+2024-03-09 20:43:54.549 INFO  com.tailai.mywiki.config.MywikiApplication        :36   [32m                  [0;39m 总行数 5
+2024-03-09 20:43:54.549 INFO  com.tailai.mywiki.config.MywikiApplication        :37   [32m                  [0;39m 总页数 1
+2024-03-09 20:43:54.551 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：25 ms -------------
+2024-03-09 20:46:27.587 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2024-03-09 20:46:27.605 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :24   [32m                  [0;39m 请求地址: http://localhost:8888/scope/search GET
+2024-03-09 20:46:27.617 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :25   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-03-09 20:46:27.654 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM scope
+2024-03-09 20:46:27.658 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:137  [32m                  [0;39m ==> Parameters: 
+2024-03-09 20:46:27.672 TRACE c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2024-03-09 20:46:27.673 TRACE c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:143  [32m                  [0;39m <==        Row: 5
+2024-03-09 20:46:27.675 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:137  [32m                  [0;39m <==      Total: 1
+2024-03-09 20:46:27.678 DEBUG c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :137  [32m                  [0;39m ==>  Preparing: select * from scope LIMIT ?
+2024-03-09 20:46:27.680 DEBUG c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2024-03-09 20:46:27.682 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==    Columns: scope_id, scope_name, brand, is_monitor, is_alarm
+2024-03-09 20:46:27.684 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100001, 良品铺子20店, 良品铺子, 1, 0
+2024-03-09 20:46:27.685 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100002, 良品铺子40店, 良品铺子, 0, 0
+2024-03-09 20:46:27.687 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100003, 良品铺子36店, 良品铺子, 1, 1
+2024-03-09 20:46:27.687 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100004, 良品铺子01店, 良品铺子, 1, 1
+2024-03-09 20:46:27.688 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100005, 良品铺子30店, 良品铺子, 1, 1
+2024-03-09 20:46:27.689 DEBUG c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :137  [32m                  [0;39m <==      Total: 5
+2024-03-09 20:46:27.691 INFO  com.tailai.mywiki.config.MywikiApplication        :36   [32m                  [0;39m 总行数 5
+2024-03-09 20:46:27.691 INFO  com.tailai.mywiki.config.MywikiApplication        :37   [32m                  [0;39m 总页数 1
+2024-03-09 20:46:27.699 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：81 ms -------------
+2024-03-09 20:50:59.309 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2024-03-09 20:50:59.314 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :24   [32m                  [0;39m 请求地址: http://localhost:8888/scope/search GET
+2024-03-09 20:50:59.314 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :25   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-03-09 20:50:59.348 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM scope
+2024-03-09 20:50:59.357 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:137  [32m                  [0;39m ==> Parameters: 
+2024-03-09 20:50:59.374 TRACE c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2024-03-09 20:50:59.375 TRACE c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:143  [32m                  [0;39m <==        Row: 5
+2024-03-09 20:50:59.376 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:137  [32m                  [0;39m <==      Total: 1
+2024-03-09 20:50:59.380 DEBUG c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :137  [32m                  [0;39m ==>  Preparing: select * from scope LIMIT ?
+2024-03-09 20:50:59.380 DEBUG c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2024-03-09 20:50:59.384 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==    Columns: scope_id, scope_name, brand, is_monitor, is_alarm
+2024-03-09 20:50:59.384 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100001, 良品铺子20店, 良品铺子, 1, 0
+2024-03-09 20:50:59.385 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100002, 良品铺子40店, 良品铺子, 0, 0
+2024-03-09 20:50:59.386 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100003, 良品铺子36店, 良品铺子, 1, 1
+2024-03-09 20:50:59.387 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100004, 良品铺子01店, 良品铺子, 1, 1
+2024-03-09 20:50:59.387 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100005, 良品铺子30店, 良品铺子, 1, 1
+2024-03-09 20:50:59.389 DEBUG c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :137  [32m                  [0;39m <==      Total: 5
+2024-03-09 20:50:59.396 INFO  com.tailai.mywiki.config.MywikiApplication        :36   [32m                  [0;39m 总行数 5
+2024-03-09 20:50:59.397 INFO  com.tailai.mywiki.config.MywikiApplication        :37   [32m                  [0;39m 总页数 1
+2024-03-09 20:50:59.455 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：141 ms -------------
+2024-03-09 20:52:49.452 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2024-03-09 20:52:49.460 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :24   [32m                  [0;39m 请求地址: http://localhost:8888/scope/search GET
+2024-03-09 20:52:49.460 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :25   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-03-09 20:52:49.507 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM scope
+2024-03-09 20:52:49.519 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:137  [32m                  [0;39m ==> Parameters: 
+2024-03-09 20:52:49.572 TRACE c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2024-03-09 20:52:49.573 TRACE c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:143  [32m                  [0;39m <==        Row: 5
+2024-03-09 20:52:49.576 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:137  [32m                  [0;39m <==      Total: 1
+2024-03-09 20:52:49.579 DEBUG c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :137  [32m                  [0;39m ==>  Preparing: select * from scope LIMIT ?
+2024-03-09 20:52:49.582 DEBUG c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2024-03-09 20:52:49.585 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==    Columns: scope_id, scope_name, brand, is_monitor, is_alarm
+2024-03-09 20:52:49.587 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100001, 良品铺子20店, 良品铺子, 1, 0
+2024-03-09 20:52:49.588 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100002, 良品铺子40店, 良品铺子, 0, 0
+2024-03-09 20:52:49.589 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100003, 良品铺子36店, 良品铺子, 1, 1
+2024-03-09 20:52:49.589 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100004, 良品铺子01店, 良品铺子, 1, 1
+2024-03-09 20:52:49.590 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100005, 良品铺子30店, 良品铺子, 1, 1
+2024-03-09 20:52:49.590 DEBUG c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :137  [32m                  [0;39m <==      Total: 5
+2024-03-09 20:52:49.591 INFO  com.tailai.mywiki.config.MywikiApplication        :36   [32m                  [0;39m 总行数 5
+2024-03-09 20:52:49.591 INFO  com.tailai.mywiki.config.MywikiApplication        :37   [32m                  [0;39m 总页数 1
+2024-03-09 20:52:49.600 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：139 ms -------------
+2024-03-09 20:55:26.008 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2024-03-09 20:55:26.013 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :24   [32m                  [0;39m 请求地址: http://localhost:8888/scope/search GET
+2024-03-09 20:55:26.014 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :25   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-03-09 20:55:26.041 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM scope
+2024-03-09 20:55:26.045 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:137  [32m                  [0;39m ==> Parameters: 
+2024-03-09 20:55:26.054 TRACE c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2024-03-09 20:55:26.055 TRACE c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:143  [32m                  [0;39m <==        Row: 5
+2024-03-09 20:55:26.060 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:137  [32m                  [0;39m <==      Total: 1
+2024-03-09 20:55:26.070 DEBUG c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :137  [32m                  [0;39m ==>  Preparing: select * from scope LIMIT ?
+2024-03-09 20:55:26.084 DEBUG c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2024-03-09 20:55:26.089 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==    Columns: scope_id, scope_name, brand, is_monitor, is_alarm
+2024-03-09 20:55:26.090 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100001, 良品铺子20店, 良品铺子, 1, 0
+2024-03-09 20:55:26.096 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100002, 良品铺子40店, 良品铺子, 0, 0
+2024-03-09 20:55:26.098 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100003, 良品铺子36店, 良品铺子, 1, 1
+2024-03-09 20:55:26.099 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100004, 良品铺子01店, 良品铺子, 1, 1
+2024-03-09 20:55:26.099 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100005, 良品铺子30店, 良品铺子, 1, 1
+2024-03-09 20:55:26.100 DEBUG c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :137  [32m                  [0;39m <==      Total: 5
+2024-03-09 20:55:26.101 INFO  com.tailai.mywiki.config.MywikiApplication        :36   [32m                  [0;39m 总行数 5
+2024-03-09 20:55:26.102 INFO  com.tailai.mywiki.config.MywikiApplication        :37   [32m                  [0;39m 总页数 1
+2024-03-09 20:55:26.111 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：94 ms -------------
+2024-03-09 20:56:04.640 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2024-03-09 20:56:04.650 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :24   [32m                  [0;39m 请求地址: http://localhost:8888/scope/search GET
+2024-03-09 20:56:04.651 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :25   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-03-09 20:56:04.717 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM scope
+2024-03-09 20:56:04.734 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:137  [32m                  [0;39m ==> Parameters: 
+2024-03-09 20:56:04.808 TRACE c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2024-03-09 20:56:04.814 TRACE c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:143  [32m                  [0;39m <==        Row: 5
+2024-03-09 20:56:04.834 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:137  [32m                  [0;39m <==      Total: 1
+2024-03-09 20:56:04.840 DEBUG c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :137  [32m                  [0;39m ==>  Preparing: select * from scope LIMIT ?
+2024-03-09 20:56:04.841 DEBUG c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2024-03-09 20:56:04.855 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==    Columns: scope_id, scope_name, brand, is_monitor, is_alarm
+2024-03-09 20:56:04.863 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100001, 良品铺子20店, 良品铺子, 1, 0
+2024-03-09 20:56:04.873 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100002, 良品铺子40店, 良品铺子, 0, 0
+2024-03-09 20:56:04.875 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100003, 良品铺子36店, 良品铺子, 1, 1
+2024-03-09 20:56:04.875 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100004, 良品铺子01店, 良品铺子, 1, 1
+2024-03-09 20:56:04.884 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100005, 良品铺子30店, 良品铺子, 1, 1
+2024-03-09 20:56:04.889 DEBUG c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :137  [32m                  [0;39m <==      Total: 5
+2024-03-09 20:56:04.905 INFO  com.tailai.mywiki.config.MywikiApplication        :36   [32m                  [0;39m 总行数 5
+2024-03-09 20:56:04.906 INFO  com.tailai.mywiki.config.MywikiApplication        :37   [32m                  [0;39m 总页数 1
+2024-03-09 20:56:04.916 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：257 ms -------------
+2024-03-09 20:58:41.705 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2024-03-09 20:58:41.710 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :24   [32m                  [0;39m 请求地址: http://localhost:8888/scope/search GET
+2024-03-09 20:58:41.713 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :25   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-03-09 20:58:41.744 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM scope
+2024-03-09 20:58:41.751 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:137  [32m                  [0;39m ==> Parameters: 
+2024-03-09 20:58:41.779 TRACE c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2024-03-09 20:58:41.782 TRACE c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:143  [32m                  [0;39m <==        Row: 5
+2024-03-09 20:58:41.787 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:137  [32m                  [0;39m <==      Total: 1
+2024-03-09 20:58:41.795 DEBUG c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :137  [32m                  [0;39m ==>  Preparing: select * from scope LIMIT ?
+2024-03-09 20:58:41.798 DEBUG c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2024-03-09 20:58:41.802 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==    Columns: scope_id, scope_name, brand, is_monitor, is_alarm
+2024-03-09 20:58:41.803 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100001, 良品铺子20店, 良品铺子, 1, 0
+2024-03-09 20:58:41.806 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100002, 良品铺子40店, 良品铺子, 0, 0
+2024-03-09 20:58:41.807 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100003, 良品铺子36店, 良品铺子, 1, 1
+2024-03-09 20:58:41.808 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100004, 良品铺子01店, 良品铺子, 1, 1
+2024-03-09 20:58:41.809 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100005, 良品铺子30店, 良品铺子, 1, 1
+2024-03-09 20:58:41.809 DEBUG c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :137  [32m                  [0;39m <==      Total: 5
+2024-03-09 20:58:41.810 INFO  com.tailai.mywiki.config.MywikiApplication        :36   [32m                  [0;39m 总行数 5
+2024-03-09 20:58:41.811 INFO  com.tailai.mywiki.config.MywikiApplication        :37   [32m                  [0;39m 总页数 1
+2024-03-09 20:58:41.831 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：115 ms -------------
+2024-03-09 20:59:35.055 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2024-03-09 20:59:35.063 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :24   [32m                  [0;39m 请求地址: http://localhost:8888/scope/search GET
+2024-03-09 20:59:35.064 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :25   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-03-09 20:59:35.121 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM scope
+2024-03-09 20:59:35.123 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:137  [32m                  [0;39m ==> Parameters: 
+2024-03-09 20:59:35.135 TRACE c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2024-03-09 20:59:35.136 TRACE c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:143  [32m                  [0;39m <==        Row: 5
+2024-03-09 20:59:35.138 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:137  [32m                  [0;39m <==      Total: 1
+2024-03-09 20:59:35.143 DEBUG c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :137  [32m                  [0;39m ==>  Preparing: select * from scope LIMIT ?
+2024-03-09 20:59:35.144 DEBUG c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2024-03-09 20:59:35.147 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==    Columns: scope_id, scope_name, brand, is_monitor, is_alarm
+2024-03-09 20:59:35.148 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100001, 良品铺子20店, 良品铺子, 1, 0
+2024-03-09 20:59:35.149 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100002, 良品铺子40店, 良品铺子, 0, 0
+2024-03-09 20:59:35.150 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100003, 良品铺子36店, 良品铺子, 1, 1
+2024-03-09 20:59:35.150 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100004, 良品铺子01店, 良品铺子, 1, 1
+2024-03-09 20:59:35.151 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100005, 良品铺子30店, 良品铺子, 1, 1
+2024-03-09 20:59:35.152 DEBUG c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :137  [32m                  [0;39m <==      Total: 5
+2024-03-09 20:59:35.152 INFO  com.tailai.mywiki.config.MywikiApplication        :36   [32m                  [0;39m 总行数 5
+2024-03-09 20:59:35.153 INFO  com.tailai.mywiki.config.MywikiApplication        :37   [32m                  [0;39m 总页数 1
+2024-03-09 20:59:35.158 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：93 ms -------------
+2024-03-09 20:59:38.188 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2024-03-09 20:59:38.188 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :24   [32m                  [0;39m 请求地址: http://localhost:8888/scope/searchpara POST
+2024-03-09 20:59:38.188 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :25   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-03-09 20:59:38.202 DEBUG c.t.m.dao.alarm.ScopeMapper.searchScopepara_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM scope WHERE 1 = 1 AND scope_name LIKE CONCAT('%', TRIM(?), '%') AND brand LIKE CONCAT('%', TRIM(?), '%') AND is_monitor = ?
+2024-03-09 20:59:38.205 DEBUG c.t.m.dao.alarm.ScopeMapper.searchScopepara_COUNT :137  [32m                  [0;39m ==> Parameters: (String), (String), false(Boolean)
+2024-03-09 20:59:38.224 TRACE c.t.m.dao.alarm.ScopeMapper.searchScopepara_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2024-03-09 20:59:38.225 TRACE c.t.m.dao.alarm.ScopeMapper.searchScopepara_COUNT :143  [32m                  [0;39m <==        Row: 1
+2024-03-09 20:59:38.226 DEBUG c.t.m.dao.alarm.ScopeMapper.searchScopepara_COUNT :137  [32m                  [0;39m <==      Total: 1
+2024-03-09 20:59:38.227 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScopepara  :137  [32m                  [0;39m ==>  Preparing: select * from scope where 1=1 AND scope_name like CONCAT('%', TRIM(?), '%') AND brand like CONCAT('%', TRIM(?), '%') AND is_monitor=?
+2024-03-09 20:59:38.227 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScopepara  :137  [32m                  [0;39m ==> Parameters: (String), (String), false(Boolean)
+2024-03-09 20:59:38.230 TRACE c.t.mywiki.dao.alarm.ScopeMapper.searchScopepara  :143  [32m                  [0;39m <==    Columns: scope_id, scope_name, brand, is_monitor, is_alarm
+2024-03-09 20:59:38.230 TRACE c.t.mywiki.dao.alarm.ScopeMapper.searchScopepara  :143  [32m                  [0;39m <==        Row: 100002, 良品铺子40店, 良品铺子, 0, 0
+2024-03-09 20:59:38.231 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScopepara  :137  [32m                  [0;39m <==      Total: 1
+2024-03-09 20:59:38.236 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：46 ms -------------
+2024-03-09 20:59:48.009 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2024-03-09 20:59:48.010 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :24   [32m                  [0;39m 请求地址: http://localhost:8888/scope/searchpara POST
+2024-03-09 20:59:48.011 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :25   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-03-09 20:59:48.021 DEBUG c.t.m.dao.alarm.ScopeMapper.searchScopepara_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM scope WHERE 1 = 1 AND scope_name LIKE CONCAT('%', TRIM(?), '%') AND brand LIKE CONCAT('%', TRIM(?), '%') AND is_monitor = ? AND is_alarm = ?
+2024-03-09 20:59:48.021 DEBUG c.t.m.dao.alarm.ScopeMapper.searchScopepara_COUNT :137  [32m                  [0;39m ==> Parameters: (String), (String), false(Boolean), false(Boolean)
+2024-03-09 20:59:48.036 TRACE c.t.m.dao.alarm.ScopeMapper.searchScopepara_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2024-03-09 20:59:48.036 TRACE c.t.m.dao.alarm.ScopeMapper.searchScopepara_COUNT :143  [32m                  [0;39m <==        Row: 1
+2024-03-09 20:59:48.037 DEBUG c.t.m.dao.alarm.ScopeMapper.searchScopepara_COUNT :137  [32m                  [0;39m <==      Total: 1
+2024-03-09 20:59:48.037 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScopepara  :137  [32m                  [0;39m ==>  Preparing: select * from scope where 1=1 AND scope_name like CONCAT('%', TRIM(?), '%') AND brand like CONCAT('%', TRIM(?), '%') AND is_monitor=? AND is_alarm=?
+2024-03-09 20:59:48.038 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScopepara  :137  [32m                  [0;39m ==> Parameters: (String), (String), false(Boolean), false(Boolean)
+2024-03-09 20:59:48.040 TRACE c.t.mywiki.dao.alarm.ScopeMapper.searchScopepara  :143  [32m                  [0;39m <==    Columns: scope_id, scope_name, brand, is_monitor, is_alarm
+2024-03-09 20:59:48.040 TRACE c.t.mywiki.dao.alarm.ScopeMapper.searchScopepara  :143  [32m                  [0;39m <==        Row: 100002, 良品铺子40店, 良品铺子, 0, 0
+2024-03-09 20:59:48.040 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScopepara  :137  [32m                  [0;39m <==      Total: 1
+2024-03-09 20:59:48.041 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：30 ms -------------
+2024-03-09 20:59:56.219 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2024-03-09 20:59:56.220 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :24   [32m                  [0;39m 请求地址: http://localhost:8888/scope/searchpara POST
+2024-03-09 20:59:56.222 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :25   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-03-09 20:59:56.230 DEBUG c.t.m.dao.alarm.ScopeMapper.searchScopepara_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM scope WHERE 1 = 1 AND scope_name LIKE CONCAT('%', TRIM(?), '%') AND brand LIKE CONCAT('%', TRIM(?), '%') AND is_monitor = ? AND is_alarm = ?
+2024-03-09 20:59:56.231 DEBUG c.t.m.dao.alarm.ScopeMapper.searchScopepara_COUNT :137  [32m                  [0;39m ==> Parameters: (String), (String), true(Boolean), false(Boolean)
+2024-03-09 20:59:56.237 TRACE c.t.m.dao.alarm.ScopeMapper.searchScopepara_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2024-03-09 20:59:56.238 TRACE c.t.m.dao.alarm.ScopeMapper.searchScopepara_COUNT :143  [32m                  [0;39m <==        Row: 1
+2024-03-09 20:59:56.239 DEBUG c.t.m.dao.alarm.ScopeMapper.searchScopepara_COUNT :137  [32m                  [0;39m <==      Total: 1
+2024-03-09 20:59:56.240 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScopepara  :137  [32m                  [0;39m ==>  Preparing: select * from scope where 1=1 AND scope_name like CONCAT('%', TRIM(?), '%') AND brand like CONCAT('%', TRIM(?), '%') AND is_monitor=? AND is_alarm=?
+2024-03-09 20:59:56.240 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScopepara  :137  [32m                  [0;39m ==> Parameters: (String), (String), true(Boolean), false(Boolean)
+2024-03-09 20:59:56.243 TRACE c.t.mywiki.dao.alarm.ScopeMapper.searchScopepara  :143  [32m                  [0;39m <==    Columns: scope_id, scope_name, brand, is_monitor, is_alarm
+2024-03-09 20:59:56.244 TRACE c.t.mywiki.dao.alarm.ScopeMapper.searchScopepara  :143  [32m                  [0;39m <==        Row: 100001, 良品铺子20店, 良品铺子, 1, 0
+2024-03-09 20:59:56.244 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScopepara  :137  [32m                  [0;39m <==      Total: 1
+2024-03-09 20:59:56.245 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：23 ms -------------
+2024-03-09 21:00:37.342 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2024-03-09 21:00:37.344 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :24   [32m                  [0;39m 请求地址: http://localhost:8888/scope/search GET
+2024-03-09 21:00:37.347 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :25   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-03-09 21:00:37.353 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM scope
+2024-03-09 21:00:37.354 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:137  [32m                  [0;39m ==> Parameters: 
+2024-03-09 21:00:37.376 TRACE c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2024-03-09 21:00:37.380 TRACE c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:143  [32m                  [0;39m <==        Row: 5
+2024-03-09 21:00:37.381 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:137  [32m                  [0;39m <==      Total: 1
+2024-03-09 21:00:37.382 DEBUG c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :137  [32m                  [0;39m ==>  Preparing: select * from scope LIMIT ?
+2024-03-09 21:00:37.384 DEBUG c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2024-03-09 21:00:37.385 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==    Columns: scope_id, scope_name, brand, is_monitor, is_alarm
+2024-03-09 21:00:37.385 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100001, 良品铺子20店, 良品铺子, 1, 0
+2024-03-09 21:00:37.387 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100002, 良品铺子40店, 良品铺子, 0, 0
+2024-03-09 21:00:37.394 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100003, 良品铺子36店, 良品铺子, 1, 1
+2024-03-09 21:00:37.395 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100004, 良品铺子01店, 良品铺子, 1, 1
+2024-03-09 21:00:37.396 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100005, 良品铺子30店, 良品铺子, 1, 1
+2024-03-09 21:00:37.396 DEBUG c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :137  [32m                  [0;39m <==      Total: 5
+2024-03-09 21:00:37.397 INFO  com.tailai.mywiki.config.MywikiApplication        :36   [32m                  [0;39m 总行数 5
+2024-03-09 21:00:37.397 INFO  com.tailai.mywiki.config.MywikiApplication        :37   [32m                  [0;39m 总页数 1
+2024-03-09 21:00:37.402 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：55 ms -------------
+2024-03-09 21:00:46.245 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2024-03-09 21:00:46.246 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :24   [32m                  [0;39m 请求地址: http://localhost:8888/scope/searchpara POST
+2024-03-09 21:00:46.246 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :25   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-03-09 21:00:46.253 DEBUG c.t.m.dao.alarm.ScopeMapper.searchScopepara_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM scope WHERE 1 = 1 AND scope_name LIKE CONCAT('%', TRIM(?), '%') AND brand LIKE CONCAT('%', TRIM(?), '%')
+2024-03-09 21:00:46.254 DEBUG c.t.m.dao.alarm.ScopeMapper.searchScopepara_COUNT :137  [32m                  [0;39m ==> Parameters: 20(String), (String)
+2024-03-09 21:00:46.257 TRACE c.t.m.dao.alarm.ScopeMapper.searchScopepara_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2024-03-09 21:00:46.259 TRACE c.t.m.dao.alarm.ScopeMapper.searchScopepara_COUNT :143  [32m                  [0;39m <==        Row: 1
+2024-03-09 21:00:46.260 DEBUG c.t.m.dao.alarm.ScopeMapper.searchScopepara_COUNT :137  [32m                  [0;39m <==      Total: 1
+2024-03-09 21:00:46.261 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScopepara  :137  [32m                  [0;39m ==>  Preparing: select * from scope where 1=1 AND scope_name like CONCAT('%', TRIM(?), '%') AND brand like CONCAT('%', TRIM(?), '%')
+2024-03-09 21:00:46.262 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScopepara  :137  [32m                  [0;39m ==> Parameters: 20(String), (String)
+2024-03-09 21:00:46.265 TRACE c.t.mywiki.dao.alarm.ScopeMapper.searchScopepara  :143  [32m                  [0;39m <==    Columns: scope_id, scope_name, brand, is_monitor, is_alarm
+2024-03-09 21:00:46.266 TRACE c.t.mywiki.dao.alarm.ScopeMapper.searchScopepara  :143  [32m                  [0;39m <==        Row: 100001, 良品铺子20店, 良品铺子, 1, 0
+2024-03-09 21:00:46.266 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScopepara  :137  [32m                  [0;39m <==      Total: 1
+2024-03-09 21:00:46.268 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：22 ms -------------
+2024-03-09 21:05:08.442 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2024-03-09 21:05:08.446 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :24   [32m                  [0;39m 请求地址: http://localhost:8888/scope/search GET
+2024-03-09 21:05:08.447 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :25   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-03-09 21:05:08.477 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM scope
+2024-03-09 21:05:08.481 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:137  [32m                  [0;39m ==> Parameters: 
+2024-03-09 21:05:08.491 TRACE c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2024-03-09 21:05:08.492 TRACE c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:143  [32m                  [0;39m <==        Row: 5
+2024-03-09 21:05:08.494 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:137  [32m                  [0;39m <==      Total: 1
+2024-03-09 21:05:08.500 DEBUG c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :137  [32m                  [0;39m ==>  Preparing: select * from scope LIMIT ?
+2024-03-09 21:05:08.502 DEBUG c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2024-03-09 21:05:08.507 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==    Columns: scope_id, scope_name, brand, is_monitor, is_alarm
+2024-03-09 21:05:08.507 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100001, 良品铺子20店, 良品铺子, 1, 0
+2024-03-09 21:05:08.509 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100002, 良品铺子40店, 良品铺子, 0, 0
+2024-03-09 21:05:08.510 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100003, 良品铺子36店, 良品铺子, 1, 1
+2024-03-09 21:05:08.510 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100004, 良品铺子01店, 良品铺子, 1, 1
+2024-03-09 21:05:08.511 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100005, 良品铺子30店, 良品铺子, 1, 1
+2024-03-09 21:05:08.512 DEBUG c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :137  [32m                  [0;39m <==      Total: 5
+2024-03-09 21:05:08.513 INFO  com.tailai.mywiki.config.MywikiApplication        :36   [32m                  [0;39m 总行数 5
+2024-03-09 21:05:08.513 INFO  com.tailai.mywiki.config.MywikiApplication        :37   [32m                  [0;39m 总页数 1
+2024-03-09 21:05:08.521 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：72 ms -------------
+2024-03-09 21:05:13.621 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2024-03-09 21:05:13.622 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :24   [32m                  [0;39m 请求地址: http://localhost:8888/scope/searchpara POST
+2024-03-09 21:05:13.623 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :25   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-03-09 21:05:13.663 ERROR c.t.mywiki.controller.ControllerExceptionHandler  :61   [32m                  [0;39m 系统异常：
+org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.lang.Boolean` from String "undefined": only "true" or "false" recognized; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `java.lang.Boolean` from String "undefined": only "true" or "false" recognized
+ at [Source: (PushbackInputStream); line: 1, column: 42] (through reference chain: com.tailai.mywiki.req.alarm.ScopeReq["is_monitor"])
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.readJavaType(AbstractJackson2HttpMessageConverter.java:285)
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.read(AbstractJackson2HttpMessageConverter.java:243)
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver.readWithMessageConverters(AbstractMessageConverterMethodArgumentResolver.java:205)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.readWithMessageConverters(RequestResponseBodyMethodProcessor.java:158)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:131)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:121)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:170)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:137)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:893)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:807)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1061)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:961)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `java.lang.Boolean` from String "undefined": only "true" or "false" recognized
+ at [Source: (PushbackInputStream); line: 1, column: 42] (through reference chain: com.tailai.mywiki.req.alarm.ScopeReq["is_monitor"])
+	at com.fasterxml.jackson.databind.exc.InvalidFormatException.from(InvalidFormatException.java:67)
+	at com.fasterxml.jackson.databind.DeserializationContext.weirdStringException(DeserializationContext.java:1702)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleWeirdStringValue(DeserializationContext.java:947)
+	at com.fasterxml.jackson.databind.deser.std.NumberDeserializers$BooleanDeserializer._parseBoolean(NumberDeserializers.java:256)
+	at com.fasterxml.jackson.databind.deser.std.NumberDeserializers$BooleanDeserializer.deserialize(NumberDeserializers.java:204)
+	at com.fasterxml.jackson.databind.deser.std.NumberDeserializers$BooleanDeserializer.deserialize(NumberDeserializers.java:180)
+	at com.fasterxml.jackson.databind.deser.impl.MethodProperty.deserializeAndSet(MethodProperty.java:129)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserializeFromObject(BeanDeserializer.java:371)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:164)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4526)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3521)
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.readJavaType(AbstractJackson2HttpMessageConverter.java:274)
+	... 51 common frames omitted
+2024-03-09 21:05:13.677 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m                  [0;39m Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.lang.Boolean` from String "undefined": only "true" or "false" recognized; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `java.lang.Boolean` from String "undefined": only "true" or "false" recognized
+ at [Source: (PushbackInputStream); line: 1, column: 42] (through reference chain: com.tailai.mywiki.req.alarm.ScopeReq["is_monitor"])]
+2024-03-09 21:07:56.283 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2024-03-09 21:07:56.297 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :24   [32m                  [0;39m 请求地址: http://localhost:8888/scope/search GET
+2024-03-09 21:07:56.300 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :25   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-03-09 21:07:56.377 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM scope
+2024-03-09 21:07:56.388 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:137  [32m                  [0;39m ==> Parameters: 
+2024-03-09 21:07:56.443 TRACE c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2024-03-09 21:07:56.444 TRACE c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:143  [32m                  [0;39m <==        Row: 5
+2024-03-09 21:07:56.445 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:137  [32m                  [0;39m <==      Total: 1
+2024-03-09 21:07:56.447 DEBUG c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :137  [32m                  [0;39m ==>  Preparing: select * from scope LIMIT ?
+2024-03-09 21:07:56.448 DEBUG c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2024-03-09 21:07:56.453 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==    Columns: scope_id, scope_name, brand, is_monitor, is_alarm
+2024-03-09 21:07:56.454 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100001, 良品铺子20店, 良品铺子, 1, 0
+2024-03-09 21:07:56.468 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100002, 良品铺子40店, 良品铺子, 0, 0
+2024-03-09 21:07:56.472 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100003, 良品铺子36店, 良品铺子, 1, 1
+2024-03-09 21:07:56.473 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100004, 良品铺子01店, 良品铺子, 1, 1
+2024-03-09 21:07:56.476 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100005, 良品铺子30店, 良品铺子, 1, 1
+2024-03-09 21:07:56.477 DEBUG c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :137  [32m                  [0;39m <==      Total: 5
+2024-03-09 21:07:56.480 INFO  com.tailai.mywiki.config.MywikiApplication        :36   [32m                  [0;39m 总行数 5
+2024-03-09 21:07:56.481 INFO  com.tailai.mywiki.config.MywikiApplication        :37   [32m                  [0;39m 总页数 1
+2024-03-09 21:07:56.510 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：208 ms -------------
+2024-03-09 21:08:15.383 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2024-03-09 21:08:15.385 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :24   [32m                  [0;39m 请求地址: http://localhost:8888/scope/searchpara POST
+2024-03-09 21:08:15.404 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :25   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-03-09 21:08:15.437 DEBUG c.t.m.dao.alarm.ScopeMapper.searchScopepara_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM scope WHERE 1 = 1 AND scope_name LIKE CONCAT('%', TRIM(?), '%') AND brand LIKE CONCAT('%', TRIM(?), '%')
+2024-03-09 21:08:15.439 DEBUG c.t.m.dao.alarm.ScopeMapper.searchScopepara_COUNT :137  [32m                  [0;39m ==> Parameters: (String), 良品(String)
+2024-03-09 21:08:15.453 TRACE c.t.m.dao.alarm.ScopeMapper.searchScopepara_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2024-03-09 21:08:15.454 TRACE c.t.m.dao.alarm.ScopeMapper.searchScopepara_COUNT :143  [32m                  [0;39m <==        Row: 5
+2024-03-09 21:08:15.454 DEBUG c.t.m.dao.alarm.ScopeMapper.searchScopepara_COUNT :137  [32m                  [0;39m <==      Total: 1
+2024-03-09 21:08:15.455 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScopepara  :137  [32m                  [0;39m ==>  Preparing: select * from scope where 1=1 AND scope_name like CONCAT('%', TRIM(?), '%') AND brand like CONCAT('%', TRIM(?), '%')
+2024-03-09 21:08:15.456 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScopepara  :137  [32m                  [0;39m ==> Parameters: (String), 良品(String)
+2024-03-09 21:08:15.458 TRACE c.t.mywiki.dao.alarm.ScopeMapper.searchScopepara  :143  [32m                  [0;39m <==    Columns: scope_id, scope_name, brand, is_monitor, is_alarm
+2024-03-09 21:08:15.459 TRACE c.t.mywiki.dao.alarm.ScopeMapper.searchScopepara  :143  [32m                  [0;39m <==        Row: 100001, 良品铺子20店, 良品铺子, 1, 0
+2024-03-09 21:08:15.461 TRACE c.t.mywiki.dao.alarm.ScopeMapper.searchScopepara  :143  [32m                  [0;39m <==        Row: 100002, 良品铺子40店, 良品铺子, 0, 0
+2024-03-09 21:08:15.463 TRACE c.t.mywiki.dao.alarm.ScopeMapper.searchScopepara  :143  [32m                  [0;39m <==        Row: 100003, 良品铺子36店, 良品铺子, 1, 1
+2024-03-09 21:08:15.463 TRACE c.t.mywiki.dao.alarm.ScopeMapper.searchScopepara  :143  [32m                  [0;39m <==        Row: 100004, 良品铺子01店, 良品铺子, 1, 1
+2024-03-09 21:08:15.464 TRACE c.t.mywiki.dao.alarm.ScopeMapper.searchScopepara  :143  [32m                  [0;39m <==        Row: 100005, 良品铺子30店, 良品铺子, 1, 1
+2024-03-09 21:08:15.464 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScopepara  :137  [32m                  [0;39m <==      Total: 5
+2024-03-09 21:08:15.469 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：64 ms -------------
+2024-03-09 21:08:32.274 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2024-03-09 21:08:32.275 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :24   [32m                  [0;39m 请求地址: http://localhost:8888/scope/searchpara POST
+2024-03-09 21:08:32.276 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :25   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-03-09 21:08:32.280 DEBUG c.t.m.dao.alarm.ScopeMapper.searchScopepara_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM scope WHERE 1 = 1 AND scope_name LIKE CONCAT('%', TRIM(?), '%') AND brand LIKE CONCAT('%', TRIM(?), '%')
+2024-03-09 21:08:32.283 DEBUG c.t.m.dao.alarm.ScopeMapper.searchScopepara_COUNT :137  [32m                  [0;39m ==> Parameters: (String), 良品(String)
+2024-03-09 21:08:32.288 TRACE c.t.m.dao.alarm.ScopeMapper.searchScopepara_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2024-03-09 21:08:32.289 TRACE c.t.m.dao.alarm.ScopeMapper.searchScopepara_COUNT :143  [32m                  [0;39m <==        Row: 5
+2024-03-09 21:08:32.290 DEBUG c.t.m.dao.alarm.ScopeMapper.searchScopepara_COUNT :137  [32m                  [0;39m <==      Total: 1
+2024-03-09 21:08:32.290 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScopepara  :137  [32m                  [0;39m ==>  Preparing: select * from scope where 1=1 AND scope_name like CONCAT('%', TRIM(?), '%') AND brand like CONCAT('%', TRIM(?), '%')
+2024-03-09 21:08:32.292 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScopepara  :137  [32m                  [0;39m ==> Parameters: (String), 良品(String)
+2024-03-09 21:08:32.295 TRACE c.t.mywiki.dao.alarm.ScopeMapper.searchScopepara  :143  [32m                  [0;39m <==    Columns: scope_id, scope_name, brand, is_monitor, is_alarm
+2024-03-09 21:08:32.296 TRACE c.t.mywiki.dao.alarm.ScopeMapper.searchScopepara  :143  [32m                  [0;39m <==        Row: 100001, 良品铺子20店, 良品铺子, 1, 0
+2024-03-09 21:08:32.297 TRACE c.t.mywiki.dao.alarm.ScopeMapper.searchScopepara  :143  [32m                  [0;39m <==        Row: 100002, 良品铺子40店, 良品铺子, 0, 0
+2024-03-09 21:08:32.298 TRACE c.t.mywiki.dao.alarm.ScopeMapper.searchScopepara  :143  [32m                  [0;39m <==        Row: 100003, 良品铺子36店, 良品铺子, 1, 1
+2024-03-09 21:08:32.299 TRACE c.t.mywiki.dao.alarm.ScopeMapper.searchScopepara  :143  [32m                  [0;39m <==        Row: 100004, 良品铺子01店, 良品铺子, 1, 1
+2024-03-09 21:08:32.299 TRACE c.t.mywiki.dao.alarm.ScopeMapper.searchScopepara  :143  [32m                  [0;39m <==        Row: 100005, 良品铺子30店, 良品铺子, 1, 1
+2024-03-09 21:08:32.300 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScopepara  :137  [32m                  [0;39m <==      Total: 5
+2024-03-09 21:08:32.303 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：27 ms -------------
+2024-03-09 21:15:51.289 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2024-03-09 21:15:51.298 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :24   [32m                  [0;39m 请求地址: http://localhost:8888/scope/search GET
+2024-03-09 21:15:51.299 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :25   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-03-09 21:15:51.346 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM scope
+2024-03-09 21:15:51.353 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:137  [32m                  [0;39m ==> Parameters: 
+2024-03-09 21:15:51.371 TRACE c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2024-03-09 21:15:51.372 TRACE c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:143  [32m                  [0;39m <==        Row: 5
+2024-03-09 21:15:51.374 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:137  [32m                  [0;39m <==      Total: 1
+2024-03-09 21:15:51.378 DEBUG c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :137  [32m                  [0;39m ==>  Preparing: select * from scope LIMIT ?
+2024-03-09 21:15:51.380 DEBUG c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2024-03-09 21:15:51.393 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==    Columns: scope_id, scope_name, brand, is_monitor, is_alarm
+2024-03-09 21:15:51.394 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100001, 良品铺子20店, 良品铺子, 1, 0
+2024-03-09 21:15:51.397 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100002, 良品铺子40店, 良品铺子, 0, 0
+2024-03-09 21:15:51.399 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100003, 良品铺子36店, 良品铺子, 1, 1
+2024-03-09 21:15:51.402 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100004, 良品铺子01店, 良品铺子, 1, 1
+2024-03-09 21:15:51.404 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100005, 良品铺子30店, 良品铺子, 1, 1
+2024-03-09 21:15:51.408 DEBUG c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :137  [32m                  [0;39m <==      Total: 5
+2024-03-09 21:15:51.418 INFO  com.tailai.mywiki.config.MywikiApplication        :36   [32m                  [0;39m 总行数 5
+2024-03-09 21:15:51.423 INFO  com.tailai.mywiki.config.MywikiApplication        :37   [32m                  [0;39m 总页数 1
+2024-03-09 21:15:51.434 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：134 ms -------------
+2024-03-09 21:34:28.077 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2024-03-09 21:34:28.088 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :24   [32m                  [0;39m 请求地址: http://localhost:8888/scope/search GET
+2024-03-09 21:34:28.089 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :25   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-03-09 21:34:28.139 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM scope
+2024-03-09 21:34:28.144 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:137  [32m                  [0;39m ==> Parameters: 
+2024-03-09 21:34:28.198 TRACE c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2024-03-09 21:34:28.199 TRACE c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:143  [32m                  [0;39m <==        Row: 5
+2024-03-09 21:34:28.201 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:137  [32m                  [0;39m <==      Total: 1
+2024-03-09 21:34:28.203 DEBUG c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :137  [32m                  [0;39m ==>  Preparing: select * from scope LIMIT ?
+2024-03-09 21:34:28.205 DEBUG c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2024-03-09 21:34:28.216 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==    Columns: scope_id, scope_name, brand, is_monitor, is_alarm
+2024-03-09 21:34:28.217 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100001, 良品铺子20店, 良品铺子, 1, 0
+2024-03-09 21:34:28.221 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100002, 良品铺子40店, 良品铺子, 0, 0
+2024-03-09 21:34:28.221 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100003, 良品铺子36店, 良品铺子, 1, 1
+2024-03-09 21:34:28.222 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100004, 良品铺子01店, 良品铺子, 1, 1
+2024-03-09 21:34:28.223 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100005, 良品铺子30店, 良品铺子, 1, 1
+2024-03-09 21:34:28.225 DEBUG c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :137  [32m                  [0;39m <==      Total: 5
+2024-03-09 21:34:28.227 INFO  com.tailai.mywiki.config.MywikiApplication        :36   [32m                  [0;39m 总行数 5
+2024-03-09 21:34:28.228 INFO  com.tailai.mywiki.config.MywikiApplication        :37   [32m                  [0;39m 总页数 1
+2024-03-09 21:34:28.269 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：179 ms -------------
+2024-03-09 21:36:32.225 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2024-03-09 21:36:32.247 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :24   [32m                  [0;39m 请求地址: http://localhost:8888/scope/search GET
+2024-03-09 21:36:32.259 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :25   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-03-09 21:36:32.310 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM scope
+2024-03-09 21:36:32.325 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:137  [32m                  [0;39m ==> Parameters: 
+2024-03-09 21:36:32.386 TRACE c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2024-03-09 21:36:32.396 TRACE c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:143  [32m                  [0;39m <==        Row: 5
+2024-03-09 21:36:32.405 DEBUG c.t.mywiki.dao.alarm.ScopeMapper.searchScope_COUNT:137  [32m                  [0;39m <==      Total: 1
+2024-03-09 21:36:32.413 DEBUG c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :137  [32m                  [0;39m ==>  Preparing: select * from scope LIMIT ?
+2024-03-09 21:36:32.415 DEBUG c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2024-03-09 21:36:32.423 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==    Columns: scope_id, scope_name, brand, is_monitor, is_alarm
+2024-03-09 21:36:32.426 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100001, 良品铺子20店, 良品铺子, 1, 0
+2024-03-09 21:36:32.434 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100002, 良品铺子40店, 良品铺子, 0, 0
+2024-03-09 21:36:32.435 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100003, 良品铺子36店, 良品铺子, 1, 1
+2024-03-09 21:36:32.437 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100004, 良品铺子01店, 良品铺子, 1, 1
+2024-03-09 21:36:32.439 TRACE c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :143  [32m                  [0;39m <==        Row: 100005, 良品铺子30店, 良品铺子, 1, 1
+2024-03-09 21:36:32.446 DEBUG c.tailai.mywiki.dao.alarm.ScopeMapper.searchScope :137  [32m                  [0;39m <==      Total: 5
+2024-03-09 21:36:32.448 INFO  com.tailai.mywiki.config.MywikiApplication        :36   [32m                  [0;39m 总行数 5
+2024-03-09 21:36:32.451 INFO  com.tailai.mywiki.config.MywikiApplication        :37   [32m                  [0;39m 总页数 1
+2024-03-09 21:36:32.479 INFO  com.tailai.mywiki.interceptor.LogInterceptor      :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：217 ms -------------
+2024-03-09 21:37:14.809 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2024-03-09 21:37:14.827 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
+2024-03-09 21:37:14.846 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
