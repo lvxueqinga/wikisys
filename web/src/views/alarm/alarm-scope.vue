@@ -2,7 +2,7 @@
 
   <a-layout>
 
-    <a-row type="flex" style="gap: 16px; margin-top: 40px;">
+    <a-row type="flex" style="gap: 16px; margin-top: 40px; margin-left: 10px;">
     <a-input
         v-model:value="scopename"
         placeholder="门店名称"
@@ -118,18 +118,17 @@
           dataIndex: 'is_monitor',
           key: 'is_monitor',
           customRender:(text: any)=>{
-            return text.valueOf().record.is_monitor ? '是' : '否'
+            console.log("xxx",text)
+            return text.record.is_monitor ? '是' : '否'
 
           }
-
-
         },
         {
           title: '是否报警',
           dataIndex: 'is_alarm',
           key: 'is_alarm',
           customRender:(text: any)=>{
-            return text.valueOf().record.is_alarm ? '是' : '否'
+            return text.record.is_alarm ? '是' : '否'
           }
         }
       ];
