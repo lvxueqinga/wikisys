@@ -80,3 +80,167 @@ java.lang.IllegalArgumentException: No enum constant org.springframework.web.bin
 2024-05-08 16:38:18.185 INFO  com.tailai.mywiki.config.MywikiApplication        :24   [32m                  [0;39m 启动成功！！
 2024-05-08 16:38:18.186 INFO  com.tailai.mywiki.config.MywikiApplication        :25   [32m                  [0;39m 地址: 	http://127.0.0.1:8888
 2024-05-08 16:38:33.313 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2024-05-08 21:28:53.957 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 6.1.6.Final
+2024-05-08 21:28:53.966 INFO  com.tailai.mywiki.config.MywikiApplication        :55   [32m                  [0;39m Starting MywikiApplication using Java 11.0.23 on tailaideMBP with PID 5642 (/Users/tailai/Desktop/wikisys/target/classes started by tailai in /Users/tailai/Desktop/wikisys)
+2024-05-08 21:28:53.968 INFO  com.tailai.mywiki.config.MywikiApplication        :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2024-05-08 21:28:54.011 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-05-08 21:28:54.011 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-05-08 21:28:54.776 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :250  [32m                  [0;39m Multiple Spring Data modules found, entering strict repository configuration mode!
+2024-05-08 21:28:54.779 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :128  [32m                  [0;39m Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-05-08 21:28:54.797 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :188  [32m                  [0;39m Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2024-05-08 21:28:55.278 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8888 (http)
+2024-05-08 21:28:55.291 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8888"]
+2024-05-08 21:28:55.292 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2024-05-08 21:28:55.292 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2024-05-08 21:28:55.354 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2024-05-08 21:28:55.355 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1343 ms
+2024-05-08 21:28:56.299 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2024-05-08 21:28:56.337 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2024-05-08 21:28:56.526 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8888"]
+2024-05-08 21:28:56.546 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8888 (http) with context path ''
+2024-05-08 21:28:56.547 INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper:120  [32m                  [0;39m Context refreshed
+2024-05-08 21:28:56.557 INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper:123  [32m                  [0;39m Found 1 custom documentation plugin(s)
+2024-05-08 21:28:56.564 INFO  s.d.spring.web.scanners.ApiListingReferenceScanner:41   [32m                  [0;39m Scanning for api listing references
+2024-05-08 21:28:56.743 INFO  s.d.s.w.r.operation.CachingOperationNameGenerator :40   [32m                  [0;39m Generating unique operation named: addUsingPOST_1
+2024-05-08 21:28:56.747 INFO  s.d.s.w.r.operation.CachingOperationNameGenerator :40   [32m                  [0;39m Generating unique operation named: delUsingPOST_1
+2024-05-08 21:28:56.750 INFO  s.d.s.w.r.operation.CachingOperationNameGenerator :40   [32m                  [0;39m Generating unique operation named: searchUsingPOST_1
+2024-05-08 21:28:56.753 INFO  s.d.s.w.r.operation.CachingOperationNameGenerator :40   [32m                  [0;39m Generating unique operation named: searchUsingGET_1
+2024-05-08 21:28:56.756 INFO  s.d.s.w.r.operation.CachingOperationNameGenerator :40   [32m                  [0;39m Generating unique operation named: searchparaUsingGET_1
+2024-05-08 21:28:56.767 INFO  s.d.s.w.r.operation.CachingOperationNameGenerator :40   [32m                  [0;39m Generating unique operation named: searchUsingPOST_2
+2024-05-08 21:28:56.770 INFO  s.d.s.w.r.operation.CachingOperationNameGenerator :40   [32m                  [0;39m Generating unique operation named: searchUsingGET_2
+2024-05-08 21:28:56.775 ERROR s.d.s.readers.operation.OperationHttpMethodReader :52   [32m                  [0;39m Invalid http method: PostValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@6e24dbfd]
+java.lang.IllegalArgumentException: No enum constant org.springframework.web.bind.annotation.RequestMethod.Post
+	at java.base/java.lang.Enum.valueOf(Enum.java:240)
+	at org.springframework.web.bind.annotation.RequestMethod.valueOf(RequestMethod.java:35)
+	at springfox.documentation.swagger.readers.operation.OperationHttpMethodReader.apply(OperationHttpMethodReader.java:49)
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsManager.operation(DocumentationPluginsManager.java:123)
+	at springfox.documentation.spring.web.readers.operation.ApiOperationReader.read(ApiOperationReader.java:73)
+	at springfox.documentation.spring.web.scanners.CachingOperationReader$1.load(CachingOperationReader.java:50)
+	at springfox.documentation.spring.web.scanners.CachingOperationReader$1.load(CachingOperationReader.java:48)
+	at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3527)
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2319)
+	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2282)
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2197)
+	at com.google.common.cache.LocalCache.get(LocalCache.java:3937)
+	at com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:3941)
+	at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:4824)
+	at com.google.common.cache.LocalCache$LocalLoadingCache.getUnchecked(LocalCache.java:4830)
+	at springfox.documentation.spring.web.scanners.CachingOperationReader.read(CachingOperationReader.java:57)
+	at springfox.documentation.spring.web.scanners.ApiDescriptionReader.read(ApiDescriptionReader.java:66)
+	at springfox.documentation.spring.web.scanners.ApiListingScanner.scan(ApiListingScanner.java:89)
+	at springfox.documentation.spring.web.scanners.ApiDocumentationScanner.scan(ApiDocumentationScanner.java:70)
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.scanDocumentation(DocumentationPluginsBootstrapper.java:85)
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:127)
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178)
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:54)
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155)
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:942)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:591)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:767)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326)
+	at com.tailai.mywiki.config.MywikiApplication.main(MywikiApplication.java:20)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+2024-05-08 21:28:56.777 INFO  s.d.s.w.r.operation.CachingOperationNameGenerator :40   [32m                  [0;39m Generating unique operation named: searchparaUsingPOST_1
+2024-05-08 21:28:56.779 INFO  s.d.s.w.r.operation.CachingOperationNameGenerator :40   [32m                  [0;39m Generating unique operation named: helloUsingGET_1
+2024-05-08 21:28:56.780 INFO  s.d.s.w.r.operation.CachingOperationNameGenerator :40   [32m                  [0;39m Generating unique operation named: helloUsingGET_2
+2024-05-08 21:28:56.781 INFO  s.d.s.w.r.operation.CachingOperationNameGenerator :40   [32m                  [0;39m Generating unique operation named: helloUsingGET_3
+2024-05-08 21:28:56.782 INFO  s.d.s.w.r.operation.CachingOperationNameGenerator :40   [32m                  [0;39m Generating unique operation named: helloUsingGET_4
+2024-05-08 21:28:56.783 INFO  s.d.s.w.r.operation.CachingOperationNameGenerator :40   [32m                  [0;39m Generating unique operation named: helloUsingGET_5
+2024-05-08 21:28:56.783 INFO  s.d.s.w.r.operation.CachingOperationNameGenerator :40   [32m                  [0;39m Generating unique operation named: helloUsingGET_6
+2024-05-08 21:28:56.784 INFO  s.d.s.w.r.operation.CachingOperationNameGenerator :40   [32m                  [0;39m Generating unique operation named: helloUsingGET_7
+2024-05-08 21:28:56.806 INFO  com.tailai.mywiki.config.MywikiApplication        :61   [32m                  [0;39m Started MywikiApplication in 3.269 seconds (JVM running for 4.044)
+2024-05-08 21:28:56.808 INFO  com.tailai.mywiki.config.MywikiApplication        :24   [32m                  [0;39m 启动成功！！
+2024-05-08 21:28:56.809 INFO  com.tailai.mywiki.config.MywikiApplication        :25   [32m                  [0;39m 地址: 	http://127.0.0.1:8888
+2024-05-08 21:29:09.583 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2024-05-08 21:36:26.979 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 6.1.6.Final
+2024-05-08 21:36:27.005 INFO  com.tailai.mywiki.config.MywikiApplication        :55   [32m                  [0;39m Starting MywikiApplication v0.0.1-SNAPSHOT using Java 17.0.11 on tailaideMBP with PID 5808 (/Users/tailai/Desktop/wikisys/target/mywiki.jar started by tailai in /Users/tailai/Desktop/wikisys)
+2024-05-08 21:36:27.006 INFO  com.tailai.mywiki.config.MywikiApplication        :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2024-05-08 21:36:27.897 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :250  [32m                  [0;39m Multiple Spring Data modules found, entering strict repository configuration mode!
+2024-05-08 21:36:27.900 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :128  [32m                  [0;39m Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-05-08 21:36:27.921 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :188  [32m                  [0;39m Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2024-05-08 21:36:28.520 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8888 (http)
+2024-05-08 21:36:28.533 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8888"]
+2024-05-08 21:36:28.533 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2024-05-08 21:36:28.533 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2024-05-08 21:36:28.588 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2024-05-08 21:36:28.589 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1525 ms
+2024-05-08 21:36:29.854 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2024-05-08 21:36:30.088 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8888"]
+2024-05-08 21:36:30.123 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8888 (http) with context path ''
+2024-05-08 21:36:30.123 INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper:120  [32m                  [0;39m Context refreshed
+2024-05-08 21:36:30.142 INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper:123  [32m                  [0;39m Found 1 custom documentation plugin(s)
+2024-05-08 21:36:30.155 INFO  s.d.spring.web.scanners.ApiListingReferenceScanner:41   [32m                  [0;39m Scanning for api listing references
+2024-05-08 21:36:30.336 INFO  s.d.s.w.r.operation.CachingOperationNameGenerator :40   [32m                  [0;39m Generating unique operation named: addUsingPOST_1
+2024-05-08 21:36:30.338 INFO  s.d.s.w.r.operation.CachingOperationNameGenerator :40   [32m                  [0;39m Generating unique operation named: delUsingPOST_1
+2024-05-08 21:36:30.341 INFO  s.d.s.w.r.operation.CachingOperationNameGenerator :40   [32m                  [0;39m Generating unique operation named: searchUsingPOST_1
+2024-05-08 21:36:30.344 INFO  s.d.s.w.r.operation.CachingOperationNameGenerator :40   [32m                  [0;39m Generating unique operation named: searchUsingGET_1
+2024-05-08 21:36:30.347 INFO  s.d.s.w.r.operation.CachingOperationNameGenerator :40   [32m                  [0;39m Generating unique operation named: searchparaUsingGET_1
+2024-05-08 21:36:30.357 INFO  s.d.s.w.r.operation.CachingOperationNameGenerator :40   [32m                  [0;39m Generating unique operation named: searchUsingPOST_2
+2024-05-08 21:36:30.359 INFO  s.d.s.w.r.operation.CachingOperationNameGenerator :40   [32m                  [0;39m Generating unique operation named: searchUsingGET_2
+2024-05-08 21:36:30.364 ERROR s.d.s.readers.operation.OperationHttpMethodReader :52   [32m                  [0;39m Invalid http method: PostValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@d5ce97f]
+java.lang.IllegalArgumentException: No enum constant org.springframework.web.bind.annotation.RequestMethod.Post
+	at java.base/java.lang.Enum.valueOf(Enum.java:273)
+	at org.springframework.web.bind.annotation.RequestMethod.valueOf(RequestMethod.java:35)
+	at springfox.documentation.swagger.readers.operation.OperationHttpMethodReader.apply(OperationHttpMethodReader.java:49)
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsManager.operation(DocumentationPluginsManager.java:123)
+	at springfox.documentation.spring.web.readers.operation.ApiOperationReader.read(ApiOperationReader.java:73)
+	at springfox.documentation.spring.web.scanners.CachingOperationReader$1.load(CachingOperationReader.java:50)
+	at springfox.documentation.spring.web.scanners.CachingOperationReader$1.load(CachingOperationReader.java:48)
+	at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3527)
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2319)
+	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2282)
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2197)
+	at com.google.common.cache.LocalCache.get(LocalCache.java:3937)
+	at com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:3941)
+	at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:4824)
+	at com.google.common.cache.LocalCache$LocalLoadingCache.getUnchecked(LocalCache.java:4830)
+	at springfox.documentation.spring.web.scanners.CachingOperationReader.read(CachingOperationReader.java:57)
+	at springfox.documentation.spring.web.scanners.ApiDescriptionReader.read(ApiDescriptionReader.java:66)
+	at springfox.documentation.spring.web.scanners.ApiListingScanner.scan(ApiListingScanner.java:89)
+	at springfox.documentation.spring.web.scanners.ApiDocumentationScanner.scan(ApiDocumentationScanner.java:70)
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.scanDocumentation(DocumentationPluginsBootstrapper.java:85)
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:127)
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178)
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:54)
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155)
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:942)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:591)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:767)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326)
+	at com.tailai.mywiki.config.MywikiApplication.main(MywikiApplication.java:20)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:107)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58)
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:88)
+2024-05-08 21:36:30.396 INFO  s.d.s.w.r.operation.CachingOperationNameGenerator :40   [32m                  [0;39m Generating unique operation named: searchparaUsingPOST_1
+2024-05-08 21:36:30.398 INFO  s.d.s.w.r.operation.CachingOperationNameGenerator :40   [32m                  [0;39m Generating unique operation named: helloUsingGET_1
+2024-05-08 21:36:30.400 INFO  s.d.s.w.r.operation.CachingOperationNameGenerator :40   [32m                  [0;39m Generating unique operation named: helloUsingGET_2
+2024-05-08 21:36:30.400 INFO  s.d.s.w.r.operation.CachingOperationNameGenerator :40   [32m                  [0;39m Generating unique operation named: helloUsingGET_3
+2024-05-08 21:36:30.404 INFO  s.d.s.w.r.operation.CachingOperationNameGenerator :40   [32m                  [0;39m Generating unique operation named: helloUsingGET_4
+2024-05-08 21:36:30.405 INFO  s.d.s.w.r.operation.CachingOperationNameGenerator :40   [32m                  [0;39m Generating unique operation named: helloUsingGET_5
+2024-05-08 21:36:30.406 INFO  s.d.s.w.r.operation.CachingOperationNameGenerator :40   [32m                  [0;39m Generating unique operation named: helloUsingGET_6
+2024-05-08 21:36:30.406 INFO  s.d.s.w.r.operation.CachingOperationNameGenerator :40   [32m                  [0;39m Generating unique operation named: helloUsingGET_7
+2024-05-08 21:36:30.429 INFO  com.tailai.mywiki.config.MywikiApplication        :61   [32m                  [0;39m Started MywikiApplication in 3.969 seconds (JVM running for 4.568)
+2024-05-08 21:36:30.432 INFO  com.tailai.mywiki.config.MywikiApplication        :24   [32m                  [0;39m 启动成功！！
+2024-05-08 21:36:30.433 INFO  com.tailai.mywiki.config.MywikiApplication        :25   [32m                  [0;39m 地址: 	http://127.0.0.1:8888
+2024-05-08 21:36:39.873 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
