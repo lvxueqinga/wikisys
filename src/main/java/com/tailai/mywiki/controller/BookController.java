@@ -34,6 +34,7 @@ public class BookController {
     @PostMapping("/edit")
     @ApiOperation(value = "编辑",httpMethod = "POST")
     public PageResp<JSONObject> search(@Valid @RequestBody Book book){
+        System.out.println(book.toString());
         return  bookService.editBook(book);
     }
 
